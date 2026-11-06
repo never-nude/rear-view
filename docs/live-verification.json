@@ -1,0 +1,64 @@
+{
+  "url": "https://never-nude.github.io/rear-view/",
+  "deploymentCommit": "c0700bbfa7d4cfbf188a037136aebc3078aed1f8",
+  "checks": [
+    {
+      "path": "",
+      "status": 200,
+      "bytes": 74840,
+      "sha256": "fe13624c5da8417d680391686a53b668b88d33b87cc7b8efa4e0955a6e16ee3d"
+    },
+    {
+      "path": "ar-vr/",
+      "status": 200,
+      "bytes": 75618,
+      "sha256": "a7a8850e99025ea80a22325b3076366f3c4d84feaa1aad1d7447ede859b64cb9"
+    },
+    {
+      "path": "works/baroque/venus-callipyge-louvre-mr-1999/",
+      "status": 200,
+      "bytes": 33035,
+      "sha256": "612143dabf7209db18ecb1290718cccc4490dec287f88cd5b53774b939237355"
+    },
+    {
+      "path": "works/europe/winter-houdon-met/",
+      "status": 200,
+      "bytes": 32991,
+      "sha256": "f40c84b1d216a1827137aa502a2cb35aa891c2335e734c47cc8c30f102ed5af3"
+    },
+    {
+      "path": "model-render-utils.js",
+      "status": 200,
+      "bytes": 5766,
+      "sha256": "afc875f080e2f1c7042ff6e2b5e41e298bfaf609d788774f48c8071950d3d2e0"
+    },
+    {
+      "path": "vendor/draco/draco_decoder.wasm",
+      "status": 200,
+      "bytes": 285747,
+      "sha256": "c55a594e8ffd18426d36b27fea9618af3df5e173640a3e56d46f09d76f0574f2"
+    },
+    {
+      "path": "models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+      "status": 200,
+      "bytes": 4211212,
+      "sha256": "21e1f8a7beb5b0e43a717fbc334cb6b3d7cecb46b04809ba1e365ce086027f1e",
+      "exactModelMatch": true
+    },
+    {
+      "path": "models/previews/europe/winter-houdon-met/preview.glb",
+      "status": 200,
+      "bytes": 3797832,
+      "sha256": "0d15d1122055d5f3ce2c09b71dc1dce15d1a47c73c36c3e9e36a827f21d80d86",
+      "exactModelMatch": true
+    },
+    {
+      "path": "models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+      "status": 200,
+      "bytes": 1125412,
+      "sha256": "5faf94ccfb9f188b3b526bce70857cdf17d135efe6ecbb68a0fdb485c2efeae7",
+      "exactModelMatch": true
+    }
+  ],
+  "passed": true
+}

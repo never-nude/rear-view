@@ -26,7 +26,7 @@ function track(page) {
 async function check(name, action) {
   const start = Date.now();
   try { const detail = await action(); report.tests.push({ name, passed: true, seconds: +((Date.now() - start) / 1000).toFixed(2), ...detail }); console.log(`PASS ${name}`); }
-  catch (error) { report.tests.push({ name, passed: false, seconds: +((Date.now() - start) / 1000).toFixed(2), error: error.message.split('\n')[0] }); console.error(`FAIL ${name}: ${error.message.split('\n')[0]}`); }
+  catch (error) { report.tests.push({ name, passed: false, seconds: +((Date.now() - start) / 1000).toFixed(2), error: error.message.replaceAll(process.cwd(), '.') }); console.error(`FAIL ${name}: ${error.message.replaceAll(process.cwd(), '.')}`); }
 }
 async function visibleCount(page) { return page.locator('[data-v3-card]:visible').count(); }
 async function waitCount(page, count) { await page.waitForFunction(n => [...document.querySelectorAll('[data-v3-card]')].filter(el => !el.hidden).length === n, count); }
@@ -75,7 +75,7 @@ try {
     await filter.selectOption({ label: 'Ancient' });
     await page.waitForFunction(() => { const n = [...document.querySelectorAll('[data-v3-card]')].filter(el => !el.hidden).length; return n > 0 && n < 50; });
     const count = await visibleCount(page);
-    assert.equal(await page.locator('[data-v3-card]:visible').filter({ hasText: 'Discobolus' }).count(), 1);
+    assert.equal(await page.locator('[data-v3-card]:visible').filter({ hasText: 'Sleeping Hermaphroditus' }).count(), 1);
     assert.equal(await page.locator('[data-v3-card]:visible').filter({ hasText: 'Winter' }).count(), 0);
     await page.locator('[data-v3-reset]').click(); await waitCount(page, 50);
     return { era: 'Ancient', visibleWorks: count, restoredWorks: 50 };
@@ -121,7 +121,7 @@ try {
     const canvas = page.locator('canvas.viewer-canvas');
     await page.waitForTimeout(400);
     const before = hash(await canvas.screenshot());
-    await page.locator('[data-zoom-in]').click(); await page.waitForTimeout(400);
+    await canvas.hover(); await page.mouse.wheel(0, -350); await page.waitForTimeout(400);
     const zoomed = hash(await canvas.screenshot()); assert.notEqual(zoomed, before, 'Zoom did not change rendered canvas');
     const box = await canvas.boundingBox();
     await page.mouse.move(box.x + box.width * .5, box.y + box.height * .5); await page.mouse.down();
@@ -165,7 +165,7 @@ try {
     return { viewport: mobile.viewportSize(), horizontalOverflow: false, model: model.slug };
   });
   await context.close(); await mobileContext.close();
-} catch (error) { report.tests.push({ name: 'Browser setup or navigation', passed: false, error: error.message.split('\n')[0] }); console.error(error.message.split('\n')[0]); }
+} catch (error) { report.tests.push({ name: 'Browser setup or navigation', passed: false, error: error.message.replaceAll(process.cwd(), '.') }); console.error(error.message.replaceAll(process.cwd(), '.')); }
 finally {
   if (browser) await browser.close();
   report.passed = report.tests.length > 0 && report.tests.every(test => test.passed) && report.pageErrors.length === 0 && report.networkFailures.length === 0;

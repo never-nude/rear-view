@@ -1,0 +1,119 @@
+{
+  "checkedAt": "2026-11-06T09:57:19.111Z",
+  "basePath": "/rear-view/",
+  "browser": "Existing Google Chrome (headless)",
+  "tests": [
+    {
+      "name": "Gallery shows 50 works and loads every thumbnail",
+      "passed": true,
+      "seconds": 4.89,
+      "visibleWorks": 50,
+      "loadedThumbnails": 50
+    },
+    {
+      "name": "Search matches a known work, handles no results, and resets",
+      "passed": true,
+      "seconds": 1.29,
+      "knownMatch": 1,
+      "noResultsState": true,
+      "resetCount": 50
+    },
+    {
+      "name": "Era filter narrows the collection and clear restores it",
+      "passed": true,
+      "seconds": 0.21,
+      "era": "Ancient",
+      "visibleWorks": 12,
+      "restoredWorks": 50
+    },
+    {
+      "name": "Saved works persist after reload and can be removed",
+      "passed": true,
+      "seconds": 1.49,
+      "persistedTitle": "Venus Callipyge",
+      "persistedAfterReload": true,
+      "removable": true
+    },
+    {
+      "name": "Explicit 3D miniature renders and closes",
+      "passed": true,
+      "seconds": 3.21,
+      "renderedWork": "/rear-view/works/baroque/venus-callipyge-louvre-mr-1999/",
+      "closed": true
+    },
+    {
+      "name": "Actual 3D model loads: baroque/venus-callipyge-louvre-mr-1999",
+      "passed": true,
+      "seconds": 2.42,
+      "slug": "baroque/venus-callipyge-louvre-mr-1999",
+      "model": "/rear-view/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+      "canvas": {
+        "width": 1440,
+        "height": 626
+      }
+    },
+    {
+      "name": "Actual 3D model loads: europe/winter-houdon-met",
+      "passed": true,
+      "seconds": 1.22,
+      "slug": "europe/winter-houdon-met",
+      "model": "/rear-view/models/previews/europe/winter-houdon-met/preview.glb",
+      "canvas": {
+        "width": 1440,
+        "height": 609
+      }
+    },
+    {
+      "name": "Actual 3D model loads: roman/sleeping-hermaphroditus-louvre-ma-231",
+      "passed": true,
+      "seconds": 0.94,
+      "slug": "roman/sleeping-hermaphroditus-louvre-ma-231",
+      "model": "/rear-view/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+      "canvas": {
+        "width": 1440,
+        "height": 626
+      }
+    },
+    {
+      "name": "Orbit, zoom, reset and mesh controls change the rendered sculpture",
+      "passed": true,
+      "seconds": 7.4,
+      "zoomChangedCanvas": true,
+      "orbitChangedCanvas": true,
+      "resetChangedCanvas": true,
+      "meshChangedCanvas": true
+    },
+    {
+      "name": "AR / VR panel gives desktop device handoff and closes",
+      "passed": true,
+      "seconds": 0.79,
+      "desktopFallback": "Use an AR phone",
+      "handoffUrlPath": "/rear-view/works/baroque/venus-callipyge-louvre-mr-1999/",
+      "physicalSessionStarted": false
+    },
+    {
+      "name": "Mobile collection and work view fit the viewport",
+      "passed": true,
+      "seconds": 6.4,
+      "viewport": {
+        "width": 390,
+        "height": 664
+      },
+      "horizontalOverflow": false,
+      "model": "baroque/venus-callipyge-louvre-mr-1999"
+    }
+  ],
+  "pageErrors": [],
+  "networkFailures": [],
+  "ignoredExternalFailures": [],
+  "screenshots": [
+    "docs/preview-desktop.png",
+    "docs/preview-work-desktop.png",
+    "docs/preview-mobile.png",
+    "docs/preview-work-mobile.png"
+  ],
+  "limitations": [
+    "Physical AR placement and headset VR were not tested. Mobile checks use an emulated viewport and touch input."
+  ],
+  "passed": true
+}
