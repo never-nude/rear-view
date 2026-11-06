@@ -1,0 +1,2748 @@
+{
+  "capitoline-venus": {
+    "dimensions": "H 193 cm (original marble, Musei Capitolini inv. MC0409)",
+    "status": "documented",
+    "basis": "original",
+    "note": "Dimensions of the original marble in the Capitoline Museums, Rome (inv. MC 409); this model was scanned from a plaster cast in the SMK Royal Cast Collection.",
+    "checked": "2026-09-13",
+    "spatialNote": "Shown at the documented height, with the model’s proportions preserved.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Statue of 'Capitoline Venus'",
+      "institution": "Musei Capitolini, Palazzo Nuovo, Gabinetto della Venere, Rome",
+      "accession": "inv. MC0409 (Scu 409)",
+      "version_or_date": "Roman marble copy (probably Parian) after a Praxitelean type, found near S. Vitale c. 1666–1670",
+      "record_url": "https://www.museicapitolini.org/en/collezioni/percorsi_per_sale/palazzo_nuovo/gabinetto_della_venere/statua_della_venere_capitolina",
+      "identity_confidence": "high",
+      "match_explanation": "SMK KAS493 is titled 'Afrodite, Den Capitolinske Venus' (mould: Berlin no. 203); the Capitoline Museums' own page for the Capitoline Venus (inv. MC0409) is the original marble."
+    },
+    "geometryReviewNote": "The full Venus, draped vase support and low irregular sculpture foot match the original pose represented in the cast photograph. No external stand is included; use the original overall height.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 193,
+        "unit": "cm",
+        "meters": 1.93,
+        "scope": "Statue height as published by the Musei Capitolini (base inclusion not stated)",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.museicapitolini.org/en/collezioni/percorsi_per_sale/palazzo_nuovo/gabinetto_della_venere/statua_della_venere_capitolina"
+        ]
+      },
+      {
+        "axis": "height",
+        "value": 188.5,
+        "unit": "cm",
+        "meters": 1.885,
+        "scope": "SMK plaster cast (not the original), brutto",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS493"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 62,
+        "unit": "cm",
+        "meters": 0.62,
+        "scope": "SMK plaster cast (not the original), brutto",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS493"
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.museicapitolini.org/en/collezioni/percorsi_per_sale/palazzo_nuovo/gabinetto_della_venere/statua_della_venere_capitolina",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.93,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/capitoline-venus/preview.glb",
+      "orientation": null,
+      "assetSha256": "03e6b216348d922374c662e10cbb22b3f8e7539fe95dc7cc13aea7f1ddc55044",
+      "reviewed": "2026-09-13",
+      "geometryReview": "Fresh current GLB decoded with current Viewer transforms, posed visible-vertex bounds and individual three-angle render inspection; official accession photographs reviewed for SMK. Evidence: scale_geometry-review.json and scale_geometry-audit/audit.json.",
+      "note": "The full Venus, draped vase support and low irregular sculpture foot match the original pose represented in the cast photograph. No external stand is included; use the original overall height. Uniform scale preserves the mesh proportions; this verifies the selected extent, not agreement of every published axis."
+    },
+    "geometryStatus": "calibrated",
+    "calibrationReady": true
+  },
+  "contemporary/punishment-hercules-deepak": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "The Punishment: A Study of Farnese Hercules",
+      "institution": "Artist-created digital work",
+      "accession": null,
+      "version_or_date": null,
+      "record_url": "https://api.sketchfab.com/v3/models/0b36d63fd4e44ab6b59088438d4da441",
+      "identity_confidence": "medium",
+      "match_explanation": "Deepak CC describes the work as his digital study of Farnese Hercules."
+    },
+    "geometryReviewNote": "Deepak CC describes The Punishment as a digital study of Farnese Hercules. It is not documented as a dimensionally faithful scan or fixed-size physical object; the ancient statue’s height cannot automatically calibrate an artist’s reinterpretation.",
+    "calibrationBlockers": [
+      "Deepak CC describes The Punishment as a digital study of Farnese Hercules. It is not documented as a dimensionally faithful scan or fixed-size physical object; the ancient statue’s height cannot automatically calibrate an artist’s reinterpretation."
+    ]
+  },
+  "discobolus": {
+    "dimensions": "H 170 cm × W 115 cm × D 50 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "Dimensions describe the exact scanned SMK plaster cast KAS1549, rather than the underlying ancient or Renaissance original.",
+    "checked": "2026-10-06",
+    "reviewed": "2026-10-06",
+    "researchStatus": "verified",
+    "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en",
+    "sourceTitle": "Statens Museum for Kunst (SMK), Royal Cast Collection / Wikimedia Commons",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 170,
+        "unit": "cm",
+        "scope": "SMK plaster cast KAS1549, gross",
+        "meters": 1.7,
+        "qualifier": "exact",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 115,
+        "unit": "cm",
+        "scope": "SMK plaster cast KAS1549, gross",
+        "meters": 1.15,
+        "qualifier": "exact",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 50,
+        "unit": "cm",
+        "scope": "SMK plaster cast KAS1549, gross",
+        "meters": 0.5,
+        "qualifier": "exact",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en"
+        ]
+      }
+    ],
+    "scannedObject": {
+      "title": "Discobolus, Roman Copy with Modern Head (SMK Plaster Cast, KAS1549)",
+      "accession": "KAS1549",
+      "institution": "SMK — Royal Cast Collection, Copenhagen",
+      "record_url": "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en",
+      "identity_confidence": "high",
+      "match_explanation": "The approved source is the maximum-resolution scan of the exact SMK plaster cast KAS1549; its accession, material and measurements agree with the SMK object record."
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en",
+        "excerpt": "Wikimedia Commons file record checked 2026-10-06: 100,849,784-byte STL, SMK digitization, CC0 1.0",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS1549&lang=en",
+        "excerpt": "SMK KAS1549 object record: plaster cast, gross 170 × 115 × 50 cm, acquired 1909, on display in Room 120",
+        "retrieved": "2026-10-06"
+      }
+    ],
+    "geometryStatus": "calibrated",
+    "geometryReviewNote": "The full-quality replacement and selected orientation were reviewed across the batch orientation views. The scan shows the complete KAS1549 plaster cast with its documented modern restored head; the published smk plaster cast kas1549, gross maps to the full world-Y extent after the selected orientation. Uniform scale preserves the scan's proportions.",
+    "calibrationReady": true,
+    "spatial": {
+      "axis": "y",
+      "meters": 1.7,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/discobolus/preview-18e77773563d.glb",
+      "assetSha256": "18e77773563d7fb00996c62c94526d663d5207edfec13982fe5ac2833cfb0ccb",
+      "reviewed": "2026-10-06",
+      "geometryReview": "The full-quality replacement and selected orientation were reviewed across the batch orientation views. The scan shows the complete KAS1549 plaster cast with its documented modern restored head; the published smk plaster cast kas1549, gross maps to the full world-Y extent after the selected orientation. Uniform scale preserves the scan's proportions.",
+      "note": "The full-quality replacement and selected orientation were reviewed across the batch orientation views. The scan shows the complete KAS1549 plaster cast with its documented modern restored head; the published smk plaster cast kas1549, gross maps to the full world-Y extent after the selected orientation. Uniform scale preserves the scan's proportions."
+    },
+    "spatialNote": "Physical scale is calibrated to the documented dimensions of SMK plaster cast KAS1549. Proportions are preserved.",
+    "originalDimensions": "",
+    "originalSizeResearch": {
+      "dimensions": "",
+      "status": "unresolved",
+      "basis": "original",
+      "note": "Published measurements still need to be reconciled.",
+      "checked": "2026-09-13",
+      "researchStatus": "conflicting",
+      "identifiedObject": {
+        "title": "Statua di discobolo tipo Lancellotti; copia romana da un originale greco di Mirone (Discobolus from Hadrian's Villa, modern head)",
+        "institution": "Musei Vaticani, Museo Pio Clementino, Sala della Biga",
+        "accession": "MV.2346.0.0 (inv. 2346)",
+        "version_or_date": "Roman copy, first half of 2nd century CE; head modern (late 18th century); found at Villa Adriana 1791 (Marefoschi excavations), acquired 1792",
+        "record_url": "https://catalogo.museivaticani.va/index.php/Detail/objects/MV.2346.0.0",
+        "identity_confidence": "high"
+      }
+    }
+  },
+  "modern/action-in-chains-maillol-carrousel": {
+    "dimensions": "H 215 × W 97 × D 90 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "Dimensions of the accessioned bronze in the Jardin du Carrousel.",
+    "checked": "2026-09-13",
+    "spatialNote": "The documented dimensions still need to be matched to the model’s displayed extent.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Action enchaînée",
+      "institution": "Musée d’Orsay; jardin du Carrousel, Paris",
+      "accession": "RF 3859; AM 686",
+      "version_or_date": "Model 1907; bronze cast before 1937",
+      "record_url": "https://www.musee-orsay.fr/fr/oeuvres/action-enchainee-6753",
+      "identity_confidence": "high",
+      "match_explanation": "Museum record locates RF 3859 at the jardin du Carrousel, matching the scan-provider Tuileries location and named Maillol work. It is an accessioned artist bronze, not a modern plaster reproduction."
+    },
+    "geometryReviewNote": "Action in Chains retains the bronze figure and metal foot above a large stone garden block. Source 215 cm belongs to the bronze, so the stone pedestal must be excluded from the reference extent by segmentation or a defensible estimated plane.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 215,
+        "unit": "cm",
+        "meters": 2.15,
+        "scope": "Bronze statue; separate display pedestal not included",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/fr/oeuvres/action-enchainee-6753"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 97,
+        "unit": "cm",
+        "meters": 0.97,
+        "scope": "Bronze statue; separate display pedestal not included",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/fr/oeuvres/action-enchainee-6753"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 90,
+        "unit": "cm",
+        "meters": 0.9,
+        "scope": "Bronze statue; separate display pedestal not included",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/fr/oeuvres/action-enchainee-6753"
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.musee-orsay.fr/fr/oeuvres/action-enchainee-6753",
+    "geometryStatus": "reviewed-blocked",
+    "geometryReview": {
+      "reviewed": "2026-09-13",
+      "status": "blocked",
+      "blocker": "support_extent",
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/action-in-chains-maillol-carrousel/preview-ba9bd4d7fcf4.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "notes": "Rear view shows the broad hips, hands held behind the torso, and the full base."
+      },
+      "assetSha256": "ba9bd4d7fcf4f589a24595bf9308938ca249a9b5700bd5711a97e3d18d9afd3a",
+      "evidence": "scale_geometry-review.json; scale_geometry-audit/audit.json; individual rendered model and applicable official museum photograph"
+    }
+  },
+  "modern/danae-henning": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "Danaë",
+      "institution": "Documented by Dan Andersen",
+      "accession": null,
+      "version_or_date": "1927",
+      "record_url": "https://api.sketchfab.com/v3/models/14de6e84822c48d290482acdb295921c",
+      "identity_confidence": "medium",
+      "match_explanation": "The scan provider identifies this subject; supplied catalogue location and artist remain leads where not confirmed by the scan description."
+    },
+    "geometryReviewNote": "Henning Danae retains the reclining figure and large rectangular bronze footplate. Source review: Physical dimensions have not yet been verified.",
+    "calibrationReady": false,
+    "geometryStatus": "reviewed-blocked",
+    "calibrationBlockers": [
+      "Henning Danae retains the reclining figure and large rectangular bronze footplate. Source review: Physical dimensions have not yet been verified."
+    ]
+  },
+  "modern/eternal-spring-rodin-glyptotek": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "Eternal Spring",
+      "institution": "Ny Carlsberg Glyptotek, Copenhagen",
+      "accession": null,
+      "version_or_date": "1884 model",
+      "record_url": "https://api.sketchfab.com/v3/models/b1753d8c52f7497293048bdb29a73839",
+      "identity_confidence": "medium",
+      "match_explanation": "The scan provider identifies this subject; supplied catalogue location and artist remain leads where not confirmed by the scan description."
+    },
+    "geometryReviewNote": "The scan identifies Rodin’s Eternal Spring at the Glyptotek, but the exact accession/cast edition is not established in a measured catalogue. Rodin editions vary in size; an edition-specific measurement is required.",
+    "calibrationBlockers": [
+      "The scan identifies Rodin’s Eternal Spring at the Glyptotek, but the exact accession/cast edition is not established in a measured catalogue. Rodin editions vary in size; an edition-specific measurement is required."
+    ]
+  },
+  "modern/eve-rodin-reduced-marble": {
+    "dimensions": "74.8 × 24.4 × 28.4 cm",
+    "sourceUrl": "https://www.museosoumaya.org/wp-content/libro/Lapuertadelinfierno.pdf",
+    "basis": "object",
+    "status": "documented",
+    "note": "Museo Soumaya catalogue printed page93 documents this authored 1892 reduced marble, not a downsized reproductive cast. First dimension maps to complete vertical height by the clearly upright figure and matching two transverse ratios.",
+    "checked": "2026-09-13",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 74.8,
+        "unit": "cm",
+        "scope": "1892 reduced marble; museum catalogue page93; source position 0",
+        "sourceUrls": [
+          "https://www.museosoumaya.org/wp-content/libro/Lapuertadelinfierno.pdf"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 24.4,
+        "unit": "cm",
+        "scope": "1892 reduced marble; museum catalogue page93; source position 1",
+        "sourceUrls": [
+          "https://www.museosoumaya.org/wp-content/libro/Lapuertadelinfierno.pdf"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 28.4,
+        "unit": "cm",
+        "scope": "1892 reduced marble; museum catalogue page93; source position 2",
+        "sourceUrls": [
+          "https://www.museosoumaya.org/wp-content/libro/Lapuertadelinfierno.pdf"
+        ]
+      }
+    ],
+    "calibrationStatus": "calibrated",
+    "spatial": {
+      "axis": "y",
+      "meters": 0.748,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/eve-rodin-reduced-marble/preview-8983147f2e0d.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "notes": "Rear view shows the rounded buttocks and bowed body. This source scan has visibly softer anatomical detail than the other marbles."
+      },
+      "assetSha256": "8983147f2e0d826201d17049bc721b7186394bd58d8ba368227e19ed4ae3a02e",
+      "reviewed": "2026-09-13",
+      "geometryReview": "The authored reduced marble Eve is complete from head to original lower marble foot.74.8cm maps to height;24.4 and28.4cm confirm the transverse ratios. Use this particular marble version rather than dimensions of a larger Eve. Source axes remain unlabelled; this spatial mapping is a visual/object-shape inference, not a claimed museum axis label.",
+      "note": "The authored reduced marble Eve is complete from head to original lower marble foot.74.8cm maps to height;24.4 and28.4cm confirm the transverse ratios. Use this particular marble version rather than dimensions of a larger Eve. Source axes remain unlabelled; this spatial mapping is a visual/object-shape inference, not a claimed museum axis label."
+    },
+    "spatialNote": "Shown at the documented size of this piece.",
+    "geometryReviewNote": "The authored reduced marble Eve is complete from head to original lower marble foot.74.8cm maps to height;24.4 and28.4cm confirm the transverse ratios. Use this particular marble version rather than dimensions of a larger Eve. Source axes remain unlabelled; this spatial mapping is a visual/object-shape inference, not a claimed museum axis label.",
+    "calibrationReady": true,
+    "geometryStatus": "calibrated",
+    "calibrationBlockers": []
+  },
+  "modern/gladiator-welonski-krakow": {
+    "dimensions": "Height 180 cm",
+    "sourceUrl": "https://muzea.malopolska.pl/en/objects-list/21",
+    "basis": "object",
+    "status": "documented",
+    "note": "",
+    "checked": "2026-09-09",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 180,
+        "unit": "cm"
+      }
+    ],
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "geometryReviewNote": "The figure includes an octagonal lower foot/plinth and upper rocky bronze support. Exact museumH180 cm lacks a stated base scope, and no separately measured component resolves whether that lower plinth is included. Do not infer its inclusion from material color.",
+    "calibrationBlockers": [
+      "The figure includes an octagonal lower foot/plinth and upper rocky bronze support. Exact museumH180 cm lacks a stated base scope, and no separately measured component resolves whether that lower plinth is included. Do not infer its inclusion from material color."
+    ]
+  },
+  "modern/nude-in-sun-harvent-mons": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "Nude in the Sun",
+      "institution": "Parc du Waux-Hall, Mons",
+      "accession": null,
+      "version_or_date": null,
+      "record_url": "https://api.sketchfab.com/v3/models/e34f758004b24837a6688ad7cfce70fd",
+      "identity_confidence": "medium",
+      "match_explanation": "Provider explicitly identifies René Harvent’s bronze at the entrance of Waux-Hall park, Mons."
+    },
+    "geometryReviewNote": "Harvent nude retains both feet and a low light-colored support. Source review: Physical dimensions have not yet been verified.",
+    "calibrationReady": false,
+    "geometryStatus": "reviewed-blocked",
+    "calibrationBlockers": [
+      "Harvent nude retains both feet and a low light-colored support. Source review: Physical dimensions have not yet been verified."
+    ]
+  },
+  "modern/victorious-athlete-grandmoulin-tahto": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "Victorious Athlete, Elmer Niklander’s 1920 Olympic prize",
+      "institution": "TAHTO, Center for Finnish Sports Culture",
+      "accession": null,
+      "version_or_date": "1920 bronze prize",
+      "record_url": "https://api.sketchfab.com/v3/models/c1242d3fec264d5aab08b3c88d95face",
+      "identity_confidence": "high",
+      "match_explanation": "TAHTO’s own scan-provider account identifies the trophy awarded to Elmer Niklander after his Antwerp discus victory."
+    },
+    "geometryReviewNote": "TAHTO’s own scan identifies Elmer Niklander’s1920 Olympic prize, but no numerical dimensions of this trophy are published in the recovered record. A generic Grandmoulin Athlete edition could be a different size.",
+    "calibrationBlockers": [
+      "TAHTO’s own scan identifies Elmer Niklander’s1920 Olympic prize, but no numerical dimensions of this trophy are published in the recovered record. A generic Grandmoulin Athlete edition could be a different size."
+    ]
+  },
+  "modern/woman-gutter-vandensteen-jehay": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "note": "Physical dimensions have not yet been verified.",
+    "checked": "2026-09-09",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "unresolved",
+    "identifiedObject": {
+      "title": "Woman at the Gutter",
+      "institution": "Château de Jehay",
+      "accession": null,
+      "version_or_date": null,
+      "record_url": "https://api.sketchfab.com/v3/models/2bf708392a554e38afe19c9a07493207",
+      "identity_confidence": "medium",
+      "match_explanation": "Provider identifies this as one of Guy van den Steen’s bronze figures along the rainwater gutters on the main sloping garden avenue at Château de Jehay."
+    },
+    "geometryReviewNote": "Woman on a gutter includes surrounding masonry and incomplete roof edges. Source review: Physical dimensions have not yet been verified.",
+    "calibrationReady": false,
+    "geometryStatus": "reviewed-blocked",
+    "calibrationBlockers": [
+      "Woman on a gutter includes surrounding masonry and incomplete roof edges. Source review: Physical dimensions have not yet been verified."
+    ]
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "dimensions": "H 172 cm × W 109 cm × D 53 cm (marble group, inv. M.IN 1373; Ny Carlsberg Fondet record)",
+    "status": "documented",
+    "basis": "object",
+    "note": "The scanned Glyptotek marble group, a workshop replica after Canova (M.IN 1373), is documented at 172 × 109 × 53 cm by its donor foundation. This describes the particular marble in the scan; a larger autograph Canova version would be a different object.",
+    "checked": "2026-09-13",
+    "spatialNote": "Physical reference: 172 cm sculpture height. The scanned proportions are preserved. Other scanned dimensions differ from the museum record; the original scanned proportions are retained.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "De tre Gratier / The Three Graces (workshop copy after Antonio Canova)",
+      "institution": "Ny Carlsberg Glyptotek, Copenhagen",
+      "accession": "M.IN 1373 (MIN 1373)",
+      "version_or_date": "Marble workshop replica after Canova, first half of the 19th century (Ny Carlsberg Fondet dates it c. 1830); acquired 1907",
+      "record_url": "https://www.ny-carlsbergfondet.dk/da/de-tre-gratier",
+      "identity_confidence": "high",
+      "match_explanation": "Geoffrey Marchal's archived Sketchfab description reads 'The Three Graces, Antonio Canova (?), 1813-14, Ny Carlsberg Glyptotek'. The Glyptotek owns a single marble Three Graces group, inv. M.IN 1373, bought in 1907 and now regarded (Friborg 1996) as a workshop copy of the first half of the 19th century. The scanned object is this marble group itself, not a cast."
+    },
+    "geometryReviewNote": "The complete marble group includes its integral oval marble base and has no separate display pedestal. Use the 172 cm height of this identified Glyptotek marble replica, not a different Canova autograph or edition. Its modeled depth differs from the donor catalogue and is retained.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 172,
+        "unit": "cm",
+        "meters": 1.72,
+        "scope": "unclear (marble group; whether the integral base is included is not stated)",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.ny-carlsbergfondet.dk/da/de-tre-gratier"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 109,
+        "unit": "cm",
+        "meters": 1.09,
+        "scope": "unclear (marble group)",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.ny-carlsbergfondet.dk/da/de-tre-gratier"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 53,
+        "unit": "cm",
+        "meters": 0.53,
+        "scope": "unclear (marble group)",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.ny-carlsbergfondet.dk/da/de-tre-gratier"
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.ny-carlsbergfondet.dk/da/de-tre-gratier",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.72,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/neoclassical/three-graces-glyptotek/preview-4ae8e5f8733e.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "notes": "Three-quarter group view exposes the outer goddess’s rounded rear while keeping all three figures and the base in frame."
+      },
+      "assetSha256": "4ae8e5f8733e5212246877dfab628c607786a7730fc49630b68f1d0b4d64ef20",
+      "reviewed": "2026-09-13",
+      "geometryReview": "The complete marble group includes its integral oval marble base and has no separate display pedestal. Use the 172 cm height of this identified Glyptotek marble replica, not a different Canova autograph or edition. Its modeled depth differs from the donor catalogue and is retained.",
+      "note": "The complete marble group includes its integral oval marble base and has no separate display pedestal. Use the 172 cm height of this identified Glyptotek marble replica, not a different Canova autograph or edition. Its modeled depth differs from the donor catalogue and is retained."
+    },
+    "calibrationBlockers": [],
+    "calibrationReady": true,
+    "geometryStatus": "calibrated"
+  },
+  "roman/esquiline-venus-smk-cast": {
+    "dimensions": "H 155 cm (original marble, Musei Capitolini MC 1141); modern base 81 x 60 x 40 cm",
+    "status": "documented",
+    "basis": "original",
+    "note": "Dimensions of the original marble in the Musei Capitolini, Rome (inv. MC 1141, H 155 cm excluding the modern base); this model was scanned from a plaster cast in the SMK Royal Cast Collection.",
+    "checked": "2026-09-12",
+    "spatialNote": "Height is calibrated from the documented original sculpture at 155 cm, preserving the model’s proportions.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Statua di Venere Esquilina, Parian marble",
+      "institution": "Musei Capitolini, Rome - Palazzo dei Conservatori, Sale degli Horti Lamiani",
+      "accession": "inv. MC1141",
+      "version_or_date": "Second half of the 1st century BC (museum), found 1874 in the Horti Lamiani; the scan is a Geoffrey Marchal photogrammetry of a plaster cast in the SMK Royal Cast Collection (SMK cast accession not identified; Zenodo 10348289 / Sketchfab 544e56c1 could not be fetched)",
+      "record_url": "https://www.museicapitolini.org/en/opera/statua-di-venere-esquilina",
+      "identity_confidence": "medium",
+      "match_explanation": "The catalogue note identifies the scan as Marchal's model of the SMK cast of the Esquiline Venus (Capitoline inv. 1141). The Esquiline Venus is a unique original; the identification of the cast/scan could not be re-verified because Zenodo (504) and Sketchfab (rate-limited) were unreachable."
+    },
+    "geometryReviewNote": "The missing arms, tilted head, sandals, draped vase and cobra identify the Esquiline Venus. The official primary description explicitly places its feet on a quadrangular sculptural base and separately specifies the modern 81 × 60 × 40 cm display base. Three-angle inspection confirms the model includes the thin quadrangular sculptural foot but no modern display pedestal. The original sculpture's 155 cm surviving height therefore matches the whole modeled extent, as it does for the other Esquiline Venus route.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 155,
+        "unit": "cm",
+        "meters": 1.55,
+        "scope": "Venus statue without the modern base ('Venere h 155 cm')",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.museicapitolini.org/sites/default/files/f_file/VENERE%20ESQUILINA.pdf"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 81,
+        "unit": "cm",
+        "meters": 0.81,
+        "scope": "Modern base only ('Base moderna 81 x 60 x 40 cm')",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.museicapitolini.org/sites/default/files/f_file/VENERE%20ESQUILINA.pdf"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 60,
+        "unit": "cm",
+        "meters": 0.6,
+        "scope": "Modern base only",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.museicapitolini.org/sites/default/files/f_file/VENERE%20ESQUILINA.pdf"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 40,
+        "unit": "cm",
+        "meters": 0.4,
+        "scope": "Modern base only",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.museicapitolini.org/sites/default/files/f_file/VENERE%20ESQUILINA.pdf"
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.museicapitolini.org/sites/default/files/f_file/VENERE%20ESQUILINA.pdf",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.55,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          0,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "confidence": "visual",
+        "note": "Upright cast; face, surviving torso, legs, and base fully visible."
+      },
+      "assetSha256": "3defa179231e213c1694f9eda905a0651e7f094d9415dfa3f48aa1ede027cf97",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Individually re-inspected the exact cached three-angle model renders against the existing source and scope; current preview URL/orientation and cached asset SHA-256 match. No skin, morph or animation data. Evidence: docs/phone-scale-2026-09-12/review.json; exact model renders and source captures retained in the local work/atrium-scale-all/geometry/revisit-391 research directory. Height is the uniform scale reference; other axes are not independently rescaled.",
+      "note": "The missing arms, tilted head, sandals, draped vase and cobra identify the Esquiline Venus. The official primary description explicitly places its feet on a quadrangular sculptural base and separately specifies the modern 81 × 60 × 40 cm display base. Three-angle inspection confirms the model includes the thin quadrangular sculptural foot but no modern display pedestal. The original sculpture's 155 cm surviving height therefore matches the whole modeled extent, as it does for the other Esquiline Venus route."
+    }
+  },
+  "the-wrestlers": {
+    "dimensions": "Measured cast: H 95.5 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "The displayed scale uses the measured SMK cast, including the reviewed cast state and supports. This is the best available matching physical reference; it is not an assertion that the cast is full-size or that its dimensions equal the original.",
+    "checked": "2026-09-13",
+    "spatialNote": "Shown at the measured cast size. The original’s size or surviving state differs or remains unverified. Some dimensions of this scan differ from the published measurements.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Wrestlers (Lottatori)",
+      "institution": "Gallerie degli Uffizi, Tribuna (A16), Florence",
+      "accession": "Inv. 1914 n. 216",
+      "version_or_date": "Parian marble (lychnite), Roman copy of the 1st century AD after a Hellenistic (3rd c. BC) original; found near Porta S. Giovanni, Rome, 1583; heads and parts of limbs restored",
+      "record_url": "https://www.uffizi.it/en/artworks/wrestlers",
+      "identity_confidence": "high",
+      "match_explanation": "SMK KAS403 'To brydere i kamp' (cast bought 1898; STL named 'uffizi-wrestlers') embeds original ORIG3153: marble, Gallerie degli Uffizi, found Rome near Porta S. Giovanni 1583, Haskell & Penny no. 94, with restorations listed. The Uffizi record for inv. 1914 n. 216 is that marble group."
+    },
+    "geometryReviewNote": "Both wrestlers, restored limbs and shaped cast foot match the source photograph. Cast 95.5 cm gross height describes this entire extent; original 89 cm has an unresolved base-height difference.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 89,
+        "unit": "cm",
+        "meters": 0.89,
+        "scope": "Original marble group ('89 cm (height)'; base inclusion not stated)",
+        "qualifier": "exact",
+        "source_ids": [
+          "S1"
+        ],
+        "sourceUrls": [
+          "https://www.uffizi.it/en/artworks/wrestlers"
+        ]
+      },
+      {
+        "axis": "height",
+        "value": 95.5,
+        "unit": "cm",
+        "meters": 0.955,
+        "scope": "SMK plaster cast (not the original) KAS403, brutto 95.5 x 117 x 70 cm",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS403"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 117,
+        "unit": "cm",
+        "meters": 1.17,
+        "scope": "SMK plaster cast (not the original) KAS403, brutto",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS403"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 70,
+        "unit": "cm",
+        "meters": 0.7,
+        "scope": "SMK plaster cast (not the original) KAS403, brutto",
+        "qualifier": "exact",
+        "source_ids": [
+          "S2"
+        ],
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS403"
+        ]
+      },
+      {
+        "axis": "height",
+        "value": 95.5,
+        "unit": "cm",
+        "meters": 0.955,
+        "scope": "Measured SMK cast KAS403; source part: brutto. Current cast state and support reviewed individually.",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS403"
+        ]
+      }
+    ],
+    "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS403",
+    "spatial": {
+      "axis": "y",
+      "meters": 0.955,
+      "measurementIndex": 4,
+      "previewUrl": "https://models.atrium.earth/models/previews/the-wrestlers/preview.glb",
+      "orientation": null,
+      "assetSha256": "a6b92d76367f235c03527f8099c460686e9bf08780a9fef19d7401090970623d",
+      "reviewed": "2026-09-13",
+      "geometryReview": "Fresh current GLB decoded with current Viewer transforms, posed visible-vertex bounds and individual three-angle render inspection; official accession photographs reviewed for SMK. Evidence: scale_geometry-review.json and scale_geometry-audit/audit.json.",
+      "note": "Both wrestlers, restored limbs and shaped cast foot match the source photograph. Cast 95.5 cm gross height describes this entire extent; original 89 cm has an unresolved base-height difference. Uniform scale preserves the mesh proportions; this verifies the selected extent, not agreement of every published axis."
+    },
+    "originalDimensions": "H 89 cm (original marble group, Uffizi inv. 1914 n. 216)",
+    "originalSizeResearch": {
+      "status": "documented",
+      "basis": "original",
+      "note": "Dimensions of the original marble Wrestlers in the Uffizi, Florence (inv. 1914 n. 216); this model was scanned from a plaster cast (KAS403) in the SMK Royal Cast Collection.",
+      "identifiedObject": {
+        "title": "Wrestlers (Lottatori)",
+        "institution": "Gallerie degli Uffizi, Tribuna (A16), Florence",
+        "accession": "Inv. 1914 n. 216",
+        "version_or_date": "Parian marble (lychnite), Roman copy of the 1st century AD after a Hellenistic (3rd c. BC) original; found near Porta S. Giovanni, Rome, 1583; heads and parts of limbs restored",
+        "record_url": "https://www.uffizi.it/en/artworks/wrestlers",
+        "identity_confidence": "high",
+        "match_explanation": "SMK KAS403 'To brydere i kamp' (cast bought 1898; STL named 'uffizi-wrestlers') embeds original ORIG3153: marble, Gallerie degli Uffizi, found Rome near Porta S. Giovanni 1583, Haskell & Penny no. 94, with restorations listed. The Uffizi record for inv. 1914 n. 216 is that marble group."
+      },
+      "sourceUrl": "https://www.uffizi.it/en/artworks/wrestlers",
+      "geometryReviewNote": "The cast retains a sculptural/plinth support whose relationship to the original’s documented measurement is not yet established. Resolve source scope and the object/base boundary before applying whole-mesh height."
+    },
+    "geometryStatus": "calibrated",
+    "calibrationReady": true
+  },
+  "roman/crouching-aphrodite-met": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "H. 42 1/4 in. (107.3 cm)",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/248138",
+    "note": "Exact accession 09.221.1 identifies the surviving Roman marble, H 107.3 cm. It is an ancient copy of a lost Greek type; no verified original Greek dimensions are published, so the surviving Roman object remains the scale basis. Do not reconstruct missing limbs or scale to a different copy.",
+    "checked": "2026-09-12",
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Marble statue of a crouching Aphrodite",
+      "institution": "The Metropolitan Museum of Art",
+      "accession": "09.221.1",
+      "version_or_date": "1st or 2nd century CE",
+      "record_url": "https://www.metmuseum.org/art/collection/search/248138",
+      "identity_confidence": "high",
+      "match_explanation": "exact accession and title matched from the catalog/Zenodo attribution to official Met record"
+    },
+    "measures": [
+      {
+        "axis": "height",
+        "value": 107.3,
+        "unit": "cm",
+        "meters": 1.073,
+        "scope": "Overall (the museum does not separately describe included mounts)",
+        "qualifier": "documented",
+        "sourceUrls": [
+          "https://collectionapi.metmuseum.org/public/collection/v1/objects/248138"
+        ],
+        "providerValue": 107.32,
+        "providerUnit": "cm",
+        "providerElementIndex": 0,
+        "evidenceField": "measurements[0].elementMeasurements.Height"
+      }
+    ],
+    "geometryReviewNote": "Complete surviving Roman Crouching Aphrodite including the ancient/restored circular plinth visible in official museum image7188; no separate modern pedestal. Published height is of this headless Roman object, not the lost Greek prototype.",
+    "dimensionEvidence": {
+      "provider": "Metropolitan Museum of Art Open Access",
+      "objectId": 248138,
+      "retrieved": "2026-09-12",
+      "apiUrl": "https://collectionapi.metmuseum.org/public/collection/v1/objects/248138",
+      "unitDocumentationUrl": "https://metmuseum.github.io/#object",
+      "rawEvidenceFile": "raw/248138.json",
+      "precisionNote": "API spatial measurements are centimeters. Candidate numeric values retain one decimal cm; exact provider precision is retained separately. Museum display text remains verbatim."
+    },
+    "spatial": {
+      "axis": "y",
+      "meters": 1.073,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "notes": "Upright rear view; rounded crouching hips and the complete surviving marble are visible."
+      },
+      "assetSha256": "5cf07e325dac8cc106094c277cc68adafc5869e312cf49e30c76a29062f176ce",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Current GLB decoded with Viewer helper removal, exact orientation and normalizeModel; three-angle visual scope review; posed vertex footprints checked. Evidence: met-geometry/calibration-review.json.",
+      "note": "Complete surviving Roman Crouching Aphrodite including the ancient/restored circular plinth visible in official museum image7188; no separate modern pedestal. Published height is of this headless Roman object, not the lost Greek prototype."
+    }
+  },
+  "modern/bacchante-and-satyr-clesinger-mia-73-13": {
+    "dimensions": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://collections.artsmia.org/art/1959",
+    "checked": "2026-09-12",
+    "note": "Dimensions transcribed from the accession-matched Mia collection record. Unlabelled axis sequences remain unlabelled; candidate axes are research notes only.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 87.63,
+        "unit": "cm",
+        "sourcePosition": 1,
+        "sourceLine": 1,
+        "scope": "museum object dimensions; base/component inclusion not specified",
+        "candidateAxis": "height",
+        "candidateAxisStatus": "inference requiring review",
+        "candidateAxisBasis": "General collection convention is a candidate only; no museum-wide Mia axis-order rule was located. Object-specific exceptions and scopes take precedence.",
+        "sourceText": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+        "sourceUrls": [
+          "https://search.artsmia.org/id/1959",
+          "https://collections.artsmia.org/art/1959"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 67.31,
+        "unit": "cm",
+        "sourcePosition": 2,
+        "sourceLine": 1,
+        "scope": "museum object dimensions; base/component inclusion not specified",
+        "candidateAxis": "width",
+        "candidateAxisStatus": "inference requiring review",
+        "candidateAxisBasis": "General collection convention is a candidate only; no museum-wide Mia axis-order rule was located. Object-specific exceptions and scopes take precedence.",
+        "sourceText": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+        "sourceUrls": [
+          "https://search.artsmia.org/id/1959",
+          "https://collections.artsmia.org/art/1959"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 34.29,
+        "unit": "cm",
+        "sourcePosition": 3,
+        "sourceLine": 1,
+        "scope": "museum object dimensions; base/component inclusion not specified",
+        "candidateAxis": "depth",
+        "candidateAxisStatus": "inference requiring review",
+        "candidateAxisBasis": "General collection convention is a candidate only; no museum-wide Mia axis-order rule was located. Object-specific exceptions and scopes take precedence.",
+        "sourceText": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+        "sourceUrls": [
+          "https://search.artsmia.org/id/1959",
+          "https://collections.artsmia.org/art/1959"
+        ]
+      }
+    ],
+    "measurementGroups": [
+      {
+        "sourceLine": 1,
+        "sourceText": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+        "scope": "museum object dimensions; base/component inclusion not specified",
+        "valuesCm": [
+          87.63,
+          67.31,
+          34.29
+        ]
+      }
+    ],
+    "researchStatus": "documented",
+    "identifiedObject": {
+      "title": "Bacchante and Satyr",
+      "institution": "Minneapolis Institute of Art",
+      "accession": "73.13",
+      "museumObjectId": 1959,
+      "version_or_date": "1869",
+      "record_url": "https://collections.artsmia.org/art/1959",
+      "identity_confidence": "high",
+      "match_explanation": "Exact museum object ID and accession matched to the catalog source; differences are recorded as correction proposals."
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://search.artsmia.org/id/1959",
+        "sourceType": "official-museum-api",
+        "checked": "2026-09-12",
+        "fields": {
+          "id": 1959,
+          "title": "Bacchante and Satyr",
+          "accession_number": "73.13",
+          "dimension": "34 1/2 x 26 1/2 x 13 1/2 in. (87.63 x 67.31 x 34.29 cm)",
+          "medium": "Marble",
+          "dated": "1869"
+        }
+      }
+    ],
+    "blockers": [
+      "Confirm the relevant source extent/axis against the displayed object before uniform scale calibration; candidate axes are not verified labels."
+    ],
+    "geometryReviewNote": "Bacchante and Satyr retains two flat marble/base stages. The museum87.63cm sequence does not resolve which lower stage belongs to the measured sculpture; source-photo/base scope remains required.",
+    "sourceVrEnlargement": false,
+    "calibrationStatus": "geometry-and-axis-review-required",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "calibrationReady": false,
+    "geometryStatus": "reviewed-blocked",
+    "calibrationBlockers": [
+      "Bacchante and Satyr retains two flat marble/base stages. The museum87.63cm sequence does not resolve which lower stage belongs to the measured sculpture; source-photo/base scope remains required."
+    ]
+  },
+  "roman/three-graces-louvre-ma-287": {
+    "dimensions": "Hauteur : 123 cm ; Largeur : 86 cm ; Profondeur : 29 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "Labeled dimensions verified against the current Louvre collection record. Source component and accessory labels are retained; no independent axis stretching is implied.",
+    "checked": "2026-09-13",
+    "spatialNote": "Shown at the documented height, with the model’s proportions preserved.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Les trois Grâces",
+      "institution": "Musée du Louvre",
+      "accession": "Autre numéro d'inventaire : MR 211 Autre numéro d'inventaire : N 642 Numéro catalogue : Ma 287",
+      "version_or_date": "2nd century CE (after an early 2nd-century BCE original)",
+      "record_url": "https://collections.louvre.fr/en/ark:/53355/cl010276682",
+      "identity_confidence": "high",
+      "match_explanation": "Exact accession-linked official collection record supplied in the catalogue was retrieved; its labeled measurements are retained. Current mesh extent still requires visual review."
+    },
+    "geometryReviewNote": "The full Three Graces, draped side supports and molded marble lower foot match the official Louvre photograph. The external stone gallery pedestal is absent. Use the documented 123 cm original height for this complete sculptural extent.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 123,
+        "unit": "cm",
+        "meters": 1.23,
+        "scope": "Louvre accession Ma 287; MR 211; N 642; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Hauteur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010276682"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 86,
+        "unit": "cm",
+        "meters": 0.86,
+        "scope": "Louvre accession Ma 287; MR 211; N 642; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Largeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010276682"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 29,
+        "unit": "cm",
+        "meters": 0.29,
+        "scope": "Louvre accession Ma 287; MR 211; N 642; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Profondeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010276682"
+        ]
+      }
+    ],
+    "sourceUrl": "https://collections.louvre.fr/en/ark:/53355/cl010276682",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.23,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 180,
+        "viewDirection": [
+          0.35,
+          0.24,
+          1
+        ],
+        "status": "reviewed",
+        "note": "The archived GLB is native Y-up with its plinth at raw Y-min. A 180-degree yaw opens on the Louvre's catalogued front, where two Graces face the viewer and the central figure turns away."
+      },
+      "assetSha256": "5e13d0c442e1def10d344e6a9455b8945400476dd3008e3f51a23fd8e073dff3",
+      "reviewed": "2026-09-13",
+      "geometryReview": "Fresh current GLB decoded with current Viewer transforms, posed visible-vertex bounds and individual three-angle render inspection; official accession photographs reviewed for SMK. Evidence: scale_geometry-review.json and scale_geometry-audit/audit.json.",
+      "note": "The full Three Graces, draped side supports and molded marble lower foot match the official Louvre photograph. The external stone gallery pedestal is absent. Use the documented 123 cm original height for this complete sculptural extent. Uniform scale preserves the mesh proportions; this verifies the selected extent, not agreement of every published axis."
+    },
+    "geometryStatus": "calibrated",
+    "calibrationReady": true
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "dimensions": "Hauteur : 1,763 m ; Largeur : 0,57 m ; Profondeur : 0,525 m",
+    "status": "documented",
+    "basis": "object",
+    "note": "Labeled dimensions verified against the current Louvre collection record. Source component and accessory labels are retained; no independent axis stretching is implied.",
+    "checked": "2026-09-13",
+    "spatialNote": "The documented dimensions still need to be matched to the model’s displayed extent.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Vénus callipyge",
+      "institution": "Musée du Louvre",
+      "accession": "",
+      "version_or_date": "1683–1686",
+      "record_url": "https://collections.louvre.fr/ark:/53355/cl010092111",
+      "identity_confidence": "high",
+      "match_explanation": "Exact accession-linked official collection record supplied in the catalogue was retrieved; its labeled measurements are retained. Current mesh extent still requires visual review."
+    },
+    "geometryReviewNote": "The Venus Callipyge figure and raised drapery match the original, but the mesh's plain circular disk does not reproduce the irregular foot and lower mounting boundary clearly visible in the Louvre photograph. Resolve original-foot versus replacement disk extent before using 176.3 cm whole height.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 1.763,
+        "unit": "m",
+        "meters": 1.763,
+        "scope": "Louvre accession MR 1999; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Hauteur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010092111"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 0.57,
+        "unit": "m",
+        "meters": 0.57,
+        "scope": "Louvre accession MR 1999; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Largeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010092111"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 0.525,
+        "unit": "m",
+        "meters": 0.525,
+        "scope": "Louvre accession MR 1999; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Profondeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010092111"
+        ]
+      }
+    ],
+    "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010092111",
+    "geometryStatus": "reviewed-blocked",
+    "geometryReview": {
+      "reviewed": "2026-09-13",
+      "status": "blocked",
+      "blocker": "base_scope",
+      "previewUrl": "https://models.atrium.earth/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 240,
+        "viewDirection": [
+          0.55,
+          0.24,
+          0.9
+        ],
+        "status": "reviewed",
+        "note": "Owner reference 2026-09-04: rear three-quarter opening view matched to the supplied screenshot, with the turned face and raised drapery visible. Camera elevation lowered to match the reference."
+      },
+      "assetSha256": "21e1f8a7beb5b0e43a717fbc334cb6b3d7cecb46b04809ba1e365ce086027f1e",
+      "evidence": "scale_geometry-review.json; scale_geometry-audit/audit.json; individual rendered model and applicable official museum photograph"
+    }
+  },
+  "roman/sleeping-hermaphroditus-louvre-ma-231": {
+    "dimensions": "Hauteur : 46,5 cm ; Longueur : 173,5 cm ; Largeur : 90,5 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "Labeled dimensions verified against the current Louvre collection record. Source component and accessory labels are retained; no independent axis stretching is implied.",
+    "checked": "2026-09-12",
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Hermaphrodite endormi",
+      "institution": "Musée du Louvre",
+      "accession": "",
+      "version_or_date": "100–150 CE; mattress 1620",
+      "record_url": "https://collections.louvre.fr/ark:/53355/cl010250571",
+      "identity_confidence": "high",
+      "match_explanation": "Exact accession-linked official collection record supplied in the catalogue was retrieved; its labeled measurements are retained. Current mesh extent still requires visual review."
+    },
+    "geometryReviewNote": "The reclining Hermaphroditus includes the historical Bernini pillow and mattress described in the Louvre accession record, with no separate gallery stand or bed legs. The whole long horizontal extent X maps to the 173.5 cm catalogued length. Width becomes 90.36 cm, corroborating 90.5 cm, and height becomes 45.12 cm versus 46.5 cm. Retain the historical restored mattress ensemble; do not reconstruct a hypothetical ancient bronze.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 46.5,
+        "unit": "cm",
+        "meters": 0.465,
+        "scope": "Louvre accession Ma 231; MR 220; N 335; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Hauteur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010250571"
+        ]
+      },
+      {
+        "axis": "length",
+        "value": 173.5,
+        "unit": "cm",
+        "meters": 1.735,
+        "scope": "Louvre accession Ma 231; MR 220; N 335; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Longueur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010250571"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 90.5,
+        "unit": "cm",
+        "meters": 0.905,
+        "scope": "Louvre accession Ma 231; MR 220; N 335; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Largeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010250571"
+        ]
+      }
+    ],
+    "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010250571",
+    "spatial": {
+      "axis": "x",
+      "meters": 1.735,
+      "measurementIndex": 1,
+      "previewUrl": "https://models.atrium.earth/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+      "orientation": {
+        "upAxis": "z",
+        "modelRotation": [
+          0,
+          0,
+          180
+        ],
+        "yaw": 0,
+        "viewDirection": [
+          -0.55,
+          0.34,
+          -0.9
+        ],
+        "status": "reviewed",
+        "note": "Reviewed 2026-08-12: retain the reclining Z-up correction but open from the forward three-quarter side so the face and torso remain readable."
+      },
+      "assetSha256": "5faf94ccfb9f188b3b526bce70857cdf17d135efe6ecbb68a0fdb485c2efeae7",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Individually reviewed all three-angle images of the exact current model against labelled source scope, current normalized actual-vertex bounds, and a supporting plan-angle cross-check. Evidence: geometry/source-geometry/review.json and audit.json. No skins, morph meshes, animations or hidden meshes are present.",
+      "note": "The reclining Hermaphroditus includes the historical Bernini pillow and mattress described in the Louvre accession record, with no separate gallery stand or bed legs. The whole long horizontal extent X maps to the 173.5 cm catalogued length. Width becomes 90.36 cm, corroborating 90.5 cm, and height becomes 45.12 cm versus 46.5 cm. Retain the historical restored mattress ensemble; do not reconstruct a hypothetical ancient bronze."
+    }
+  },
+  "modern/three-nymphs-maillol-carrousel": {
+    "dimensions": "Hauteur : 1,56 m ; Largeur : 1,43 m ; Profondeur : 0,81 m",
+    "status": "documented",
+    "basis": "object",
+    "note": "Labeled dimensions verified against the current Louvre collection record. Source component and accessory labels are retained; no independent axis stretching is implied.",
+    "checked": "2026-09-13",
+    "spatialNote": "The documented dimensions still need to be matched to the model’s displayed extent.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Trois Nymphes ou Trois Grâces ou Nymphes de la prairie",
+      "institution": "Musée du Louvre",
+      "accession": "",
+      "version_or_date": "1930",
+      "record_url": "https://collections.louvre.fr/ark:/53355/cl010094955",
+      "identity_confidence": "high",
+      "match_explanation": "Exact accession-linked official collection record supplied in the catalogue was retrieved; its labeled measurements are retained. Current mesh extent still requires visual review."
+    },
+    "geometryReviewNote": "The three bronze nymphs and shared metal foot match the Louvre photograph, but the scan includes the large stone garden pedestal. Source 156 cm measures the bronze group. Needs a reproducible bronze-only boundary, retaining the correct garden edition.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 1.56,
+        "unit": "m",
+        "meters": 1.56,
+        "scope": "Louvre accession R 5 S; RF 3237; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Hauteur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010094955"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 1.43,
+        "unit": "m",
+        "meters": 1.43,
+        "scope": "Louvre accession R 5 S; RF 3237; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Largeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010094955"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 0.81,
+        "unit": "m",
+        "meters": 0.81,
+        "scope": "Louvre accession R 5 S; RF 3237; physical artwork as catalogued; separate support inclusion not specified",
+        "qualifier": "exact",
+        "sourceLabel": "Profondeur",
+        "sourceComponent": null,
+        "sourceUrls": [
+          "https://collections.louvre.fr/ark:/53355/cl010094955"
+        ]
+      }
+    ],
+    "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010094955",
+    "geometryStatus": "reviewed-blocked",
+    "geometryReview": {
+      "reviewed": "2026-09-13",
+      "status": "blocked",
+      "blocker": "support_extent",
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/three-nymphs-maillol-carrousel/preview-6ae33e9ceb01.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          0,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "confidence": "visual",
+        "note": "Upright group; the three different poses and the shared base are preserved."
+      },
+      "assetSha256": "6ae33e9ceb01609235d9346b8cb4819f3d7dd369b1d26e277db79d1b03bb12bd",
+      "evidence": "scale_geometry-review.json; scale_geometry-audit/audit.json; individual rendered model and applicable official museum photograph"
+    }
+  },
+  "modern/crouching-woman-rodin-hirshhorn-66-4342": {
+    "dimensions": "95.1 x 70.2 x 61.5 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_66.4342",
+    "checked": "2026-09-12",
+    "researchStatus": "verified",
+    "note": "Dimensions describe the enlarged bronze version, accession 66.4342, cast 1962; the scan provider attribution and mesh extent must match this exact version.",
+    "geometryReviewNote": "New welded-component audit confirms the square modern slab is fused with the crouching bronze in one dominant component. A reproducible bronze-only bottom plane/region is required before using95.1 cm; the slab cannot be assigned the sculpture height.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 95.1,
+        "unit": "cm",
+        "meters": 0.951,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 1,
+        "sourceText": "95.1 x 70.2 x 61.5 cm",
+        "sourceUrls": [
+          "https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_66.4342"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 70.2,
+        "unit": "cm",
+        "meters": 0.702,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 2,
+        "sourceText": "95.1 x 70.2 x 61.5 cm",
+        "sourceUrls": [
+          "https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_66.4342"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 61.5,
+        "unit": "cm",
+        "meters": 0.615,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 3,
+        "sourceText": "95.1 x 70.2 x 61.5 cm",
+        "sourceUrls": [
+          "https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_66.4342"
+        ]
+      }
+    ],
+    "identifiedObject": {
+      "title": "Crouching Woman",
+      "institution": "Hirshhorn Museum and Sculpture Garden, Washington, DC",
+      "accession": "66.4342",
+      "record_url": "https://hirshhorn.si.edu/collection/artwork/?edanUrl=edanmdm%3Ahmsg_66.4342",
+      "identity_confidence": "medium",
+      "match_explanation": "Matched to the linked official museum object record."
+    },
+    "calibrationBlockers": [
+      "New welded-component audit confirms the square modern slab is fused with the crouching bronze in one dominant component. A reproducible bronze-only bottom plane/region is required before using95.1 cm; the slab cannot be assigned the sculpture height."
+    ]
+  },
+  "modern/torso-callender-saam": {
+    "dimensions": "43.7 x 13.5 x 10.1 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://americanart.si.edu/artwork/torso-3712",
+    "checked": "2026-09-12",
+    "researchStatus": "verified",
+    "note": "Museum materials identify granite on a marble base; confirm whether the stated dimensions and scan both include the marble base.",
+    "geometryReviewNote": "Museum materials describe granite on a marble base, whereas the scan shows only the torso. No source entry states whether43.7 cm includes that absent marble base. The component audit cannot recover a component not present in the scan.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 43.7,
+        "unit": "cm",
+        "meters": 0.437,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 1,
+        "sourceText": "43.7 x 13.5 x 10.1 cm",
+        "sourceUrls": [
+          "https://americanart.si.edu/artwork/torso-3712"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 13.5,
+        "unit": "cm",
+        "meters": 0.135,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 2,
+        "sourceText": "43.7 x 13.5 x 10.1 cm",
+        "sourceUrls": [
+          "https://americanart.si.edu/artwork/torso-3712"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 10.1,
+        "unit": "cm",
+        "meters": 0.101,
+        "scope": "Entire object as catalogued; added supports not distinguished",
+        "qualifier": "exact",
+        "sourcePosition": 3,
+        "sourceText": "43.7 x 13.5 x 10.1 cm",
+        "sourceUrls": [
+          "https://americanart.si.edu/artwork/torso-3712"
+        ]
+      }
+    ],
+    "identifiedObject": {
+      "title": "Torso",
+      "institution": "Smithsonian American Art Museum",
+      "accession": "1960.8.5",
+      "record_url": "https://americanart.si.edu/artwork/torso-3712",
+      "identity_confidence": "high",
+      "match_explanation": "Matched to the linked official museum object record."
+    },
+    "calibrationBlockers": [
+      "Museum materials describe granite on a marble base, whereas the scan shows only the torso. No source entry states whether43.7 cm includes that absent marble base. The component audit cannot recover a component not present in the scan."
+    ]
+  },
+  "doryphoros": {
+    "dimensions": "SMK plaster cast: H 213 cm × W 75.5 cm × D 77 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS11&lang=en",
+    "note": "These are SMK’s documented gross measurements of plaster cast KAS11. They do not describe the ancient prototype. The new GLB has not yet been physically calibrated; its display size is adjustable.",
+    "checked": "2026-10-26",
+    "identifiedObject": {
+      "title": "Doryphoros (SMK Plaster Cast, KAS11)",
+      "institution": "SMK — Royal Cast Collection, Copenhagen",
+      "accession": "KAS11",
+      "record_url": "https://api.smk.dk/api/v1/art?object_number=KAS11&lang=en",
+      "identity_confidence": "high",
+      "match_explanation": "The current museum record links the exact published GLB or publisher model UID to this plaster cast accession."
+    },
+    "measures": [
+      {
+        "axis": "height",
+        "value": 213,
+        "unit": "cm",
+        "meters": 2.13,
+        "scope": "SMK plaster cast KAS11, gross documented measurement",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS11&lang=en"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 75.5,
+        "unit": "cm",
+        "meters": 0.755,
+        "scope": "SMK plaster cast KAS11, gross documented measurement",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS11&lang=en"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 77,
+        "unit": "cm",
+        "meters": 0.77,
+        "scope": "SMK plaster cast KAS11, gross documented measurement",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS11&lang=en"
+        ]
+      }
+    ],
+    "geometryStatus": "needs-review",
+    "calibrationReady": false,
+    "spatialNote": "Documented cast measurements; this model version still needs a physical-size check."
+  },
+  "borghese-gladiator": {
+    "dimensions": "H 173 cm × W 172 cm × D 169 cm",
+    "status": "documented",
+    "basis": "original",
+    "note": "Published original artwork dimensions from the Musée du Louvre.",
+    "checked": "2026-09-12",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Borghese Gladiator",
+      "institution": "Musée du Louvre",
+      "accession": "MR 224; N 919; Ma 527",
+      "record_url": "https://collections.louvre.fr/en/ark:/53355/cl010278706",
+      "identity_confidence": "high",
+      "match_explanation": "Exact titled original and accession; current mesh will be inspected separately."
+    },
+    "geometryReviewNote": "Borghese Gladiator is a print-derived sculpture on a flat rectangular plate fused to the mesh. The original Louvre173cm height excludes a separate gallery pedestal; the current plate’s status/inclusion needs a primary-image comparison before mapping the original measurement.",
+    "sourceUrl": "https://collections.louvre.fr/en/ark:/53355/cl010278706",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 173,
+        "unit": "cm",
+        "meters": 1.73,
+        "scope": "Original sculpture as catalogued by the Musée du Louvre; separate gallery pedestal not included.",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010278706"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 172,
+        "unit": "cm",
+        "meters": 1.72,
+        "scope": "Original sculpture as catalogued by the Musée du Louvre; separate gallery pedestal not included.",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010278706"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 169,
+        "unit": "cm",
+        "meters": 1.69,
+        "scope": "Original sculpture as catalogued by the Musée du Louvre; separate gallery pedestal not included.",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://collections.louvre.fr/en/ark:/53355/cl010278706"
+        ]
+      }
+    ],
+    "calibrationReady": false,
+    "geometryStatus": "reviewed-blocked",
+    "calibrationBlockers": [
+      "Borghese Gladiator is a print-derived sculpture on a flat rectangular plate fused to the mesh. The original Louvre173cm height excludes a separate gallery pedestal; the current plate’s status/inclusion needs a primary-image comparison before mapping the original measurement."
+    ]
+  },
+  "rodin/danaid": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "terracotta, 20,2 x 36,5 x 27,5 cm",
+    "sourceUrl": "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509",
+    "sourceTitle": "Wikimedia Commons / Nationalmuseum",
+    "note": "Museum upload depicts the original terracotta version; its later enlarged marble is a different authored version. Retain this terracotta size.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 20.2,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 36.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 27.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Danaid",
+      "accession": null
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509",
+        "excerpt": "terracotta, 20,2 x 36,5 x 27,5 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 20.2 cm × W 36.5 cm × D 27.5 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Danaid_NMSk_1854_(Auguste_Rodin)_-_Nationalmuseum_-_76c5c234c6074b13a94bf793c276a509.stl",
+        "text": "work/atrium-scale-all/other/text/75e988c866aa5b79.txt",
+        "ok": true
+      },
+      {
+        "url": "https://api.sketchfab.com/v3/models/76c5c234c6074b13a94bf793c276a509",
+        "text": "work/atrium-scale-all/other/text/41410dce3f096cae.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "Complete original terracotta Danaid version, including its modeled foot; the first20.2cm extent is vertical, corroborated by the two other extents within2.7%. Do not enlarge it to the later marble version.",
+    "spatial": {
+      "axis": "y",
+      "meters": 0.202,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/rodin/danaid/preview.glb",
+      "orientation": {
+        "upAxis": "z",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "yaw": 0,
+        "fit": 1.1,
+        "status": "reviewed",
+        "confidence": 0.8,
+        "note": "Corrected 2026-06-30 from legacy y:1.1:180, which presented the recumbent figure on its cut side. Use the scan's Z-up basis and flip around Y so the figure rests on a horizontal base while remaining front-readable."
+      },
+      "assetSha256": "d109b27c43162ff6ad369b469c6ba0e9e23468c0289c3e92f9f190eb80e97e05",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Exact current GLB inspected from three angles. Posed-vertex footprints agree with normalized bounds. Chosen source extent matches full modeled reference; uniform scaling only.",
+      "note": "Complete original terracotta Danaid version, including its modeled foot; the first20.2cm extent is vertical, corroborated by the two other extents within2.7%. Do not enlarge it to the later marble version."
+    },
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved."
+  },
+  "rodin/adam-rodin-musee-rodin": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "H. 197 cm; W. 76 cm; D. 77 cm",
+    "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam",
+    "sourceTitle": "Musee Rodin / Wikimedia Commons",
+    "note": "Published physical dimensions. The scan and measurement scope have been reviewed for scale.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 197,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 76,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 77,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Adam",
+      "accession": "S.01303"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam",
+        "excerpt": "H. 197 cm; W. 76 cm; D. 77 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 197 cm x W 76 cm x D 77 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/adam",
+        "text": "work/atrium-scale-all/other/text/bafcb4d94ae4ba8d.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "Complete Adam with its integral sculpted square bronze foot. The197cm museum height maps toY; the two plan extents agree within4.7% after yaw.",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.97,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/rodin/adam-rodin-musee-rodin/preview.glb",
+      "orientation": null,
+      "assetSha256": "df8d4657e0494922fea297f267ac26b07547ca285439aa0bdcaa4fade4f892ac",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Exact current GLB inspected from three angles. Posed-vertex footprints agree with normalized bounds. Chosen source extent matches full modeled reference; uniform scaling only.",
+      "note": "Complete Adam with its integral sculpted square bronze foot. The197cm museum height maps toY; the two plan extents agree within4.7% after yaw."
+    },
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved."
+  },
+  "rodin/age-of-bronze-rodin-musee-rodin": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "H. 180.5 cm; W. 68.5 cm; D. 54.5 cm",
+    "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze",
+    "sourceTitle": "Musee Rodin / Wikimedia Commons",
+    "note": "Published physical dimensions; scan geometry and support scope still need review before calibration.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 180.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze"
+        ],
+        "meters": 1.805
+      },
+      {
+        "axis": "width",
+        "value": 68.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze"
+        ],
+        "meters": 0.685
+      },
+      {
+        "axis": "depth",
+        "value": 54.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze"
+        ],
+        "meters": 0.545
+      }
+    ],
+    "identity": {
+      "title": "The Age of Bronze",
+      "accession": "S.986"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze",
+        "excerpt": "H. 180.5 cm; W. 68.5 cm; D. 54.5 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "calibrated",
+    "catalogDimensionsForComparisonOnly": "H 180.5 cm x W 68.5 cm x D 54.5 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/age-bronze",
+        "text": "work/atrium-scale-all/other/text/85cb34eea095a91d.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": true,
+    "geometryReviewNote": "The complete Age of Bronze figure and thin square bronze foot are present, with no external display pedestal. Use the museum 180.5 cm height. The prior 8.8 percent plan mismatch is retained; this calibration validates only the complete vertical extent.",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.805,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/rodin/age-of-bronze-rodin-musee-rodin/preview.glb",
+      "orientation": null,
+      "assetSha256": "a8b4373d53b7ef57d82dbaf9860948e22c3cb10b34e21297ef58c93927853948",
+      "reviewed": "2026-09-13",
+      "geometryReview": "Fresh current GLB decoded with current Viewer transforms, posed visible-vertex bounds and individual three-angle render inspection; official accession photographs reviewed for SMK. Evidence: scale_geometry-review.json and scale_geometry-audit/audit.json.",
+      "note": "The complete Age of Bronze figure and thin square bronze foot are present, with no external display pedestal. Use the museum 180.5 cm height. The prior 8.8 percent plan mismatch is retained; this calibration validates only the complete vertical extent. Uniform scale preserves the mesh proportions; this verifies the selected extent, not agreement of every published axis."
+    },
+    "checked": "2026-09-13",
+    "spatialNote": "Shown at the documented height, with the model’s proportions preserved."
+  },
+  "modern/the-kiss-rodin-musee-rodin-s-1002": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "H. 181.5 cm; W. 112.5 cm; D. 117 cm",
+    "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss",
+    "sourceTitle": "Migg / Sketchfab; Musée Rodin metadata",
+    "note": "Published physical dimensions; scan geometry and support scope still need review before calibration.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 181.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 112.5,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 117,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "The Kiss",
+      "accession": "S.1002; Lux.132"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss",
+        "excerpt": "H. 181.5 cm; W. 112.5 cm; D. 117 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "reviewed-blocked",
+    "catalogDimensionsForComparisonOnly": "H 181.5 cm × W 112.5 cm × D 117 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/41dd704633244bb1ad4f13d8a50fccd1",
+        "text": "work/atrium-scale-all/other/text/7343b263a0bff0fd.txt",
+        "ok": true
+      },
+      {
+        "url": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/kiss",
+        "text": "work/atrium-scale-all/other/text/71f1edbdf6be5846.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "The Kiss includes the complete marble group above a large display pedestal and surrounding floor. The 181.5 cm source height applies only to the sculpture. Needs segmented marble bounds; the pedestal and floor must not consume that height.",
+    "checked": "2026-09-13",
+    "spatialNote": "The documented dimensions still need to be matched to the model’s displayed extent.",
+    "geometryReview": {
+      "reviewed": "2026-09-13",
+      "status": "blocked",
+      "blocker": "support_and_floor",
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/the-kiss-rodin-musee-rodin-s-1002/preview-94630787b4b0.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 180,
+        "viewDirection": [
+          0.55,
+          0.34,
+          0.9
+        ],
+        "status": "reviewed",
+        "note": "Reviewed 2026-08-12: reverse the native Y-up group to a front three-quarter opening that presents both faces and the embrace."
+      },
+      "assetSha256": "94630787b4b03cc2bb4d555fe820b2c2b339bc4a17b88c4903afd27f3992ef72",
+      "evidence": "scale_geometry-review.json; scale_geometry-audit/audit.json; individual rendered model and applicable official museum photograph"
+    }
+  },
+  "modern/bacchante-etcheto-pau": {
+    "status": "approximate",
+    "basis": "object",
+    "dimensions": "Height 170 cm, reported by scan creator",
+    "sourceUrl": "https://api.sketchfab.com/v3/models/63ffd433228849de9db58aefde92da93",
+    "sourceTitle": "Musée des Beaux-Arts de Pau",
+    "note": "Direct scan creator reports this measurement, but no institutional/artist measurement was independently verified. Keep estimate clearly labeled; do not advertise verified true scale.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 170,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/63ffd433228849de9db58aefde92da93"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Bacchante",
+      "accession": ""
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://api.sketchfab.com/v3/models/63ffd433228849de9db58aefde92da93",
+        "excerpt": "Height 170 cm, reported by scan creator",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "reviewed-blocked",
+    "catalogDimensionsForComparisonOnly": "H 170 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/63ffd433228849de9db58aefde92da93",
+        "text": "work/atrium-scale-all/other/text/1f6eb1bb8b4a9918.txt",
+        "ok": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/10220288",
+        "text": "work/atrium-scale-all/other/text/0b65026d20015c72.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "blocker": "Institutional/artist corroboration or exact physical measurement still needed; contributor estimate only.",
+    "geometryReviewNote": "Etcheto Bacchante has a round original carved foot above a square stone slab. Creator’s170cm statement lacks explicit base scope; need a reliable boundary below the complete original carving.",
+    "calibrationBlockers": [
+      "Etcheto Bacchante has a round original carved foot above a square stone slab. Creator’s170cm statement lacks explicit base scope; need a reliable boundary below the complete original carving."
+    ],
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "modern/bacchante-couchee-clesinger-petit-palais": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "H. 56 x l. 200 x P. 82 cm",
+    "sourceUrl": "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee",
+    "sourceTitle": "Petit Palais, Paris",
+    "note": "Museum record is Reclining Bacchante PPS1345 (1848). Scan description mistakenly discusses the different Woman Bitten by a Snake (1847); visually verify identity against Petit Palais photos.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 56,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 200,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 82,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Reclining Bacchante",
+      "accession": "PPS1345"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee",
+        "excerpt": "H. 56 x l. 200 x P. 82 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "reviewed-blocked",
+    "catalogDimensionsForComparisonOnly": "H 56 × W 200 × D 82 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/9ed6fbed059a4bae952ada5312efb8f9",
+        "text": "work/atrium-scale-all/other/text/cd40a4bbc3fda0d2.txt",
+        "ok": true
+      },
+      {
+        "url": "https://www.petitpalais.paris.fr/oeuvre/bacchante-couchee",
+        "ok": false,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://zenodo.org/api/records/10380070",
+        "text": "work/atrium-scale-all/other/text/b5dec26751949bab.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "Bacchante couchée includes a broad floor patch and oval display plinth. Its200×82cm museum plan dimensions cannot be compared to the whole scene; uploader description also discusses a different Clésinger work. Need exact artwork-boundary and identity corroboration.",
+    "calibrationBlockers": [
+      "Bacchante couchée includes a broad floor patch and oval display plinth. Its200×82cm museum plan dimensions cannot be compared to the whole scene; uploader description also discusses a different Clésinger work. Need exact artwork-boundary and identity corroboration."
+    ],
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "roman/lely-venus-british-museum": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "125 x 53 x 65 cm (whole object); base width43cm and depth58cm",
+    "sourceUrl": "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus",
+    "sourceTitle": "British Museum, on loan from the Royal Collection",
+    "note": "Royal Collection owner record supersedes uncited catalog H112cm. Whole object may include restored integral support; verify scan scope before calibration.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 125,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 53,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 65,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 43,
+        "unit": "cm",
+        "scope": "base",
+        "sourcePosition": 4,
+        "sourceUrls": [
+          "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 58,
+        "unit": "cm",
+        "scope": "base",
+        "sourcePosition": 5,
+        "sourceUrls": [
+          "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Aphrodite or Crouching Venus (Lely Venus)",
+      "accession": "RCIN69746; BM1963,1029.1"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus",
+        "excerpt": "125 x 53 x 65 cm (whole object); base width43cm and depth58cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 112 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/31dcd2d0842f4153a2c45ad24e62754e",
+        "text": "work/atrium-scale-all/other/text/808f4425725c7584.txt",
+        "ok": true
+      },
+      {
+        "url": "https://www.britishmuseum.org/collection/object/G_1963-1029-1",
+        "ok": false,
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://zenodo.org/api/records/21530978",
+        "text": "work/atrium-scale-all/other/text/23f68508e1c818f1.txt",
+        "ok": true
+      },
+      {
+        "url": "https://www.rct.uk/collection/69746/aphrodite-or-crouching-venus",
+        "text": "work/atrium-scale-all/other/text/1fec00fa3dc9cecc.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "The new component audit confirms the large cylindrical museum pedestal is fused to Lely Venus. Source125 cm concerns the sculpture; the pedestal’s top plane and original integral support need a reproducible separation before a statue-only reference is assigned.",
+    "calibrationBlockers": [
+      "The new component audit confirms the large cylindrical museum pedestal is fused to Lely Venus. Source125 cm concerns the sculpture; the pedestal’s top plane and original integral support need a reproducible separation before a statue-only reference is assigned."
+    ]
+  },
+  "modern/assia-despiau-middelheim": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "hoogte:190cm; breedte:55cm; diepte:45cm; sokkel66×52cm",
+    "sourceUrl": "https://search.middelheimmuseum.be/details/collect/148129",
+    "sourceTitle": "Middelheim Museum, Antwerp",
+    "note": "Original authorized life-size bronze at Middelheim, distinct from known smaller versions.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 190,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://search.middelheimmuseum.be/details/collect/148129"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 55,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://search.middelheimmuseum.be/details/collect/148129"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 45,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://search.middelheimmuseum.be/details/collect/148129"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 66,
+        "unit": "cm",
+        "scope": "socle",
+        "sourcePosition": 4,
+        "sourceUrls": [
+          "https://search.middelheimmuseum.be/details/collect/148129"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 52,
+        "unit": "cm",
+        "scope": "socle",
+        "sourcePosition": 5,
+        "sourceUrls": [
+          "https://search.middelheimmuseum.be/details/collect/148129"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Assia",
+      "accession": "MID.B.004"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://search.middelheimmuseum.be/details/collect/148129",
+        "excerpt": "hoogte:190cm; breedte:55cm; diepte:45cm; sokkel66×52cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 190 × W 55 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/28351d2b0b02420db787aa31d0377b8f",
+        "text": "work/atrium-scale-all/other/text/25c89994d5845e77.txt",
+        "ok": true
+      },
+      {
+        "url": "https://search.middelheimmuseum.be/details/collect/148129",
+        "text": "work/atrium-scale-all/other/text/04fe49f2a9c00066.txt",
+        "ok": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/10261675",
+        "text": "work/atrium-scale-all/other/text/8b01230e9360c49d.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "The inscribed display socle is fused with Assia in the new component audit. Museum sculptureH190 cm and separately listed socle66×52 cm offer two possible references, but the modeled socle is oblique in plan and its correct measurement directions are not yet verified.",
+    "calibrationBlockers": [
+      "The inscribed display socle is fused with Assia in the new component audit. Museum sculptureH190 cm and separately listed socle66×52 cm offer two possible references, but the modeled socle is oblique in plan and its correct measurement directions are not yet verified."
+    ]
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "Overall: 19.7 cm x 8.3 cm x 5.1 cm",
+    "sourceUrl": "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433",
+    "sourceTitle": "Mount Holyoke College Art Museum",
+    "note": "Original edition2/4 of Petite Phryne, not a modern reproductive reduction. Published by museum photographer Laura Shea; preserve this authored small version.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 19.7,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 8.3,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 5.1,
+        "unit": "cm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "Small Phryne with Drapery",
+      "accession": "MH 2006.25.2"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433",
+        "excerpt": "Overall: 19.7 cm x 8.3 cm x 5.1 cm",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 19.7 × W 8.3 × D 5.1 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/59856dc494454d849c2f70eeb1f3d433",
+        "text": "work/atrium-scale-all/other/text/b821b2de7af8780d.txt",
+        "ok": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/10286567",
+        "text": "work/atrium-scale-all/other/text/f36aeabf116bdcff.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "Complete original small bronze edition of Phryne, including integral foot. Preserve19.7cm height; the8.3×5.1cm plan extents agree within3.3%. This is an authored small version, not a reproductive reduction.",
+    "spatial": {
+      "axis": "y",
+      "meters": 0.197,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/small-phryne-maillol-mount-holyoke/preview-d81ccb0b07f7.glb",
+      "orientation": {
+        "upAxis": "y",
+        "modelRotation": [
+          0,
+          180,
+          0
+        ],
+        "viewDirection": [
+          0.35,
+          0.22,
+          1
+        ],
+        "fit": 1.12,
+        "status": "reviewed",
+        "notes": "Rear view keeps both buttocks clear of the drapery held at either side; entire bronze is framed."
+      },
+      "assetSha256": "d81ccb0b07f79ee0d8a2fe5f65f1a8156191db24044a394450963f8ba8c26a89",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Exact current GLB inspected from three angles. Posed-vertex footprints agree with normalized bounds. Chosen source extent matches full modeled reference; uniform scaling only.",
+      "note": "Complete original small bronze edition of Phryne, including integral foot. Preserve19.7cm height; the8.3×5.1cm plan extents agree within3.3%. This is an authored small version, not a reproductive reduction."
+    },
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved."
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "status": "documented",
+    "basis": "object",
+    "dimensions": "object: 1746 x 984 x 1099 mm, 290 kg",
+    "sourceUrl": "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json",
+    "sourceTitle": "light_heists / Scan the World; Tate metadata",
+    "note": "Official Tate collection dataset, accession N01754. The published dimension string is 1746 × 984 × 1099 mm; the structured height and width fields reverse the first two values. Review of the complete upright sculpture and all three proportions supports 1746 mm as its height. The original conflicting source fields are retained in the research evidence.",
+    "measures": [
+      {
+        "axis": "unlabelled",
+        "value": 1746,
+        "unit": "mm",
+        "scope": "object",
+        "sourcePosition": 1,
+        "sourceUrls": [
+          "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 984,
+        "unit": "mm",
+        "scope": "object",
+        "sourcePosition": 2,
+        "sourceUrls": [
+          "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json"
+        ]
+      },
+      {
+        "axis": "unlabelled",
+        "value": 1099,
+        "unit": "mm",
+        "scope": "object",
+        "sourcePosition": 3,
+        "sourceUrls": [
+          "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json"
+        ]
+      }
+    ],
+    "identity": {
+      "title": "An Athlete Wrestling with a Python",
+      "accession": "N01754"
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json",
+        "excerpt": "object: 1746 x 984 x 1099 mm, 290 kg",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "not-audited",
+    "catalogDimensionsForComparisonOnly": "H 98.4 cm × W 174.6 cm × D 109.9 cm; 290 kg",
+    "sourcesReviewed": [
+      {
+        "url": "https://api.sketchfab.com/v3/models/3d2bcba992144b78b32b1ebcabbf3f47",
+        "text": "work/atrium-scale-all/other/text/6d97f13becff2c77.txt",
+        "ok": true
+      },
+      {
+        "url": "https://www.tate.org.uk/art/artworks/leighton-an-athlete-wrestling-with-a-python-n01754",
+        "text": "work/atrium-scale-all/other/text/c7b378ac7b776ab9.txt",
+        "ok": true
+      },
+      {
+        "url": "https://api.github.com/repos/tategallery/collection/git/trees/master?recursive=1",
+        "text": "work/atrium-scale-all/other/text/699537e6fbc70dc5.txt",
+        "ok": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/tategallery/collection/master/artworks/n/017/n01754-8579.json",
+        "text": "work/atrium-scale-all/other/text/fd3ada66275eb78b.txt",
+        "ok": true
+      }
+    ],
+    "calibrationReady": false,
+    "geometryReviewNote": "Complete athlete and integral square bronze foot. The upright anatomical extent unequivocally corresponds to1746mm: the other984/1099mm extents match within4.1%. Tate’s dimension string supports this mapping, while its structured height/width fields are transposed. Preserve those conflicting source fields in the evidence; use this independently corroborated spatial mapping.",
+    "spatial": {
+      "axis": "y",
+      "meters": 1.746,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/modern/athlete-wrestling-python-leighton-tate-n01754/preview.glb",
+      "orientation": {
+        "upAxis": "z",
+        "modelRotation": [
+          0,
+          0,
+          180
+        ],
+        "yaw": 0,
+        "viewDirection": [
+          -0.55,
+          0.34,
+          -0.9
+        ],
+        "status": "reviewed",
+        "note": "Reviewed 2026-08-12: front three-quarter view retains the twisting action and python while making the athlete's face and chest visible."
+      },
+      "assetSha256": "3b3ca63aef92c792c53a76dfa1213ed9ab6ca56ada7051d6f5c50a367b69bb10",
+      "reviewed": "2026-09-12",
+      "geometryReview": "Exact current GLB inspected from three angles. Posed-vertex footprints agree with normalized bounds. Chosen source extent matches full modeled reference; uniform scaling only.",
+      "note": "Complete athlete and integral square bronze foot. The upright anatomical extent unequivocally corresponds to1746mm: the other984/1099mm extents match within4.1%. Tate’s dimension string supports this mapping, while its structured height/width fields are transposed. Preserve those conflicting source fields in the evidence; use this independently corroborated spatial mapping."
+    },
+    "spatialNote": "Physical scale is calibrated to the documented object dimensions. Proportions are preserved."
+  },
+  "modern/susanna-aaltonen-turku": {
+    "status": "unresolved",
+    "basis": "object",
+    "dimensions": "",
+    "sourceUrl": "https://zenodo.org/api/records/10224607",
+    "sourceTitle": "Wäinö Aaltonen Museum of Art, Turku",
+    "note": "Museum-attributed Zenodo mirror saysH126cm but direct originalscan deleted; official museum source verification needed.",
+    "measures": [],
+    "identity": {
+      "title": "Susanna",
+      "accession": ""
+    },
+    "evidence": [
+      {
+        "sourceUrl": "https://zenodo.org/api/records/10224607",
+        "excerpt": "",
+        "retrieved": "2026-09-12"
+      }
+    ],
+    "reviewed": "2026-09-12",
+    "geometryStatus": "reviewed-blocked",
+    "catalogDimensionsForComparisonOnly": "H 126 cm",
+    "sourcesReviewed": [
+      {
+        "url": "https://zenodo.org/api/records/10224607",
+        "text": "work/atrium-scale-all/other/text/0891708c19cfffc7.txt",
+        "ok": true
+      },
+      {
+        "url": "https://api.sketchfab.com/v3/models/b3f96ee21c1442cc9e2778256e971418",
+        "ok": false,
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "calibrationReady": false,
+    "blocker": "Museum-attributed Zenodo mirror saysH126cm but direct originalscan deleted; official museum source verification needed.",
+    "geometryReviewNote": "Susanna includes the complete crouching bronze and small cast foot, with no large public pedestal. Source review: Museum-attributed Zenodo mirror saysH126cm but direct originalscan deleted; official museum source verification needed.",
+    "calibrationBlockers": [
+      "Susanna includes the complete crouching bronze and small cast foot, with no large public pedestal. Source review: Museum-attributed Zenodo mirror saysH126cm but direct originalscan deleted; official museum source verification needed."
+    ],
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "crouching-venus": {
+    "dimensions": "Measured cast: H 87.5 cm",
+    "status": "documented",
+    "basis": "object",
+    "note": "The displayed scale uses the measured SMK cast, including the reviewed cast state and supports. This is the best available matching physical reference; it is not an assertion that the cast is full-size or that its dimensions equal the original.",
+    "checked": "2026-09-13",
+    "researchStatus": "searched",
+    "spatialNote": "Shown at the measured cast size. The original’s size or surviving state differs or remains unverified.",
+    "sourceUrl": "https://api.smk.dk/api/v1/art?object_number=KAS618",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 87.5,
+        "unit": "cm",
+        "meters": 0.875,
+        "scope": "Measured SMK cast KAS618; source part: brutto. Current cast state and support reviewed individually.",
+        "qualifier": "exact",
+        "sourceUrls": [
+          "https://api.smk.dk/api/v1/art?object_number=KAS618"
+        ]
+      }
+    ],
+    "geometryReviewNote": "The complete restored crouching Venus, scroll support and polygonal foot match the exact cast photograph. Use 87.5 cm gross cast height while preserving the original Vatican identity and unavailable original-size research.",
+    "researchSources": [
+      "https://coll-antike.univie.ac.at/en/visit-us/nakedness/1393-aphrodite/"
+    ],
+    "spatial": {
+      "axis": "y",
+      "meters": 0.875,
+      "measurementIndex": 0,
+      "previewUrl": "https://models.atrium.earth/models/previews/crouching-venus/preview.glb",
+      "orientation": null,
+      "assetSha256": "a8f32ee50ae8566a7c2c5ad031b4f43325b3db7d0bfa335543c9caaeff393b1b",
+      "reviewed": "2026-09-13",
+      "geometryReview": "Fresh current GLB decoded with current Viewer transforms, posed visible-vertex bounds and individual three-angle render inspection; official accession photographs reviewed for SMK. Evidence: scale_geometry-review.json and scale_geometry-audit/audit.json.",
+      "note": "The complete restored crouching Venus, scroll support and polygonal foot match the exact cast photograph. Use 87.5 cm gross cast height while preserving the original Vatican identity and unavailable original-size research. Uniform scale preserves the mesh proportions; this verifies the selected extent, not agreement of every published axis."
+    },
+    "originalDimensions": "",
+    "originalSizeResearch": {
+      "status": "unresolved",
+      "basis": "original",
+      "note": "The model is a reproduction cast. Original artwork dimensions remain unverified after source review.",
+      "identifiedObject": null,
+      "sourceUrl": "https://coll-antike.univie.ac.at/en/visit-us/nakedness/1393-aphrodite/",
+      "geometryReviewNote": "The original is Vatican inv.815, with extensive modern restoration. University cast records cross-reference that accession but do not give an explicitly original labeled size; similar Crouching Venuses at Naples and London are different versions. Exact original size and restoration extent remain unverified."
+    },
+    "geometryStatus": "calibrated",
+    "calibrationReady": true
+  },
+  "rodin/the-eternal-idol-harvard": {
+    "dimensions": "H 72.4 × W 63.5 × D 40 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://artsandculture.google.com/asset/eternal-idol/SwHlQYxvVlBhAQ?hl=en",
+    "checked": "2026-09-19",
+    "note": "Dimensions of the Harvard marble published by Harvard Art Museums on Google Arts & Culture.",
+    "measures": [
+      {
+        "axis": "height",
+        "value": 72.4,
+        "unit": "cm",
+        "sourceUrls": [
+          "https://artsandculture.google.com/asset/eternal-idol/SwHlQYxvVlBhAQ?hl=en"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 63.5,
+        "unit": "cm",
+        "sourceUrls": [
+          "https://artsandculture.google.com/asset/eternal-idol/SwHlQYxvVlBhAQ?hl=en"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 40,
+        "unit": "cm",
+        "sourceUrls": [
+          "https://artsandculture.google.com/asset/eternal-idol/SwHlQYxvVlBhAQ?hl=en"
+        ]
+      }
+    ],
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "geometryReviewNote": "The sculpture and integral marble base are complete in the scan. No source-to-geometry scale calibration is claimed."
+  },
+  "europe/three-graces-carpeaux-mia": {
+    "dimensions": "82.55 × 46.99 cm (32 1/2 × 18 1/2 in.)",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://collections.artsmia.org/art/2224/les-trois-graces-jean-baptiste-carpeaux",
+    "checked": "2026-09-19",
+    "note": "Published dimensions of the accessioned sculpture; source-to-geometry scale is not calibrated.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Les Trois Grâces (The Three Graces)",
+      "institution": "Minneapolis Institute of Art",
+      "accession": "75.52a, b",
+      "version_or_date": "c. 1872",
+      "record_url": "https://collections.artsmia.org/art/2224/les-trois-graces-jean-baptiste-carpeaux",
+      "identity_confidence": "high",
+      "match_explanation": "Scan’s tinyurl.com/3wvzxfue resolves to Mia object 2224. This is the Mia plaster, not the Musée d’Orsay or Petit Palais object."
+    },
+    "measures": [
+      {
+        "axis": "height",
+        "value": 82.55,
+        "unit": "cm",
+        "qualifier": "published",
+        "sourceUrls": [
+          "https://collections.artsmia.org/art/2224/les-trois-graces-jean-baptiste-carpeaux",
+          "https://search.artsmia.org/id/2224",
+          "https://raw.githubusercontent.com/artsmia/collection/main/objects/2/2224.json"
+        ]
+      }
+    ],
+    "geometryReviewNote": "Reviewed front, side and rear. Complete sculpture geometry is framed upright. No physical scale calibration claimed.",
+    "calibrationBlockers": [
+      "No source-to-geometry physical scale calibration."
+    ]
+  },
+  "europe/winter-houdon-met": {
+    "dimensions": "143.5 × 39.1 × 50.5 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/202614",
+    "checked": "2026-09-19",
+    "note": "Published dimensions for this museum version.",
+    "geometryReviewNote": "Reviewed front, side and rear. Complete sculpture geometry is framed upright. No physical scale calibration claimed.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "europe/sluggard-leighton-royal-academy": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "sourceUrl": "https://journals.openedition.org/insitu/28407",
+    "checked": "2026-09-19",
+    "note": "The exact Royal Academy plaster or bronze version has not been resolved. Dimensions and medium are deliberately omitted.",
+    "geometryReviewNote": "Reviewed front, side and rear. Complete sculpture geometry is framed upright. No physical scale calibration claimed.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "rodin/fugitive-love-cantor-portland": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "sourceUrl": "https://portlandartmuseum.org/wp-content/uploads/2023/12/Rodin-Large-Print-Labels.pdf#page=64",
+    "checked": "2026-09-19",
+    "note": "The exact loaned cast has no published dimensions in the exhibition label. No measurements have been borrowed from other casts.",
+    "geometryReviewNote": "Reviewed three angles; source Z-up rotation baked to Y-up. Complete intertwined group and rectangular display base retained. Surface detail is limited and the untextured bronze appearance is a display treatment. Physical scale is not calibrated.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "rodin/iris-cantor-portland": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "sourceUrl": "https://portlandartmuseum.org/wp-content/uploads/2023/12/Rodin-Large-Print-Labels.pdf#page=70",
+    "checked": "2026-09-19",
+    "note": "The exact loaned cast has no published dimensions in the exhibition label. No measurements have been borrowed from other casts.",
+    "geometryReviewNote": "Reviewed three angles against source museum photograph. Whole sculpture and square display base framed upright; intentionally absent head and arm match the Rodin composition. Limited untextured scan detail; already Y-up. Physical scale is not calibrated.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "contemporary/dynamic-female-torso-polycosm": {
+    "dimensions": "Variable",
+    "status": "variable",
+    "basis": "object",
+    "sourceUrl": "https://sketchfab.com/3d-models/15b290a29e15482ebcbeb39581aeed63",
+    "note": "Original digital sculpture with no single documented physical size.",
+    "checked": "2026-09-19",
+    "spatialNote": "This digital sculpture has no single physical size. Display size is adjustable."
+  },
+  "roman/aphrodite-pudica-glyptotek": {
+    "dimensions": "",
+    "status": "unresolved",
+    "basis": "object",
+    "sourceUrl": "https://sketchfab.com/3d-models/bd30c047af57425e8c613aabd02cd960",
+    "note": "Physical dimensions of the exact object have not been verified; no measurements are inferred from the model or borrowed from another version.",
+    "checked": "2026-09-19",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "roman/aphrodite-removing-sandal-karlsruhe": {
+    "dimensions": "25.9 × 11.4 × 10.7 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://sketchfab.com/3d-models/bfbeb4132ca540a8b0bfb42c9a155c65",
+    "note": "The official Badisches Landesmuseum model record documents H 25.9 × W 11.4 × D 10.7 cm for accession 66/9.",
+    "checked": "2026-09-19",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "europe/bacchante-female-satyr-clodion-mag": {
+    "dimensions": "H 13 × W 14 × D 11½ in (33 × 35.6 × 29.2 cm)",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://www.frenchsculpture.org/index.php/Detail/objects/25959",
+    "checked": "2026-09-19",
+    "note": "Museum-derived dimensions from French Sculpture Census; display-base inclusion is unspecified, so do not use these figures to calibrate the entire capture automatically.",
+    "geometryReviewNote": "Reviewed three angles before and after conservative context removal. Both figures and ornate display base retained; slight irregular margins remain at the base perimeter. The group is mounted on the base; its authorship is not separately asserted. Physical scale is not calibrated.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  },
+  "europe/le-repos-boucher-pau": {
+    "dimensions": "H 59.6 × L 182.8 × D 83 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://www.musee-orsay.fr/en/artworks/le-repos-5088",
+    "checked": "2026-09-19",
+    "note": "Exact marble RF3896/LUX101 dimensions from Musée d’Orsay; Pau is its deposit location. No geometry scale assigned.",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable.",
+    "researchStatus": "verified",
+    "identifiedObject": {
+      "title": "Le Repos",
+      "institution": "Musée d’Orsay, deposited at Musée des Beaux-Arts de Pau",
+      "accession": "RF 3896 (LUX 101)",
+      "version_or_date": "1892 marble",
+      "record_url": "https://www.musee-orsay.fr/en/artworks/le-repos-5088",
+      "identity_confidence": "high",
+      "match_explanation": "Scan creator identifies Alfred Boucher,1892,marble,in Pau; official Orsay record confirms exact work deposited in Pau. Source reference matches the reclining nude on a cushioned bed."
+    },
+    "geometryReviewNote": "Reviewed three angles and final lower-exposure front view. Entire reclining figure and bed slab retained. Source colors are pale and fine facial detail is limited; the model does not reconstruct absent detail. Physical scale is not calibrated.",
+    "calibrationBlockers": [
+      "Native model units are not calibrated to the physical object."
+    ],
+    "measures": [
+      {
+        "axis": "height",
+        "value": 59.6,
+        "unit": "cm",
+        "qualifier": "published",
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/en/artworks/le-repos-5088"
+        ]
+      },
+      {
+        "axis": "width",
+        "value": 182.8,
+        "unit": "cm",
+        "qualifier": "published",
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/en/artworks/le-repos-5088"
+        ]
+      },
+      {
+        "axis": "depth",
+        "value": 83,
+        "unit": "cm",
+        "qualifier": "published",
+        "sourceUrls": [
+          "https://www.musee-orsay.fr/en/artworks/le-repos-5088"
+        ]
+      }
+    ]
+  },
+  "rodin/the-sphinx-nga": {
+    "dimensions": "59 × 62.1 × 58.3 cm",
+    "status": "documented",
+    "basis": "object",
+    "sourceUrl": "https://www.nga.gov/artworks/50753-figure-woman-sphinx",
+    "note": "Published object dimensions; no scale is inferred from the scan.",
+    "checked": "2026-09-19",
+    "spatialNote": "Physical size is not yet calibrated. Display size is adjustable."
+  }
+}

@@ -1,0 +1,170 @@
+---
+import Viewer from '../../components/Viewer.astro';
+import DimensionValue from '../../components/DimensionValue.astro';
+import V3WorkCard from '../../components/v3/V3WorkCard.astro';
+import V3Layout from '../../layouts/v3/V3Layout.astro';
+import { workBySlug, works, type Work } from '../../lib/catalog';
+import { neighborsFor, v3WorkRoute } from '../../lib/v3';
+import { withBase } from '../../lib/urls';
+import { museumLabelFor } from '../../lib/museum-label.mjs';
+
+export function getStaticPaths() {
+  return works.map((work) => ({ params: { slug: work.slug }, props: { work } }));
+}
+
+type Props = { work: Work };
+const { work } = Astro.props;
+const { previous, next } = neighborsFor(work);
+const related = work.relatedWorks.map((slug) => workBySlug(slug)).filter((candidate): candidate is Work => Boolean(candidate)).slice(0, 6);
+const originalLocation = work.originalLocation && work.originalLocation.toLowerCase() !== work.museum.toLowerCase()
+  ? work.originalLocation
+  : '';
+const facts = ([
+  ['Maker', work.maker],
+  ['Date', work.displayDate],
+  ['Origin', originalLocation],
+  ['Material', work.medium],
+  ['Dimensions', work.dimensions || (work.dimensionsNote ? 'Not yet verified' : '')],
+  ['Location / collection', work.museum],
+  ['Department', work.department],
+  ['Accession / inventory', work.accession],
+] as Array<[string, string]>).filter(([, value]) => Boolean(value && !/not yet recorded|unassigned/i.test(value)));
+const sourceLabel = work.sourceMuseum || (work.sourceUrl ? new URL(work.sourceUrl).hostname.replace(/^www\./, '') : '');
+---
+
+<V3Layout
+  title={work.title}
+  description={`${work.title}${work.maker ? ` by ${work.maker}` : ''}. Explore the sculpture in 3D.`}
+  image={work.thumbnailImage}
+  immersive={true}
+>
+  <section id="sculpture" class="v3-object-stage" aria-labelledby="v3-object-title" tabindex="-1" style={`view-transition-name: w-${work.id};`}>
+    <Viewer
+      glb={withBase(work.modelGlb)}
+      poster={withBase(work.thumbnailImage)}
+      title={work.title}
+      hud={false}
+      immersive={true}
+      autoRotate={work.slug !== 'europe/venus-of-willendorf-nhmw-44-686'}
+      displayControls={true}
+      spatialViewing={work.spatialAccess.enabled}
+      museumLabel={museumLabelFor(work)}
+      spatialAssetSha256={work.spatialAccess.assetSha256}
+      spatialDimensionStatus={work.spatialAccess.status}
+      spatialLabel={work.spatialAccess.label}
+      spatialSizeLabel={work.spatialAccess.sizeLabel}
+      spatialDefaultMaxExtentMeters={work.spatialAccess.defaultMaxExtentMeters}
+      spatialUnavailableNote={work.spatialAccess.enabled ? undefined : work.spatialAccess.note}
+      spatialReference={work.spatialAccess.reference}
+      displaySupport={work.displaySupport}
+      spatialNote={work.spatialAccess.verified ? `${work.spatialAccess.sizeLabel}. ${work.spatialNote}` : work.spatialAccess.note}
+      posterLoading="eager"
+      upAxis={work.modelUpAxis}
+      modelTransform={work.modelTransform}
+      materialAppearance={work.materialAppearance}
+    />
+
+    <div class="v3-object-title">
+      <p class="v3-kicker">{work.era} · № {String(work.index).padStart(3, '0')}</p>
+      <h1 id="v3-object-title">{work.title}</h1>
+      <p>{[work.maker, work.displayDate].filter(Boolean).join(' · ')}</p>
+    </div>
+
+    <div class="v3-object-actions">
+      <a class="v3-object-record-link" href="#object-record">Object record <span aria-hidden="true">↓</span></a>
+
+      <nav class="v3-object-nav" aria-label="Previous and next sculptures">
+        <a href={withBase(v3WorkRoute(previous))} aria-label={`Previous work: ${previous.title}`}><span>←</span><i>{previous.title}</i></a>
+        <a href={withBase(v3WorkRoute(next))} aria-label={`Next work: ${next.title}`}><i>{next.title}</i><span>→</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <script>
+    // The interface recedes while the visitor handles the sculpture (see .is-engaged in v3.css).
+    const stageSection = document.querySelector('.v3-object-stage');
+    const canvasHost = stageSection?.querySelector('.model-stage');
+    const viewerRoot = stageSection?.querySelector('.viewer');
+    // Keep controls within their viewer's event scope, with their own row
+    // outside the measured canvas so they do not cover the artwork.
+    if (viewerRoot && canvasHost) {
+      const controls = [viewerRoot.querySelector('[data-immersive-tools]'), viewerRoot.querySelector('[data-display-controls]'), viewerRoot.querySelector('[data-spatial]'), viewerRoot.querySelector('[data-spatial-unavailable]')].filter((element): element is HTMLElement => element instanceof HTMLElement);
+      if (controls.length) {
+        const controlsRow = document.createElement('div');
+        controlsRow.className = 'v3-object-viewer-controls';
+        canvasHost.after(controlsRow);
+        controlsRow.append(...controls);
+      }
+    }
+    let quietTimer = 0;
+    if (stageSection && canvasHost) {
+      // Track live pointers by id so a pinch (two fingers) stays engaged until the
+      // LAST finger lifts, and so toolbar taps (whose downs we never counted) are ignored.
+      const activePointers = new Set<number>();
+      const scheduleRelease = () => {
+        window.clearTimeout(quietTimer);
+        quietTimer = window.setTimeout(() => stageSection.classList.remove('is-engaged'), 900);
+      };
+      canvasHost.addEventListener('pointerdown', (event) => {
+        // Only handling the sculpture engages: the WebGL canvas itself, not the
+        // toolbar/activate buttons that also live inside .model-stage.
+        if (!(event.target instanceof Element) || !event.target.classList.contains('viewer-canvas')) return;
+        activePointers.add(event.pointerId);
+        window.clearTimeout(quietTimer);
+        stageSection.classList.add('is-engaged');
+      });
+      const releasePointer = (event: PointerEvent) => {
+        if (!activePointers.delete(event.pointerId)) return;
+        if (activePointers.size === 0) scheduleRelease();
+      };
+      // pointercancel (interrupted touch) and blur (focus lost mid-drag) can eat the
+      // pointerup; treat all of them as "the visitor let go" so the title always returns.
+      window.addEventListener('pointerup', releasePointer);
+      window.addEventListener('pointercancel', releasePointer);
+      window.addEventListener('blur', () => { activePointers.clear(); scheduleRelease(); });
+    }
+  </script>
+
+  <section class="v3-object-record" aria-labelledby="object-record-title">
+    <div id="object-record" class="v3-object-record__intro" tabindex="-1">
+      <p class="v3-kicker">Object record</p>
+      <h2 id="object-record-title" class="v3-display">{work.title}</h2>
+      <a class="v3-object-return" href="#sculpture">Back to sculpture <span aria-hidden="true">↑</span></a>
+    </div>
+
+    <dl class="v3-facts">
+      <div id="size-verification" tabindex="-1"><dt>AR / VR</dt><dd><strong class="v3-dimension-status" data-dimension-status={work.spatialAccess.status}>{work.spatialAccess.label}{work.spatialAccess.enabled && ` · ${work.spatialAccess.sizeLabel}`}</strong>. {work.spatialAccess.note}{work.spatialAccess.status === 'approximate' && work.spatialAccess.sourceText && <small class="v3-estimate-evidence">Listed dimensions / description: {work.spatialAccess.sourceText}{work.spatialAccess.sourceUrl && <> <a href={work.spatialAccess.sourceUrl}>Source ↗</a></>}</small>}</dd></div>
+      {facts.map(([label, value]) => <div><dt>{label}</dt><dd>{label === 'Dimensions'
+        ? <DimensionValue value={work.dimensions} note={work.dimensionsNote} sourceUrl={work.dimensionsSourceUrl} />
+        : value}</dd></div>)}
+      {work.sourceRecordUrl && <div><dt>Museum record</dt><dd><a href={work.sourceRecordUrl}>Collection record ↗</a></dd></div>}
+      {work.relatedSourceRecordUrls.filter((url) => url !== work.sourceRecordUrl).map((url, index) => (
+        <div><dt>Additional record</dt><dd><a href={url}>Collection record {index + 2} ↗</a></dd></div>
+      ))}
+      {work.sourceUrl && <div><dt>3D source</dt><dd><a href={work.sourceUrl}>{sourceLabel} ↗</a></dd></div>}
+      {work.scanSource && <div><dt>Model / capture</dt><dd>{work.scanSource}</dd></div>}
+      {work.scanAuthor && <div><dt>Captured by</dt><dd>{work.scanAuthor}</dd></div>}
+      {work.creditLine && <div><dt>Credit</dt><dd>{work.creditLine}</dd></div>}
+      {work.rights && !/review pending/i.test(work.rights) && (
+        <div>
+          <dt>Rights</dt>
+          <dd>{work.licenseUrl ? <a href={work.licenseUrl} rel="license">3D scan: {work.rights} ↗</a> : work.rights}</dd>
+        </div>
+      )}
+      {work.aiTrainingRestricted && <div><dt>AI use</dt><dd>Source marked NoAI</dd></div>}
+    </dl>
+  </section>
+
+  {related.length > 0 && (
+    <section class="v3-object-related" aria-labelledby="related-title">
+      <div class="v3-section-head v3-section-head--split">
+        <div><p class="v3-kicker">Related works</p><h2 id="related-title" class="v3-display">Continue exploring the collection.</h2></div>
+      </div>
+      <div class="v3-rail">{related.map((candidate) => <V3WorkCard work={candidate} />)}</div>
+    </section>
+  )}
+</V3Layout>
+
+<style>
+  .v3-estimate-evidence { display: block; margin-top: 8px; font-size: 12px; line-height: 1.6; color: var(--v3-muted); }
+</style>

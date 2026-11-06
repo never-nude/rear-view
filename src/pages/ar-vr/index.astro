@@ -1,0 +1,31 @@
+---
+import V3CollectionExplorer from '../../components/v3/V3CollectionExplorer.astro';
+import V3Layout from '../../layouts/v3/V3Layout.astro';
+import { featuredWork, works } from '../../lib/v3';
+
+const arVrWorks = works.filter((work) => work.spatialAccess.enabled);
+const verifiedCount = arVrWorks.filter((work) => work.spatialAccess.verified).length;
+const approximateCount = arVrWorks.filter((work) => work.spatialAccess.status === 'approximate').length;
+const unknownCount = arVrWorks.filter((work) => work.spatialAccess.status === 'unknown').length;
+---
+
+<V3Layout
+  title="AR / VR"
+  description={`Explore ${arVrWorks.length} Rear View sculptures in AR or VR, with verified, approximate and unknown dimensions clearly labeled.`}
+  image={arVrWorks[0]?.thumbnailImage || featuredWork.thumbnailImage}
+>
+  <header class="v3-page-hero v3-discovery-hero">
+    <p class="v3-kicker">Rear View / {arVrWorks.length} works in AR / VR</p>
+    <h1 class="v3-display">From every angle.</h1>
+    <p>Place a sculpture in your room with a compatible phone, or walk around it in a VR headset.</p>
+    <div class="v3-dimension-legend" aria-label="Dimension status guide">
+      <p><strong class="v3-dimension-status" data-dimension-status="verified">Verified dimensions · {verifiedCount}</strong> — Source measurements matched to the model. Measured casts are identified.</p>
+      <p><strong class="v3-dimension-status" data-dimension-status="approximate">Approximate dimensions · {approximateCount}</strong> — Atrium’s estimate from listed dimensions and work descriptions; actual size may vary.</p>
+      <p><strong class="v3-dimension-status" data-dimension-status="unknown">Dimensions unknown · {unknownCount}</strong> — Opens at an adjustable display size.</p>
+    </div>
+  </header>
+
+  <section class="v3-collection" aria-label="Rear View works available in AR and VR">
+    <V3CollectionExplorer works={arVrWorks} spatial={true} />
+  </section>
+</V3Layout>

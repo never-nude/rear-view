@@ -1,0 +1,1673 @@
+{
+  "sourceRepository": "https://github.com/never-nude/atrium.earth",
+  "sourceRevision": "c0dacac0da71f5dc994998b635fee3de20f57c3e",
+  "selectedWorks": 50,
+  "files": 88,
+  "totalBytes": 2895813,
+  "works": [
+    {
+      "id": "baroque/venus-callipyge-louvre-mr-1999",
+      "assets": [
+        {
+          "path": "public/previews/renders/baroque/venus-callipyge-louvre-mr-1999/thumb.webp",
+          "bytes": 21674,
+          "sha256": "0716b198c46b717d2f279f5814c07b8ba0a6c251ee0c18e000121b5e6a93f54a",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/baroque/venus-callipyge-louvre-mr-1999/poster.svg",
+          "bytes": 34610,
+          "sha256": "ae1b07d7efb09db3758b70b980a173bd723fadc786815a42fb987b2c97c93cde",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "europe/winter-houdon-met",
+      "assets": [
+        {
+          "path": "public/previews/renders/europe/winter-houdon-met/thumb.webp",
+          "bytes": 30578,
+          "sha256": "f24086cbbde390e98bac50a3a8153a50ceedbff70032718fb000b005383a518a",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "roman/sleeping-hermaphroditus-louvre-ma-231",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/sleeping-hermaphroditus-louvre-ma-231/thumb.webp",
+          "bytes": 15592,
+          "sha256": "20d327ebac19c41d38e33544c5dd8a21ca5a83af5675c46833b8e5585cab737f",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/roman/sleeping-hermaphroditus-louvre-ma-231/poster.svg",
+          "bytes": 21106,
+          "sha256": "a300af483577ba0f6b4b9d8f1959b759e930afaffa3c553501c4957126bb1f52",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/crouching-woman-rodin-hirshhorn-66-4342",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/crouching-woman-rodin-hirshhorn-66-4342/thumb.webp",
+          "bytes": 54070,
+          "sha256": "853d546657d4c16e9131ffb0c68842243cbec71f10adb0bddab87eda0ab285e9",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/crouching-woman-rodin-hirshhorn-66-4342/poster.svg",
+          "bytes": 71810,
+          "sha256": "5de378c3a4dba3f49806ab7b89cd20d362c1fd3155b3d49bcc6864d4c01cb352",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/lely-venus-british-museum",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/lely-venus-british-museum/thumb.webp",
+          "bytes": 36538,
+          "sha256": "f55e88fb8e17ceb17471fb98df5b6f73bf054bb7edaf4edaa24675e62926549c",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/roman/lely-venus-british-museum/poster.svg",
+          "bytes": 49040,
+          "sha256": "8902e1e6793128e5461a7318070f28fc7788ecb59c78b48b77c2b630b8dfd44b",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/crouching-aphrodite-met",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/crouching-aphrodite-met/thumb.webp",
+          "bytes": 23612,
+          "sha256": "53d6dcf6fd2f6983a94156e4670c65d40785e5d26cd08ff09bb22cf832fae6aa",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/roman/crouching-aphrodite-met/poster.svg",
+          "bytes": 31834,
+          "sha256": "92026d809fbb9d3176635148a3d6bfe33db47df64673fe3fab417702fddf45b6",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "rodin/danaid",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/danaid/thumb.webp",
+          "bytes": 21892,
+          "sha256": "8e2067498ac279ad744ae4ef8665d993a1999b4ac2ba71f1f2ee1e693fd113d0",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/rodin/danaid/poster.svg",
+          "bytes": 2089,
+          "sha256": "7cececf9a03c6b7329928f0183905dc5dd7890e4790f5f83010136ba74a2129b",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/bacchante-couchee-clesinger-petit-palais",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/bacchante-couchee-clesinger-petit-palais/thumb.webp",
+          "bytes": 28570,
+          "sha256": "769c56be6a4fe50bdf2c33cc5ea5a77cba66b8548e9203c12b268d9834ec6ed1",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/bacchante-couchee-clesinger-petit-palais/poster.svg",
+          "bytes": 38378,
+          "sha256": "af8eab3dffe473203fd54fc3a1fa689bb295b465fd5e5b9d547303b6128691cb",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/bacchante-and-satyr-clesinger-mia-73-13",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/bacchante-and-satyr-clesinger-mia-73-13/thumb.webp",
+          "bytes": 42552,
+          "sha256": "2eb383d97b6bd45e12d250459964744351a942fc71b9cf07cdd96afca9ea1dde",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/bacchante-and-satyr-clesinger-mia-73-13/poster.svg",
+          "bytes": 56666,
+          "sha256": "181592787363f925a77759451adc263a5926a68565dd855f8caa563fe5574121",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "neoclassical/three-graces-glyptotek",
+      "assets": [
+        {
+          "path": "public/previews/renders/neoclassical/three-graces-glyptotek/thumb.webp",
+          "bytes": 29806,
+          "sha256": "5de94114f0073e229bca7b3bcb74912be8909c254eea7747fcf8fe52715b5a3e",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/neoclassical/three-graces-glyptotek/poster.svg",
+          "bytes": 38572,
+          "sha256": "3ef90bc0d213607312724f6d6f3fd3bdf2008ccc56ea19d6bdcd2de2d0eaaec0",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/three-graces-louvre-ma-287",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/three-graces-louvre-ma-287/thumb.webp",
+          "bytes": 44674,
+          "sha256": "494f174b1a7cecaedf2413938bdfc17f857f8f454df4cff89af65fc516e3e92f",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/roman/three-graces-louvre-ma-287/poster.svg",
+          "bytes": 2123,
+          "sha256": "5fcc6ff8d501412c20224033781de72be97bbea3f720a46ed1c84538f60213c1",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "crouching-venus",
+      "assets": [
+        {
+          "path": "public/previews/renders/crouching-venus/thumb.webp",
+          "bytes": 32622,
+          "sha256": "bc4e1eb4541126fd7545d30c2f4f8c3a7c5275a9d6dfdb32c2112abc3c06b05e",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/crouching-venus/poster.svg",
+          "bytes": 2105,
+          "sha256": "a223c3a6e0c86065603b29c05fe87483b215ca3d5cbea3f48b2ba24efad4ea16",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/susanna-aaltonen-turku",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/susanna-aaltonen-turku/thumb.webp",
+          "bytes": 37080,
+          "sha256": "3825597380d37d756d233eb83c0333d9da7c3f754cf446aba75c959e26a0649d",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/susanna-aaltonen-turku/poster.svg",
+          "bytes": 44186,
+          "sha256": "f1ca0fd94d51e94b03fd94bcfada7a2a35e360cbd0753751f70dc16d8259a074",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/torso-callender-saam",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/torso-callender-saam/thumb.webp",
+          "bytes": 16830,
+          "sha256": "9203bf03621d1b6feae02dc67457d9ba6523354256741d5bf7b28bc9fd14a09a",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/torso-callender-saam/poster.svg",
+          "bytes": 21202,
+          "sha256": "cbf681fa3ae67efacfcda4a3f266db6ca23bdbf9031f55b3b4f5ad469db7c275",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/eve-rodin-reduced-marble",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/eve-rodin-reduced-marble/thumb.webp",
+          "bytes": 15322,
+          "sha256": "106288d8d932de9f5c64afdbe5ee636f6a92c5a5c733e741889000c8b8cc8c92",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/eve-rodin-reduced-marble/poster.svg",
+          "bytes": 16678,
+          "sha256": "ff6c1a89b3916b1d2a26bad6446807f2d0101b852311ef746ad9f09b68e355e5",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/danae-henning",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/danae-henning/thumb.webp",
+          "bytes": 64306,
+          "sha256": "b536dfed2e1be4724cd70b44f80979423ae99b16cbbf85c0ea6406c7308defb6",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/danae-henning/poster.svg",
+          "bytes": 81152,
+          "sha256": "f8629f7b7b2f404be7c6e918c6f7e023d7ec805a18688ac38c1d02c1c9395dcf",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/nude-in-sun-harvent-mons",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/nude-in-sun-harvent-mons/thumb.webp",
+          "bytes": 29000,
+          "sha256": "37854b7daaf942387a6a9efcc5503a58d9eb4c11e125e03b1e41470d133c79d0",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/nude-in-sun-harvent-mons/poster.svg",
+          "bytes": 38998,
+          "sha256": "fbe06fe835796e8c5da8f646cf33ad6520c1d40fff8ae1051a0b82527caabe7e",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "contemporary/punishment-hercules-deepak",
+      "assets": [
+        {
+          "path": "public/previews/renders/contemporary/punishment-hercules-deepak/thumb.webp",
+          "bytes": 27388,
+          "sha256": "9e44a58e8fb8a8897b1f5f612e2bf95c8abd951bc1e0b8d9e43d0937a3279095",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/contemporary/punishment-hercules-deepak/poster.svg",
+          "bytes": 36906,
+          "sha256": "9fd6edb2cc84f1ba804f99ab89656c0e4caa88672b6807b7c846738d4b754eac",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/small-phryne-maillol-mount-holyoke",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/small-phryne-maillol-mount-holyoke/thumb.webp",
+          "bytes": 47218,
+          "sha256": "1b3f7e75e938fb6a45d2513251f374ab2449d4c8717fb66488cd451356c6e01d",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/small-phryne-maillol-mount-holyoke/poster.svg",
+          "bytes": 39314,
+          "sha256": "cf1e470d18cd9b080f799674197c2a0dd8393bffb23011fb4a9acf00aa5dbae9",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/three-nymphs-maillol-carrousel",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/three-nymphs-maillol-carrousel/thumb.webp",
+          "bytes": 59672,
+          "sha256": "c8e67f9ef6ae7a4baa6fff15a38937dd983d0f84ce96a110b6a6c52338861d64",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/three-nymphs-maillol-carrousel/poster.svg",
+          "bytes": 79926,
+          "sha256": "a8f6e009002bf904df167cdae837bfc04c42d3e43a1791593e49b20c80577b18",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/assia-despiau-middelheim",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/assia-despiau-middelheim/thumb.webp",
+          "bytes": 27036,
+          "sha256": "fd44d6d7f2e3bf52e5653087e80de12749b9c3912c3cf210263a1f90ee8ad0fa",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/assia-despiau-middelheim/poster.svg",
+          "bytes": 36358,
+          "sha256": "d2da73e15460edf9650b4d4d061cea21298b5b5f719276aedb9aeee42400ba2b",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/action-in-chains-maillol-carrousel",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/action-in-chains-maillol-carrousel/thumb.webp",
+          "bytes": 42822,
+          "sha256": "dc26586cdf074a7972394918f9780e5eac50374dd449852e1eb83aaef62a46fe",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/action-in-chains-maillol-carrousel/poster.svg",
+          "bytes": 57428,
+          "sha256": "f21b18a39ea0fe6bf1815b311202afadd3a4102cbcccd60b2d1cae7c3f0f7094",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "contemporary/dynamic-female-torso-polycosm",
+      "assets": [
+        {
+          "path": "public/previews/renders/contemporary/dynamic-female-torso-polycosm/thumb.webp",
+          "bytes": 9770,
+          "sha256": "76ed60dc6078ff32b7b33cf7c2b647c9c38c6afe97807db4bf14b4d17283a8f8",
+          "format": "WEBP",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "id": "modern/woman-gutter-vandensteen-jehay",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/woman-gutter-vandensteen-jehay/thumb.webp",
+          "bytes": 29252,
+          "sha256": "306ac5bfdcdc77e28ff4341e903779af6709e8ff24d7d3c895f2027016943951",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/woman-gutter-vandensteen-jehay/poster.svg",
+          "bytes": 39342,
+          "sha256": "e3a82bbcab38ed9fdcbd455533665b348a751c7a3435abeccdb62a14e72bf86c",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/athlete-wrestling-python-leighton-tate-n01754",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/athlete-wrestling-python-leighton-tate-n01754/thumb.webp",
+          "bytes": 42230,
+          "sha256": "4524608de86f46fad476e70e129f48b107674cb2903cf5707fe8de8ec6e2bf79",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/athlete-wrestling-python-leighton-tate-n01754/poster.svg",
+          "bytes": 56356,
+          "sha256": "93fd00a7b62e6c7a34119ba8606b8740c9c85beab179c93390f7eb36130e6483",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "the-wrestlers",
+      "assets": [
+        {
+          "path": "public/previews/renders/the-wrestlers/thumb.webp",
+          "bytes": 27628,
+          "sha256": "ce81f599bce02de1d9b847df21819c92194182586ddbd651dc8d49b72dc1b35a",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/the-wrestlers/poster.svg",
+          "bytes": 2104,
+          "sha256": "a313e409d537bcbb19ed7fbe7a19d4a320a6286f0aea6b7d2483222725c3b842",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/hermes-tying-sandal-glyptotek",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/hermes-tying-sandal-glyptotek/thumb.webp",
+          "bytes": 28038,
+          "sha256": "48dae830ea367044f72118e06810979cc241b5d0eccb77e16462537074c17579",
+          "format": "WEBP",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "id": "borghese-gladiator",
+      "assets": [
+        {
+          "path": "public/previews/renders/borghese-gladiator/thumb.webp",
+          "bytes": 21666,
+          "sha256": "1944da3bdd27fee5c730314e7d94e9e89a14411437e1ca13b90f00941a5fabfa",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/borghese-gladiator/poster.svg",
+          "bytes": 2126,
+          "sha256": "ae362dc964d18ce8058020147e402ab35e79d830576b613a5a83224532a200b9",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "discobolus",
+      "assets": [
+        {
+          "path": "public/previews/renders/discobolus/thumb.webp",
+          "bytes": 20710,
+          "sha256": "a54f8211e33ac5dba09a8b33d68bb485bdcb1300554db796b8849813ec5969c3",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/discobolus/poster.svg",
+          "bytes": 28050,
+          "sha256": "1ce9a6bf1f909e9a8e274bbe3acd4900db01a4c4d3d025522c77b805e39c969a",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "doryphoros",
+      "assets": [
+        {
+          "path": "public/previews/renders/doryphoros/thumb.webp",
+          "bytes": 15488,
+          "sha256": "fce576d556d1a23772ff78c50078ed293aa1fa2835381062b491cdd9bdcfcf92",
+          "format": "WEBP",
+          "width": 720,
+          "height": 900
+        },
+        {
+          "path": "public/previews/posters/doryphoros/poster.svg",
+          "bytes": 21024,
+          "sha256": "74d35f80d693d74b65d374fe4a93cb2e3f192f35fd10150c8d46bd469fbea478",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/esquiline-venus-smk-cast",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/esquiline-venus-smk-cast/thumb.webp",
+          "bytes": 27126,
+          "sha256": "0a0a58a5bc6c99eeaed965422b7715223e924943f5111c4abb6bf4e7eeb0de48",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/roman/esquiline-venus-smk-cast/poster.svg",
+          "bytes": 36512,
+          "sha256": "32d71c3d7b85c68a02570cb2b45b225b83768850e4ad48856646e411e1dbdb1d",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "capitoline-venus",
+      "assets": [
+        {
+          "path": "public/previews/renders/capitoline-venus/thumb.webp",
+          "bytes": 24434,
+          "sha256": "8475c17fa86cd115a59cdc2e521074b207c04487ef04661993421892c8a1b8fc",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/capitoline-venus/poster.svg",
+          "bytes": 2108,
+          "sha256": "b2d57854662e4e790e953a8d92761cdf00c7e6ab0f041b9317a62586206b57e4",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/aphrodite-pudica-glyptotek",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/aphrodite-pudica-glyptotek/thumb.webp",
+          "bytes": 16606,
+          "sha256": "ac7266b2bff269c1f72bc341e21219cc589efb34c107c5fb9db40b629adc24fe",
+          "format": "WEBP",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "id": "modern/gladiator-welonski-krakow",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/gladiator-welonski-krakow/thumb.webp",
+          "bytes": 34858,
+          "sha256": "cb4f74aa87ef82f0a70148b6bef102e879a878deff547c532b66425adfab0d14",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/gladiator-welonski-krakow/poster.svg",
+          "bytes": 46798,
+          "sha256": "c28c809390feea9ed2eff43e2bde410586a9f828203497bf002a5b5403b37e5e",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "rodin/iris-cantor-portland",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/iris-cantor-portland/thumb.webp",
+          "bytes": 19894,
+          "sha256": "ead6b9613d00534997740a814ea7fcc35a263487f3cdf4d0445ab2d0a7abc297",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "rodin/the-sphinx-nga",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/the-sphinx-nga/thumb.webp",
+          "bytes": 27538,
+          "sha256": "eee9ce9dde9ff9da8c5bed24eaea7a0d15b3bcfcf56d6570bef69d5b6fc9173c",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "rodin/the-eternal-idol-harvard",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/the-eternal-idol-harvard/thumb.webp",
+          "bytes": 33066,
+          "sha256": "7997b807cf0975c34bcb53e0e583684888fed8d05aa3b4c04d898af6ff66f736",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "modern/the-kiss-rodin-musee-rodin-s-1002",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/the-kiss-rodin-musee-rodin-s-1002/thumb.webp",
+          "bytes": 52980,
+          "sha256": "e197d6ff651dd11789f0a77396a90d84cee19731ee52d4420970fba7599fb36c",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/the-kiss-rodin-musee-rodin-s-1002/poster.svg",
+          "bytes": 66980,
+          "sha256": "eca659f6ca5d9a5e5d9a6abf04318204e598e5ab258c3954ce4400854b8ffea2",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/eternal-spring-rodin-glyptotek",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/eternal-spring-rodin-glyptotek/thumb.webp",
+          "bytes": 38856,
+          "sha256": "7ae08373a111d7c664f863b738a233881300a669829b17280d02dfd3edce651c",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/eternal-spring-rodin-glyptotek/poster.svg",
+          "bytes": 35980,
+          "sha256": "33e0b63fe703089c4938832679e00162d89c57bd0ec5f210d902067c81cecfb1",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "rodin/fugitive-love-cantor-portland",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/fugitive-love-cantor-portland/thumb.webp",
+          "bytes": 17972,
+          "sha256": "e4b7cae0ea87471c7869f5474dbecc358ab95dc2ea263cb2258a2c35955c856e",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "europe/bacchante-female-satyr-clodion-mag",
+      "assets": [
+        {
+          "path": "public/previews/renders/europe/bacchante-female-satyr-clodion-mag/thumb.webp",
+          "bytes": 73212,
+          "sha256": "62a905889cdf7997441c83aee166b52c07c73e98664ca813a2adf38dbc3d1a50",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "europe/three-graces-carpeaux-mia",
+      "assets": [
+        {
+          "path": "public/previews/renders/europe/three-graces-carpeaux-mia/thumb.webp",
+          "bytes": 65568,
+          "sha256": "e009708118d661e332a627c9bd74638874b997091c6ad9371d22266db1071f49",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "europe/le-repos-boucher-pau",
+      "assets": [
+        {
+          "path": "public/previews/renders/europe/le-repos-boucher-pau/thumb.webp",
+          "bytes": 20444,
+          "sha256": "a0fe20fad72f00b00043e479c1bfbb9185cc32260bf0f593e7013bb550d1446e",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/europe/le-repos-boucher-pau/poster.svg",
+          "bytes": 27590,
+          "sha256": "6619840ba9ae9ca7f4582ceb412fd9aa9e6d8afed68873cca6bf7888ff71363b",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "europe/sluggard-leighton-royal-academy",
+      "assets": [
+        {
+          "path": "public/previews/renders/europe/sluggard-leighton-royal-academy/thumb.webp",
+          "bytes": 46104,
+          "sha256": "19d7737fa217594e451fded7bd47282d9a6261b39d0dfa9a17e18862ce00e05e",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        }
+      ]
+    },
+    {
+      "id": "rodin/age-of-bronze-rodin-musee-rodin",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/age-of-bronze-rodin-musee-rodin/thumb.webp",
+          "bytes": 28038,
+          "sha256": "d02c18d4e7b11a01e4a7683c93dbe40dfd3609d5fc4888504b4b869535411698",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/rodin/age-of-bronze-rodin-musee-rodin/poster.svg",
+          "bytes": 2125,
+          "sha256": "c1027fb3d5609f0a96cf48b71ef07f0329708418869d0b09cf65badffb921ca9",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "rodin/adam-rodin-musee-rodin",
+      "assets": [
+        {
+          "path": "public/previews/renders/rodin/adam-rodin-musee-rodin/thumb.webp",
+          "bytes": 26556,
+          "sha256": "fa9cce97c0545376093e03ceab13bca67ea6416e224fbb4a2e9ff248e9714c17",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/rodin/adam-rodin-musee-rodin/poster.svg",
+          "bytes": 2085,
+          "sha256": "7af69d0fbd4a4bdebd03d33c008b10dd1006fe7904848ded4b7233c815397d8b",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/victorious-athlete-grandmoulin-tahto",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/victorious-athlete-grandmoulin-tahto/thumb.webp",
+          "bytes": 31306,
+          "sha256": "a35d9597aa80d56ccaf8d99ee74f1e6c61269d146214546dcc320727dd6ee3ba",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/victorious-athlete-grandmoulin-tahto/poster.svg",
+          "bytes": 42112,
+          "sha256": "2fa44284a19fe655b502ba72f014ccefc93a5eab7a47215a0829b3cefed90a30",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "roman/aphrodite-removing-sandal-karlsruhe",
+      "assets": [
+        {
+          "path": "public/previews/renders/roman/aphrodite-removing-sandal-karlsruhe/thumb.webp",
+          "bytes": 28674,
+          "sha256": "fcce3dd9e689ae7d7e7b7f0306b0990aaa7814afb24ad96c1dff6c224c8a2b2e",
+          "format": "WEBP",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "id": "modern/bacchante-etcheto-pau",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/bacchante-etcheto-pau/thumb.webp",
+          "bytes": 31258,
+          "sha256": "5e40d2fd1c66d0ae82736cf6fcdeea513fd962557f45ddd3198eadddeb89ad89",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/bacchante-etcheto-pau/poster.svg",
+          "bytes": 41998,
+          "sha256": "3f1bed7ead959aec93cad3d397896e964b3cc0441a2ef289aae40e65159b7a29",
+          "externalReferences": []
+        }
+      ]
+    },
+    {
+      "id": "modern/aurore-les-vagues-swiecinski-guethary",
+      "assets": [
+        {
+          "path": "public/previews/renders/modern/aurore-les-vagues-swiecinski-guethary/thumb.webp",
+          "bytes": 22962,
+          "sha256": "072b4eafa8f293ae094c772080d01c6674d26212c40410f38be6f46d472bcc65",
+          "format": "WEBP",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "path": "public/previews/posters/modern/aurore-les-vagues-swiecinski-guethary/poster.svg",
+          "bytes": 30954,
+          "sha256": "52c5f95f4177fa3cbebe2e01fe531950480980ac25174aa683f8b026887c0aa3",
+          "externalReferences": []
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "id": "europe/winter-houdon-met",
+      "path": "public/previews/posters/europe/winter-houdon-met/poster.svg",
+      "error": "fatal: path 'public/previews/posters/europe/winter-houdon-met/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "contemporary/dynamic-female-torso-polycosm",
+      "path": "public/previews/posters/contemporary/dynamic-female-torso-polycosm/poster.svg",
+      "error": "fatal: path 'public/previews/posters/contemporary/dynamic-female-torso-polycosm/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "roman/hermes-tying-sandal-glyptotek",
+      "path": "public/previews/posters/roman/hermes-tying-sandal-glyptotek/poster.svg",
+      "error": "fatal: path 'public/previews/posters/roman/hermes-tying-sandal-glyptotek/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "roman/aphrodite-pudica-glyptotek",
+      "path": "public/previews/posters/roman/aphrodite-pudica-glyptotek/poster.svg",
+      "error": "fatal: path 'public/previews/posters/roman/aphrodite-pudica-glyptotek/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "rodin/iris-cantor-portland",
+      "path": "public/previews/posters/rodin/iris-cantor-portland/poster.svg",
+      "error": "fatal: path 'public/previews/posters/rodin/iris-cantor-portland/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "rodin/the-sphinx-nga",
+      "path": "public/previews/posters/rodin/the-sphinx-nga/poster.svg",
+      "error": "fatal: path 'public/previews/posters/rodin/the-sphinx-nga/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "rodin/the-eternal-idol-harvard",
+      "path": "public/previews/posters/rodin/the-eternal-idol-harvard/poster.svg",
+      "error": "fatal: path 'public/previews/posters/rodin/the-eternal-idol-harvard/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "rodin/fugitive-love-cantor-portland",
+      "path": "public/previews/posters/rodin/fugitive-love-cantor-portland/poster.svg",
+      "error": "fatal: path 'public/previews/posters/rodin/fugitive-love-cantor-portland/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "europe/bacchante-female-satyr-clodion-mag",
+      "path": "public/previews/posters/europe/bacchante-female-satyr-clodion-mag/poster.svg",
+      "error": "fatal: path 'public/previews/posters/europe/bacchante-female-satyr-clodion-mag/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "europe/three-graces-carpeaux-mia",
+      "path": "public/previews/posters/europe/three-graces-carpeaux-mia/poster.svg",
+      "error": "fatal: path 'public/previews/posters/europe/three-graces-carpeaux-mia/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "europe/sluggard-leighton-royal-academy",
+      "path": "public/previews/posters/europe/sluggard-leighton-royal-academy/poster.svg",
+      "error": "fatal: path 'public/previews/posters/europe/sluggard-leighton-royal-academy/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    },
+    {
+      "id": "roman/aphrodite-removing-sandal-karlsruhe",
+      "path": "public/previews/posters/roman/aphrodite-removing-sandal-karlsruhe/poster.svg",
+      "error": "fatal: path 'public/previews/posters/roman/aphrodite-removing-sandal-karlsruhe/poster.svg' does not exist in 'c0dacac0da71f5dc994998b635fee3de20f57c3e'\n"
+    }
+  ],
+  "modelOriginProbe": {
+    "origin": "https://never-nude.github.io",
+    "works": [
+      "baroque/venus-callipyge-louvre-mr-1999",
+      "contemporary/punishment-hercules-deepak"
+    ],
+    "methods": [
+      "HEAD",
+      "GET with Range bytes=0-31",
+      "OPTIONS"
+    ],
+    "result": "Both models returned Cloudflare HTTP 403 error code 1010 for the new origin and for https://atrium.earth. No Access-Control-Allow-Origin response header was present. CORS cannot be verified from these blocked requests."
+  },
+  "models": {
+    "count": 50,
+    "validated": 50,
+    "expectedTotalBytes": 122741008,
+    "totalBytes": 122741008,
+    "boundHashCheckCount": 15,
+    "allBoundHashesMatch": true,
+    "works": [
+      {
+        "id": "baroque/venus-callipyge-louvre-mr-1999",
+        "originalURL": "https://models.atrium.earth/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+        "path": "public/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+        "expectedBytes": 4211212,
+        "acquisition": "https://models.atrium.earth/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+        "bytes": 4211212,
+        "sha256": "21e1f8a7beb5b0e43a717fbc334cb6b3d7cecb46b04809ba1e365ce086027f1e",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "europe/winter-houdon-met",
+        "originalURL": "/models/previews/europe/winter-houdon-met/preview.glb",
+        "path": "public/models/previews/europe/winter-houdon-met/preview.glb",
+        "expectedBytes": 3797832,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/europe/winter-houdon-met/preview.glb",
+        "bytes": 3797832,
+        "sha256": "0d15d1122055d5f3ce2c09b71dc1dce15d1a47c73c36c3e9e36a827f21d80d86",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/sleeping-hermaphroditus-louvre-ma-231",
+        "originalURL": "https://models.atrium.earth/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+        "path": "public/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+        "expectedBytes": 1125412,
+        "acquisition": "https://models.atrium.earth/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+        "bytes": 1125412,
+        "sha256": "5faf94ccfb9f188b3b526bce70857cdf17d135efe6ecbb68a0fdb485c2efeae7",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "5faf94ccfb9f188b3b526bce70857cdf17d135efe6ecbb68a0fdb485c2efeae7",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/crouching-woman-rodin-hirshhorn-66-4342",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/crouching-woman-rodin-hirshhorn-66-4342/preview.glb",
+        "path": "public/models/previews/modern/crouching-woman-rodin-hirshhorn-66-4342/preview.glb",
+        "expectedBytes": 804788,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/crouching-woman-rodin-hirshhorn-66-4342/preview.glb",
+        "bytes": 804788,
+        "sha256": "26537bf580d3738b4b1ba1ac25112e867f66ad1679355f2f66e60bb310b8d716",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/lely-venus-british-museum",
+        "originalURL": "https://models.atrium.earth/models/previews/roman/lely-venus-british-museum/preview-17045586a3c8.glb",
+        "path": "public/models/previews/roman/lely-venus-british-museum/preview-17045586a3c8.glb",
+        "expectedBytes": 658164,
+        "acquisition": "https://models.atrium.earth/models/previews/roman/lely-venus-british-museum/preview-17045586a3c8.glb",
+        "bytes": 658164,
+        "sha256": "17045586a3c8db03803a3d8c91e4aa3ec8b888880847f3d331a31adb8bdad6bd",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/crouching-aphrodite-met",
+        "originalURL": "https://models.atrium.earth/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+        "path": "public/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+        "expectedBytes": 558700,
+        "acquisition": "https://models.atrium.earth/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+        "bytes": 558700,
+        "sha256": "5cf07e325dac8cc106094c277cc68adafc5869e312cf49e30c76a29062f176ce",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "5cf07e325dac8cc106094c277cc68adafc5869e312cf49e30c76a29062f176ce",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/danaid",
+        "originalURL": "https://models.atrium.earth/models/previews/rodin/danaid/preview.glb",
+        "path": "public/models/previews/rodin/danaid/preview.glb",
+        "expectedBytes": 362492,
+        "acquisition": "https://models.atrium.earth/models/previews/rodin/danaid/preview.glb",
+        "bytes": 362492,
+        "sha256": "d109b27c43162ff6ad369b469c6ba0e9e23468c0289c3e92f9f190eb80e97e05",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "d109b27c43162ff6ad369b469c6ba0e9e23468c0289c3e92f9f190eb80e97e05",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/bacchante-couchee-clesinger-petit-palais",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/bacchante-couchee-clesinger-petit-palais/preview-c003da62b8d6.glb",
+        "path": "public/models/previews/modern/bacchante-couchee-clesinger-petit-palais/preview-c003da62b8d6.glb",
+        "expectedBytes": 1113720,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/bacchante-couchee-clesinger-petit-palais/preview-c003da62b8d6.glb",
+        "bytes": 1113720,
+        "sha256": "c003da62b8d69b4bea5545b0eda32455d66914612e27d7c08d20f2df13a2b78f",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/bacchante-and-satyr-clesinger-mia-73-13",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/bacchante-and-satyr-clesinger-mia-73-13/preview.glb",
+        "path": "public/models/previews/modern/bacchante-and-satyr-clesinger-mia-73-13/preview.glb",
+        "expectedBytes": 993664,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/bacchante-and-satyr-clesinger-mia-73-13/preview.glb",
+        "bytes": 993664,
+        "sha256": "fc9d7ed0ae485006b6ceeb6a1793256c06ce8d57faa77a9140152a40bb0a7993",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "neoclassical/three-graces-glyptotek",
+        "originalURL": "https://models.atrium.earth/models/previews/neoclassical/three-graces-glyptotek/preview-4ae8e5f8733e.glb",
+        "path": "public/models/previews/neoclassical/three-graces-glyptotek/preview-4ae8e5f8733e.glb",
+        "expectedBytes": 1542540,
+        "acquisition": "https://models.atrium.earth/models/previews/neoclassical/three-graces-glyptotek/preview-4ae8e5f8733e.glb",
+        "bytes": 1542540,
+        "sha256": "4ae8e5f8733e5212246877dfab628c607786a7730fc49630b68f1d0b4d64ef20",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "4ae8e5f8733e5212246877dfab628c607786a7730fc49630b68f1d0b4d64ef20",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/three-graces-louvre-ma-287",
+        "originalURL": "https://models.atrium.earth/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+        "path": "public/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+        "expectedBytes": 13054756,
+        "acquisition": "https://models.atrium.earth/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+        "bytes": 13054756,
+        "sha256": "5e13d0c442e1def10d344e6a9455b8945400476dd3008e3f51a23fd8e073dff3",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "5e13d0c442e1def10d344e6a9455b8945400476dd3008e3f51a23fd8e073dff3",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "crouching-venus",
+        "originalURL": "https://models.atrium.earth/models/previews/crouching-venus/preview.glb",
+        "path": "public/models/previews/crouching-venus/preview.glb",
+        "expectedBytes": 493044,
+        "acquisition": "https://models.atrium.earth/models/previews/crouching-venus/preview.glb",
+        "bytes": 493044,
+        "sha256": "a8f32ee50ae8566a7c2c5ad031b4f43325b3db7d0bfa335543c9caaeff393b1b",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "a8f32ee50ae8566a7c2c5ad031b4f43325b3db7d0bfa335543c9caaeff393b1b",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/susanna-aaltonen-turku",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/susanna-aaltonen-turku/preview-9d50f46de573.glb",
+        "path": "public/models/previews/modern/susanna-aaltonen-turku/preview-9d50f46de573.glb",
+        "expectedBytes": 1500460,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/susanna-aaltonen-turku/preview-9d50f46de573.glb",
+        "bytes": 1500460,
+        "sha256": "9d50f46de573b5532cc5ba016272db82bf044152e6656448c5f3de6d021cd049",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/torso-callender-saam",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/torso-callender-saam/preview-3b8fd391c55f.glb",
+        "path": "public/models/previews/modern/torso-callender-saam/preview-3b8fd391c55f.glb",
+        "expectedBytes": 989472,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/torso-callender-saam/preview-3b8fd391c55f.glb",
+        "bytes": 989472,
+        "sha256": "3b8fd391c55fa9e312896f34b5c4d58fba0692e84885471af7e1b6f798ea0980",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/eve-rodin-reduced-marble",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/eve-rodin-reduced-marble/preview-8983147f2e0d.glb",
+        "path": "public/models/previews/modern/eve-rodin-reduced-marble/preview-8983147f2e0d.glb",
+        "expectedBytes": 92460,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/eve-rodin-reduced-marble/preview-8983147f2e0d.glb",
+        "bytes": 92460,
+        "sha256": "8983147f2e0d826201d17049bc721b7186394bd58d8ba368227e19ed4ae3a02e",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "8983147f2e0d826201d17049bc721b7186394bd58d8ba368227e19ed4ae3a02e",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/danae-henning",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/danae-henning/preview-ba70d7305fd5.glb",
+        "path": "public/models/previews/modern/danae-henning/preview-ba70d7305fd5.glb",
+        "expectedBytes": 2080864,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/danae-henning/preview-ba70d7305fd5.glb",
+        "bytes": 2080864,
+        "sha256": "ba70d7305fd56b98cf1492fad2168b4210358e79c363142c7a45708ed79e08db",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/nude-in-sun-harvent-mons",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/nude-in-sun-harvent-mons/preview-6c3b82e1725b.glb",
+        "path": "public/models/previews/modern/nude-in-sun-harvent-mons/preview-6c3b82e1725b.glb",
+        "expectedBytes": 952452,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/nude-in-sun-harvent-mons/preview-6c3b82e1725b.glb",
+        "bytes": 952452,
+        "sha256": "6c3b82e1725befc58ccec109aa019809819c94d1754dfdf25a251581c589cb9c",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "contemporary/punishment-hercules-deepak",
+        "originalURL": "https://models.atrium.earth/models/previews/contemporary/punishment-hercules-deepak/preview-fc651f0077f1.glb",
+        "path": "public/models/previews/contemporary/punishment-hercules-deepak/preview-fc651f0077f1.glb",
+        "expectedBytes": 1146512,
+        "acquisition": "https://models.atrium.earth/models/previews/contemporary/punishment-hercules-deepak/preview-fc651f0077f1.glb",
+        "bytes": 1146512,
+        "sha256": "fc651f0077f18569cd99add92f1edf7cca54f01a7f7ef0e6acfbfdba2af5ad34",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/small-phryne-maillol-mount-holyoke",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/small-phryne-maillol-mount-holyoke/preview-d81ccb0b07f7.glb",
+        "path": "public/models/previews/modern/small-phryne-maillol-mount-holyoke/preview-d81ccb0b07f7.glb",
+        "expectedBytes": 1602908,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/small-phryne-maillol-mount-holyoke/preview-d81ccb0b07f7.glb",
+        "bytes": 1602908,
+        "sha256": "d81ccb0b07f79ee0d8a2fe5f65f1a8156191db24044a394450963f8ba8c26a89",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "d81ccb0b07f79ee0d8a2fe5f65f1a8156191db24044a394450963f8ba8c26a89",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/three-nymphs-maillol-carrousel",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/three-nymphs-maillol-carrousel/preview-6ae33e9ceb01.glb",
+        "path": "public/models/previews/modern/three-nymphs-maillol-carrousel/preview-6ae33e9ceb01.glb",
+        "expectedBytes": 986768,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/three-nymphs-maillol-carrousel/preview-6ae33e9ceb01.glb",
+        "bytes": 986768,
+        "sha256": "6ae33e9ceb01609235d9346b8cb4819f3d7dd369b1d26e277db79d1b03bb12bd",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/assia-despiau-middelheim",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/assia-despiau-middelheim/preview-ff140dce843d.glb",
+        "path": "public/models/previews/modern/assia-despiau-middelheim/preview-ff140dce843d.glb",
+        "expectedBytes": 1016216,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/assia-despiau-middelheim/preview-ff140dce843d.glb",
+        "bytes": 1016216,
+        "sha256": "ff140dce843d54d634bb872f2390c4fd8cb6af0139b746b5985b6aa9f99e6874",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/action-in-chains-maillol-carrousel",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/action-in-chains-maillol-carrousel/preview-ba9bd4d7fcf4.glb",
+        "path": "public/models/previews/modern/action-in-chains-maillol-carrousel/preview-ba9bd4d7fcf4.glb",
+        "expectedBytes": 195248,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/action-in-chains-maillol-carrousel/preview-ba9bd4d7fcf4.glb",
+        "bytes": 195248,
+        "sha256": "ba9bd4d7fcf4f589a24595bf9308938ca249a9b5700bd5711a97e3d18d9afd3a",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "contemporary/dynamic-female-torso-polycosm",
+        "originalURL": "/models/previews/contemporary/dynamic-female-torso-polycosm/preview.glb",
+        "path": "public/models/previews/contemporary/dynamic-female-torso-polycosm/preview.glb",
+        "expectedBytes": 16567896,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/contemporary/dynamic-female-torso-polycosm/preview.glb",
+        "bytes": 16567896,
+        "sha256": "54729f2115cb6300652091ff485f68c0edd41cbaed649e8192a4fd04b7462ec5",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/woman-gutter-vandensteen-jehay",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/woman-gutter-vandensteen-jehay/preview-bf6e6efc10ea.glb",
+        "path": "public/models/previews/modern/woman-gutter-vandensteen-jehay/preview-bf6e6efc10ea.glb",
+        "expectedBytes": 1107780,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/woman-gutter-vandensteen-jehay/preview-bf6e6efc10ea.glb",
+        "bytes": 1107780,
+        "sha256": "bf6e6efc10ea412e28a48817f974c1a64f163e4fb7db53048e2e6004efd458f4",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/athlete-wrestling-python-leighton-tate-n01754",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/athlete-wrestling-python-leighton-tate-n01754/preview.glb",
+        "path": "public/models/previews/modern/athlete-wrestling-python-leighton-tate-n01754/preview.glb",
+        "expectedBytes": 1257984,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/athlete-wrestling-python-leighton-tate-n01754/preview.glb",
+        "bytes": 1257984,
+        "sha256": "3b3ca63aef92c792c53a76dfa1213ed9ab6ca56ada7051d6f5c50a367b69bb10",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "3b3ca63aef92c792c53a76dfa1213ed9ab6ca56ada7051d6f5c50a367b69bb10",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "the-wrestlers",
+        "originalURL": "https://models.atrium.earth/models/previews/the-wrestlers/preview.glb",
+        "path": "public/models/previews/the-wrestlers/preview.glb",
+        "expectedBytes": 499232,
+        "acquisition": "https://models.atrium.earth/models/previews/the-wrestlers/preview.glb",
+        "bytes": 499232,
+        "sha256": "a6b92d76367f235c03527f8099c460686e9bf08780a9fef19d7401090970623d",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "a6b92d76367f235c03527f8099c460686e9bf08780a9fef19d7401090970623d",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/hermes-tying-sandal-glyptotek",
+        "originalURL": "/models/previews/roman/hermes-tying-sandal-glyptotek/preview.glb",
+        "path": "public/models/previews/roman/hermes-tying-sandal-glyptotek/preview.glb",
+        "expectedBytes": 1474560,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/roman/hermes-tying-sandal-glyptotek/preview.glb",
+        "bytes": 1474560,
+        "sha256": "97f9091a533bd92959afe40a20d45d55e6388eac8d09987f9a73e0e9d68cde6e",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "borghese-gladiator",
+        "originalURL": "https://models.atrium.earth/models/previews/borghese-gladiator/preview.glb",
+        "path": "public/models/previews/borghese-gladiator/preview.glb",
+        "expectedBytes": 490700,
+        "acquisition": "https://models.atrium.earth/models/previews/borghese-gladiator/preview.glb",
+        "bytes": 490700,
+        "sha256": "1cc4bb34aaad4dfa9fe7809f73b15f7786a1b98cd37c9a197cff3d675d12795d",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "discobolus",
+        "originalURL": "https://models.atrium.earth/models/previews/discobolus/preview-18e77773563d.glb",
+        "path": "public/models/previews/discobolus/preview-18e77773563d.glb",
+        "expectedBytes": 7200744,
+        "acquisition": "https://models.atrium.earth/models/previews/discobolus/preview-18e77773563d.glb",
+        "bytes": 7200744,
+        "sha256": "18e77773563d7fb00996c62c94526d663d5207edfec13982fe5ac2833cfb0ccb",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "18e77773563d7fb00996c62c94526d663d5207edfec13982fe5ac2833cfb0ccb",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "doryphoros",
+        "originalURL": "https://models.atrium.earth/models/previews/doryphoros/preview-d799001e3ad8.glb",
+        "path": "public/models/previews/doryphoros/preview-d799001e3ad8.glb",
+        "expectedBytes": 497068,
+        "acquisition": "https://models.atrium.earth/models/previews/doryphoros/preview-d799001e3ad8.glb",
+        "bytes": 497068,
+        "sha256": "d799001e3ad8bada967325c39b16da1d7dceded1cdfd1f7f2227a48c72ce12a5",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/esquiline-venus-smk-cast",
+        "originalURL": "https://models.atrium.earth/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+        "path": "public/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+        "expectedBytes": 1466772,
+        "acquisition": "https://models.atrium.earth/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+        "bytes": 1466772,
+        "sha256": "3defa179231e213c1694f9eda905a0651e7f094d9415dfa3f48aa1ede027cf97",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "3defa179231e213c1694f9eda905a0651e7f094d9415dfa3f48aa1ede027cf97",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "capitoline-venus",
+        "originalURL": "https://models.atrium.earth/models/previews/capitoline-venus/preview.glb",
+        "path": "public/models/previews/capitoline-venus/preview.glb",
+        "expectedBytes": 481568,
+        "acquisition": "https://models.atrium.earth/models/previews/capitoline-venus/preview.glb",
+        "bytes": 481568,
+        "sha256": "03e6b216348d922374c662e10cbb22b3f8e7539fe95dc7cc13aea7f1ddc55044",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "03e6b216348d922374c662e10cbb22b3f8e7539fe95dc7cc13aea7f1ddc55044",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/aphrodite-pudica-glyptotek",
+        "originalURL": "/models/previews/roman/aphrodite-pudica-glyptotek/preview.glb",
+        "path": "public/models/previews/roman/aphrodite-pudica-glyptotek/preview.glb",
+        "expectedBytes": 1168012,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/roman/aphrodite-pudica-glyptotek/preview.glb",
+        "bytes": 1168012,
+        "sha256": "5570154a897c1454e354b22064c919dbfe778c807368b8955b9fa9ba20e66317",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/gladiator-welonski-krakow",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/gladiator-welonski-krakow/preview-8a1c7cea5a03.glb",
+        "path": "public/models/previews/modern/gladiator-welonski-krakow/preview-8a1c7cea5a03.glb",
+        "expectedBytes": 2364824,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/gladiator-welonski-krakow/preview-8a1c7cea5a03.glb",
+        "bytes": 2364824,
+        "sha256": "8a1c7cea5a030ac77a0d906651b466c151b5845449f497122da8ee2c9f337376",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/iris-cantor-portland",
+        "originalURL": "/models/previews/rodin/iris-cantor-portland/preview.glb",
+        "path": "public/models/previews/rodin/iris-cantor-portland/preview.glb",
+        "expectedBytes": 254688,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/rodin/iris-cantor-portland/preview.glb",
+        "bytes": 254688,
+        "sha256": "bec7787e4a612d9d8e5e3dd6480a758ea53efa57534c4c2abcdb7781f4ae9eff",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/the-sphinx-nga",
+        "originalURL": "/models/previews/rodin/the-sphinx-nga/preview.glb",
+        "path": "public/models/previews/rodin/the-sphinx-nga/preview.glb",
+        "expectedBytes": 1243228,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/rodin/the-sphinx-nga/preview.glb",
+        "bytes": 1243228,
+        "sha256": "0a3f87dbfdffda98c5817add1c0282ffb2c2b8129d760506538cd9ab692fdc56",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/the-eternal-idol-harvard",
+        "originalURL": "/models/previews/rodin/the-eternal-idol-harvard/preview.glb",
+        "path": "public/models/previews/rodin/the-eternal-idol-harvard/preview.glb",
+        "expectedBytes": 6238616,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/rodin/the-eternal-idol-harvard/preview.glb",
+        "bytes": 6238616,
+        "sha256": "7ea04fd8c3cf49e357496de62103d8ccba34b0e480baf10f25e9dc76d39466b6",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/the-kiss-rodin-musee-rodin-s-1002",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/the-kiss-rodin-musee-rodin-s-1002/preview-94630787b4b0.glb",
+        "path": "public/models/previews/modern/the-kiss-rodin-musee-rodin-s-1002/preview-94630787b4b0.glb",
+        "expectedBytes": 23685860,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/the-kiss-rodin-musee-rodin-s-1002/preview-94630787b4b0.glb",
+        "bytes": 23685860,
+        "sha256": "94630787b4b03cc2bb4d555fe820b2c2b339bc4a17b88c4903afd27f3992ef72",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/eternal-spring-rodin-glyptotek",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/eternal-spring-rodin-glyptotek/preview-a08ef2288206.glb",
+        "path": "public/models/previews/modern/eternal-spring-rodin-glyptotek/preview-a08ef2288206.glb",
+        "expectedBytes": 1738464,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/eternal-spring-rodin-glyptotek/preview-a08ef2288206.glb",
+        "bytes": 1738464,
+        "sha256": "a08ef228820681ccf81b71d70365835711453ea18305140da1f3640a697b3c05",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/fugitive-love-cantor-portland",
+        "originalURL": "/models/previews/rodin/fugitive-love-cantor-portland/preview.glb",
+        "path": "public/models/previews/rodin/fugitive-love-cantor-portland/preview.glb",
+        "expectedBytes": 218668,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/rodin/fugitive-love-cantor-portland/preview.glb",
+        "bytes": 218668,
+        "sha256": "cb4f0c6c0505fb33e10b8729192c1d9fe8126bd12d4f4de6a16f1d88245e89f4",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "europe/bacchante-female-satyr-clodion-mag",
+        "originalURL": "/models/previews/europe/bacchante-female-satyr-clodion-mag/preview.glb",
+        "path": "public/models/previews/europe/bacchante-female-satyr-clodion-mag/preview.glb",
+        "expectedBytes": 1188984,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/europe/bacchante-female-satyr-clodion-mag/preview.glb",
+        "bytes": 1188984,
+        "sha256": "e24b5420a0a54e7d7e26b66f39db5396a2aba001bbd0384d36171830ad46c2d6",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "europe/three-graces-carpeaux-mia",
+        "originalURL": "/models/previews/europe/three-graces-carpeaux-mia/preview.glb",
+        "path": "public/models/previews/europe/three-graces-carpeaux-mia/preview.glb",
+        "expectedBytes": 3681988,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/europe/three-graces-carpeaux-mia/preview.glb",
+        "bytes": 3681988,
+        "sha256": "a2137aba43a56986739113bceb9b8af72d570dcfd5f5a76b085f5f9d3c12711f",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "europe/le-repos-boucher-pau",
+        "originalURL": "/models/previews/europe/le-repos-boucher-pau/preview.glb",
+        "path": "public/models/previews/europe/le-repos-boucher-pau/preview.glb",
+        "expectedBytes": 1001144,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/europe/le-repos-boucher-pau/preview.glb",
+        "bytes": 1001144,
+        "sha256": "599c395b885f5059b807d1c3bea0087b536522f2e35e70ce7ec0640a8e2a7d72",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "europe/sluggard-leighton-royal-academy",
+        "originalURL": "/models/previews/europe/sluggard-leighton-royal-academy/preview.glb",
+        "path": "public/models/previews/europe/sluggard-leighton-royal-academy/preview.glb",
+        "expectedBytes": 865028,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/europe/sluggard-leighton-royal-academy/preview.glb",
+        "bytes": 865028,
+        "sha256": "ce320c0843a6679fc5a8deb0edd3502ff00d7b921de59728eb1dc84557feeff5",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/age-of-bronze-rodin-musee-rodin",
+        "originalURL": "https://models.atrium.earth/models/previews/rodin/age-of-bronze-rodin-musee-rodin/preview.glb",
+        "path": "public/models/previews/rodin/age-of-bronze-rodin-musee-rodin/preview.glb",
+        "expectedBytes": 1246200,
+        "acquisition": "https://models.atrium.earth/models/previews/rodin/age-of-bronze-rodin-musee-rodin/preview.glb",
+        "bytes": 1246200,
+        "sha256": "a8b4373d53b7ef57d82dbaf9860948e22c3cb10b34e21297ef58c93927853948",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "a8b4373d53b7ef57d82dbaf9860948e22c3cb10b34e21297ef58c93927853948",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "rodin/adam-rodin-musee-rodin",
+        "originalURL": "https://models.atrium.earth/models/previews/rodin/adam-rodin-musee-rodin/preview.glb",
+        "path": "public/models/previews/rodin/adam-rodin-musee-rodin/preview.glb",
+        "expectedBytes": 1255292,
+        "acquisition": "https://models.atrium.earth/models/previews/rodin/adam-rodin-musee-rodin/preview.glb",
+        "bytes": 1255292,
+        "sha256": "df8d4657e0494922fea297f267ac26b07547ca285439aa0bdcaa4fade4f892ac",
+        "hashChecks": [
+          {
+            "field": "physicalDimensions.spatial.assetSha256",
+            "sha256": "df8d4657e0494922fea297f267ac26b07547ca285439aa0bdcaa4fade4f892ac",
+            "matched": true
+          }
+        ],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/victorious-athlete-grandmoulin-tahto",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/victorious-athlete-grandmoulin-tahto/preview-e1dee8a2b9c4.glb",
+        "path": "public/models/previews/modern/victorious-athlete-grandmoulin-tahto/preview-e1dee8a2b9c4.glb",
+        "expectedBytes": 3107912,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/victorious-athlete-grandmoulin-tahto/preview-e1dee8a2b9c4.glb",
+        "bytes": 3107912,
+        "sha256": "e1dee8a2b9c405393768f1b54ed0f33269c7cb7048adbadf81f08e419998a1cc",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "roman/aphrodite-removing-sandal-karlsruhe",
+        "originalURL": "/models/previews/roman/aphrodite-removing-sandal-karlsruhe/preview.glb",
+        "path": "public/models/previews/roman/aphrodite-removing-sandal-karlsruhe/preview.glb",
+        "expectedBytes": 428844,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/roman/aphrodite-removing-sandal-karlsruhe/preview.glb",
+        "bytes": 428844,
+        "sha256": "1d3fb6e4fb60eed1df36dcdfeb97a24c26aabc7301ab32e420e369611b43a8e9",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/bacchante-etcheto-pau",
+        "originalURL": "https://models.atrium.earth/models/previews/modern/bacchante-etcheto-pau/preview-a37c90a6013f.glb",
+        "path": "public/models/previews/modern/bacchante-etcheto-pau/preview-a37c90a6013f.glb",
+        "expectedBytes": 1663680,
+        "acquisition": "https://models.atrium.earth/models/previews/modern/bacchante-etcheto-pau/preview-a37c90a6013f.glb",
+        "bytes": 1663680,
+        "sha256": "a37c90a6013f4ffb623ab3300c8584682455da55b1dc3d8194cc4dc927a6418f",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      },
+      {
+        "id": "modern/aurore-les-vagues-swiecinski-guethary",
+        "originalURL": "/models/previews/modern/aurore-les-vagues-swiecinski-guethary/preview.glb",
+        "path": "public/models/previews/modern/aurore-les-vagues-swiecinski-guethary/preview.glb",
+        "expectedBytes": 1065588,
+        "acquisition": "git:c0dacac0da71f5dc994998b635fee3de20f57c3e:public/models/previews/modern/aurore-les-vagues-swiecinski-guethary/preview.glb",
+        "bytes": 1065588,
+        "sha256": "a244112b214801802bfbbe35f82fec3e2e352cb9964067a20c96fc591665773a",
+        "hashChecks": [],
+        "validated": true,
+        "externalResourceURIs": []
+      }
+    ],
+    "errors": [],
+    "glbExternalResourceDependencies": [],
+    "extensionsUsed": [
+      "EXT_meshopt_compression",
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_ior",
+      "KHR_materials_specular",
+      "KHR_materials_unlit",
+      "KHR_mesh_quantization"
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "rodin/danaid": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "borghese-gladiator": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the named full-figure sculpture. This is a viewing preset, not a physical measurement."
+  },
+  "crouching-venus": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Crouching”. This is a viewing preset, not a physical measurement."
+  },
+  "the-wrestlers": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the named two-figure subject. This is a viewing preset, not a physical measurement."
+  },
+  "rodin/adam-rodin-musee-rodin": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "rodin/age-of-bronze-rodin-musee-rodin": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Venus”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/crouching-woman-rodin-hirshhorn-66-4342": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Crouching”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/bacchante-and-satyr-clesinger-mia-73-13": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Satyr”. This is a viewing preset, not a physical measurement."
+  },
+  "roman/sleeping-hermaphroditus-louvre-ma-231": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Sleeping”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Athlete”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/the-kiss-rodin-musee-rodin-s-1002": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/bacchante-couchee-clesinger-petit-palais": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Reclining”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/three-nymphs-maillol-carrousel": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Nymphs”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/bacchante-etcheto-pau": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "roman/lely-venus-british-museum": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Venus”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/danae-henning": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/action-in-chains-maillol-carrousel": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/assia-despiau-middelheim": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/torso-callender-saam": {
+    "maxExtentMeters": 0.6,
+    "preset": "portrait",
+    "reason": "Chosen display size: 0.6 m along the longest axis for the title/slug term “Torso”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/susanna-aaltonen-turku": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/gladiator-welonski-krakow": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Gladiator”. This is a viewing preset, not a physical measurement."
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Graces”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/nude-in-sun-harvent-mons": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Nude”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/eternal-spring-rodin-glyptotek": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/eve-rodin-reduced-marble": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  },
+  "modern/victorious-athlete-grandmoulin-tahto": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Athlete”. This is a viewing preset, not a physical measurement."
+  },
+  "contemporary/punishment-hercules-deepak": {
+    "maxExtentMeters": 1.5,
+    "preset": "large-form",
+    "reason": "Chosen display size: 1.5 m along the longest axis for the title/slug term “Hercules”. This is a viewing preset, not a physical measurement."
+  },
+  "modern/woman-gutter-vandensteen-jehay": {
+    "maxExtentMeters": 1,
+    "preset": "general",
+    "reason": "Chosen display size: 1 m along the longest axis for a neutral starting size where the title does not identify a more specific display preset. This is a viewing preset, not a physical measurement."
+  }
+}

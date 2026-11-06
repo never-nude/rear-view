@@ -1,0 +1,683 @@
+{
+  "rodin/danaid": {
+    "upAxis": "z",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "yaw": 0,
+    "fit": 1.1,
+    "status": "reviewed",
+    "confidence": 0.8,
+    "note": "Corrected 2026-06-30 from legacy y:1.1:180, which presented the recumbent figure on its cut side. Use the scan's Z-up basis and flip around Y so the figure rests on a horizontal base while remaining front-readable."
+  },
+  "roman/three-graces-louvre-ma-287": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 180,
+    "viewDirection": [
+      0.35,
+      0.24,
+      1
+    ],
+    "status": "reviewed",
+    "note": "The archived GLB is native Y-up with its plinth at raw Y-min. A 180-degree yaw opens on the Louvre's catalogued front, where two Graces face the viewer and the central figure turns away."
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 240,
+    "viewDirection": [
+      0.55,
+      0.24,
+      0.9
+    ],
+    "status": "reviewed",
+    "note": "Owner reference 2026-09-04: rear three-quarter opening view matched to the supplied screenshot, with the turned face and raised drapery visible. Camera elevation lowered to match the reference."
+  },
+  "modern/crouching-woman-rodin-hirshhorn-66-4342": {
+    "upAxis": "z",
+    "modelRotation": [
+      0,
+      0,
+      180
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      -0.55,
+      0.34,
+      -0.9
+    ],
+    "status": "reviewed",
+    "note": "Reviewed 2026-08-12: retain the native Z-up pose and open from the opposite three-quarter angle so the head, chest, and folded limbs read from the front."
+  },
+  "modern/bacchante-and-satyr-clesinger-mia-73-13": {
+    "upAxis": "z",
+    "modelRotation": [
+      0,
+      0,
+      180
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      -0.55,
+      0.34,
+      -0.9
+    ],
+    "status": "reviewed",
+    "note": "Reviewed 2026-08-12: front three-quarter view gives the bacchante and satyr equal facial and gestural presence while preserving the group silhouette."
+  },
+  "roman/sleeping-hermaphroditus-louvre-ma-231": {
+    "upAxis": "z",
+    "modelRotation": [
+      0,
+      0,
+      180
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      -0.55,
+      0.34,
+      -0.9
+    ],
+    "status": "reviewed",
+    "note": "Reviewed 2026-08-12: retain the reclining Z-up correction but open from the forward three-quarter side so the face and torso remain readable."
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "upAxis": "z",
+    "modelRotation": [
+      0,
+      0,
+      180
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      -0.55,
+      0.34,
+      -0.9
+    ],
+    "status": "reviewed",
+    "note": "Reviewed 2026-08-12: front three-quarter view retains the twisting action and python while making the athlete's face and chest visible."
+  },
+  "modern/the-kiss-rodin-musee-rodin-s-1002": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 180,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "status": "reviewed",
+    "note": "Reviewed 2026-08-12: reverse the native Y-up group to a front three-quarter opening that presents both faces and the embrace."
+  },
+  "modern/bacchante-couchee-clesinger-petit-palais": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      120,
+      0
+    ],
+    "viewDirection": [
+      0,
+      0.4,
+      1
+    ],
+    "fit": 1.08,
+    "status": "reviewed",
+    "confidence": "visual",
+    "note": "Reclining figure viewed from an elevated three-quarter angle; head, torso, and full plinth remain visible."
+  },
+  "modern/three-nymphs-maillol-carrousel": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "confidence": "visual",
+    "note": "Upright group; the three different poses and the shared base are preserved."
+  },
+  "modern/bacchante-etcheto-pau": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      60,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.08,
+    "status": "reviewed",
+    "confidence": "visual",
+    "note": "Standing figure turned to the front; head, folded arms, torso, and base included."
+  },
+  "roman/esquiline-venus-smk-cast": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "confidence": "visual",
+    "note": "Upright cast; face, surviving torso, legs, and base fully visible."
+  },
+  "roman/crouching-aphrodite-met": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Upright rear view; rounded crouching hips and the complete surviving marble are visible."
+  },
+  "roman/lely-venus-british-museum": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear three-quarter view shows both buttocks, the turning torso, and the intact round pedestal."
+  },
+  "modern/danae-henning": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      -0.35,
+      0.22,
+      -1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Reclining figure remains correctly grounded; rear three-quarter camera reveals the raised hip and bent legs."
+  },
+  "modern/action-in-chains-maillol-carrousel": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear view shows the broad hips, hands held behind the torso, and the full base."
+  },
+  "modern/assia-despiau-middelheim": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Standing rear view; both buttocks and the relaxed stance remain visible. Exposure lifted slightly for the bronze."
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear view keeps both buttocks clear of the drapery held at either side; entire bronze is framed."
+  },
+  "modern/torso-callender-saam": {
+    "upAxis": "y",
+    "modelRotation": [
+      -166.8788,
+      0.1809,
+      -178.4271
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear view shows the smooth rounded stone buttocks and waist without cropping the torso.",
+    "yaw": 0
+  },
+  "modern/susanna-aaltonen-turku": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      1,
+      0.18,
+      0
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear three-quarter view shows the bending body and projecting hip; surviving scan boundaries stay within frame."
+  },
+  "modern/gladiator-welonski-krakow": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      -0.35,
+      0.22,
+      -1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear three-quarter view presents the gluteal contours, raised arm, trident, and entire pedestal."
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Three-quarter group view exposes the outer goddess’s rounded rear while keeping all three figures and the base in frame."
+  },
+  "modern/nude-in-sun-harvent-mons": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Upright rear three-quarter view shows both buttocks and the hands-on-hips stance."
+  },
+  "modern/eternal-spring-rodin-glyptotek": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      1.2246467991473532e-16,
+      0.16,
+      -1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Camera faces the modeled side of the group, exposing a lover’s back and buttocks without letting the rough marble support dominate."
+  },
+  "modern/eve-rodin-reduced-marble": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.35,
+      0.22,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear view shows the rounded buttocks and bowed body. This source scan has visibly softer anatomical detail than the other marbles."
+  },
+  "modern/victorious-athlete-grandmoulin-tahto": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.8660254037844386,
+      0.16,
+      0.5000000000000001
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Rear view centers the athlete’s buttocks while retaining the raised wreath and complete round pedestal."
+  },
+  "contemporary/punishment-hercules-deepak": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0,
+      0.16,
+      1
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Direct rear view emphasizes the muscular buttocks and hand holding the apples; complete digital sculpture and support are framed."
+  },
+  "modern/woman-gutter-vandensteen-jehay": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      180,
+      0
+    ],
+    "viewDirection": [
+      0.8660254037844386,
+      0.16,
+      0.5000000000000001
+    ],
+    "fit": 1.12,
+    "status": "reviewed",
+    "notes": "Side-rear three-quarter view shows the seated hip and buttock projecting beyond the architectural edge; the complete sculpture and support are retained."
+  },
+  "roman/hermes-tying-sandal-glyptotek": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "fit": 1.16,
+    "viewDirection": [
+      0.35,
+      0.2,
+      1
+    ]
+  },
+  "modern/aurore-les-vagues-swiecinski-guethary": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "fit": 1.16,
+    "viewDirection": [
+      -1,
+      0.2,
+      0
+    ]
+  },
+  "rodin/the-eternal-idol-harvard": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 120,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Source Y is upright. Reviewed front, side and rear. The chosen three-quarter view reveals both adult figures and the complete marble base."
+  },
+  "europe/three-graces-carpeaux-mia": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 120,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed front, side and rear. Complete sculpture geometry is framed upright."
+  },
+  "europe/winter-houdon-met": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed front, side and rear. Complete sculpture geometry is framed upright."
+  },
+  "europe/sluggard-leighton-royal-academy": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 120,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed front, side and rear. Complete sculpture geometry is framed upright."
+  },
+  "rodin/fugitive-love-cantor-portland": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed three angles; source Z-up rotation baked to Y-up. Complete intertwined group and rectangular display base retained. Surface detail is limited and the untextured bronze appearance is a display treatment."
+  },
+  "rodin/iris-cantor-portland": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed three angles against source museum photograph. Whole sculpture and square display base framed upright; intentionally absent head and arm match the Rodin composition. Limited untextured scan detail; already Y-up."
+  },
+  "contemporary/dynamic-female-torso-polycosm": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "fit": 1.16,
+    "viewDirection": [
+      0.35,
+      0.2,
+      1
+    ]
+  },
+  "roman/aphrodite-pudica-glyptotek": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "fit": 1.16,
+    "viewDirection": [
+      0.35,
+      0.2,
+      1
+    ]
+  },
+  "roman/aphrodite-removing-sandal-karlsruhe": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "fit": 1.16,
+    "viewDirection": [
+      0.35,
+      0.2,
+      1
+    ]
+  },
+  "europe/bacchante-female-satyr-clodion-mag": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed three angles before and after conservative context removal. Both figures and ornate display base retained; slight irregular margins remain at the base perimeter. The group is mounted on the base; its authorship is not separately asserted."
+  },
+  "europe/le-repos-boucher-pau": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "viewDirection": [
+      0.55,
+      0.34,
+      0.9
+    ],
+    "fit": 1.16,
+    "status": "reviewed",
+    "note": "Reviewed three angles and final lower-exposure front view. Entire reclining figure and bed slab retained. Source colors are pale and fine facial detail is limited; the model does not reconstruct absent detail."
+  },
+  "rodin/the-sphinx-nga": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "viewDirection": [
+      -0.35,
+      0.3,
+      1
+    ],
+    "fit": 1.15
+  },
+  "doryphoros": {
+    "upAxis": "y",
+    "modelRotation": [
+      0,
+      0,
+      0
+    ],
+    "yaw": 0,
+    "status": "local-visual-reviewed",
+    "note": "Native publisher GLB hierarchy gives world Y-up. Whole figure, source material and opening frame reviewed locally; no geometry transform baked into the serving asset."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "modern/torso-callender-saam": {
+    "catalog": {
+      "wing": "americas-oceania"
+    },
+    "source": "https://americanart.si.edu/artwork/torso-3712",
+    "note": "The catalog explicitly identifies Bessie Stough Callender and the United States. The modern collection folder currently overrides that context and files Torso in Europe. The Americas wing already includes American sculptors working in European traditions.",
+    "reviewed": "2026-09-13"
+  }
+}

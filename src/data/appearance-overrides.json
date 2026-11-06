@@ -1,0 +1,172 @@
+{
+  "discobolus": {
+    "profile": "plaster"
+  },
+  "roman/three-graces-louvre-ma-287": {
+    "exposure": 0.15
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "exposure": 0.15
+  },
+  "modern/assia-despiau-middelheim": {
+    "exposure": 1.1
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "exposure": 1.1
+  },
+  "roman/hermes-tying-sandal-glyptotek": {
+    "tintStrength": 0,
+    "variation": 0,
+    "exposure": 0.85,
+    "envMapIntensity": 0.7,
+    "mapLift": 0,
+    "mapFloor": 0
+  },
+  "modern/aurore-les-vagues-swiecinski-guethary": {
+    "tintStrength": 0,
+    "variation": 0,
+    "exposure": 0.85,
+    "envMapIntensity": 0.7,
+    "mapLift": 0,
+    "mapFloor": 0
+  },
+  "rodin/the-eternal-idol-harvard": {
+    "profile": "marble",
+    "textureDefault": 100,
+    "exposure": 0.62,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.82,
+    "metalness": 0
+  },
+  "europe/three-graces-carpeaux-mia": {
+    "profile": "plaster",
+    "textureDefault": 100,
+    "exposure": 0.7,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.8,
+    "metalness": 0
+  },
+  "europe/winter-houdon-met": {
+    "profile": "bronze-patina",
+    "textureDefault": 100,
+    "exposure": 0.72,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.8,
+    "metalness": 0
+  },
+  "europe/sluggard-leighton-royal-academy": {
+    "profile": "bronze-patina",
+    "textureDefault": 100,
+    "exposure": 0.72,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.8,
+    "metalness": 0
+  },
+  "rodin/fugitive-love-cantor-portland": {
+    "profile": "bronze-patina",
+    "textureDefault": 0,
+    "exposure": 0.82,
+    "tintStrength": 0.25,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.75,
+    "metalness": 0.35
+  },
+  "rodin/iris-cantor-portland": {
+    "profile": "bronze-patina",
+    "textureDefault": 0,
+    "exposure": 0.82,
+    "tintStrength": 0.25,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.75,
+    "metalness": 0.35
+  },
+  "contemporary/dynamic-female-torso-polycosm": {
+    "tintStrength": 0,
+    "variation": 0,
+    "exposure": 0.5,
+    "envMapIntensity": 0.5,
+    "mapLift": 0,
+    "mapFloor": 0
+  },
+  "roman/aphrodite-pudica-glyptotek": {
+    "tintStrength": 0,
+    "variation": 0,
+    "exposure": 0.85,
+    "envMapIntensity": 0.7,
+    "mapLift": 0,
+    "mapFloor": 0
+  },
+  "roman/aphrodite-removing-sandal-karlsruhe": {
+    "tintStrength": 0,
+    "variation": 0,
+    "exposure": 0.85,
+    "envMapIntensity": 0.7,
+    "mapLift": 0,
+    "mapFloor": 0
+  },
+  "europe/bacchante-female-satyr-clodion-mag": {
+    "profile": "ceramic",
+    "textureDefault": 100,
+    "exposure": 0.78,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.8,
+    "metalness": 0
+  },
+  "europe/le-repos-boucher-pau": {
+    "profile": "marble",
+    "textureDefault": 100,
+    "exposure": 0.32,
+    "tintStrength": 0,
+    "variation": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "roughness": 0.85,
+    "metalness": 0
+  },
+  "rodin/the-sphinx-nga": {
+    "baseColor": "#FFFFFF",
+    "secondaryColor": "#FFFFFF",
+    "tintStrength": 0,
+    "variation": 0,
+    "metalness": 0,
+    "roughness": 0.68,
+    "textureDefault": 75,
+    "exposure": 0.85,
+    "envMapIntensity": 0.7,
+    "emissiveIntensity": 0,
+    "mapLift": 0,
+    "mapFloor": 0,
+    "backdropTop": "#15243A",
+    "backdropBase": "#15243A",
+    "backdropGlow": "#D7DEE8",
+    "backdropGlowStrength": 0.07,
+    "keyLightIntensity": 1.12,
+    "fillLightIntensity": 0.88,
+    "rimLightIntensity": 1.16,
+    "hemiLightIntensity": 0.82
+  },
+  "doryphoros": {
+    "profile": "plaster",
+    "preserveSourceMaterials": true,
+    "exposure": 0.2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "modern/action-in-chains-maillol-carrousel": {
+    "kind": "existing_base",
+    "height": 0,
+    "note": "Retain the base already captured with the artwork; check the object and base extents before setting physical scale."
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "kind": "floor",
+    "height": 0,
+    "note": "Display at floor level, retaining the sculptural base already in the model."
+  },
+  "discobolus": {
+    "kind": "existing_base",
+    "height": 0,
+    "note": "Retain the base in the scan and display at floor level.",
+    "assetSha256": "18e77773563d7fb00996c62c94526d663d5207edfec13982fe5ac2833cfb0ccb",
+    "reviewed": "2026-10-06",
+    "reviewNote": "The full-quality replacement and selected orientation were reviewed across the batch orientation views. The scan shows the complete KAS1549 plaster cast with its documented modern restored head; the published smk plaster cast kas1549, gross maps to the full world-Y extent after the selected orientation. Uniform scale preserves the scan's proportions."
+  },
+  "rodin/adam-rodin-musee-rodin": {
+    "kind": "floor",
+    "height": 0,
+    "note": "Display at floor level, retaining the sculptural base already in the model.",
+    "reviewed": "2026-09-12",
+    "assetSha256": "df8d4657e0494922fea297f267ac26b07547ca285439aa0bdcaa4fade4f892ac",
+    "reviewNote": "Complete Adam with its integral sculpted square bronze foot. The197cm museum height maps toY; the two plan extents agree within4.7% after yaw."
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "kind": "floor",
+    "height": 0,
+    "note": "Display at floor level, retaining the sculptural base already in the model.",
+    "reviewed": "2026-09-12",
+    "assetSha256": "3b3ca63aef92c792c53a76dfa1213ed9ab6ca56ada7051d6f5c50a367b69bb10",
+    "reviewNote": "Complete athlete and integral square bronze foot. The upright anatomical extent unequivocally corresponds to1746mm: the other984/1099mm extents match within4.1%. Tate’s dimension string supports this mapping, while its structured height/width fields are transposed. Preserve those conflicting source fields in the evidence; use this independently corroborated spatial mapping."
+  }
+}

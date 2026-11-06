@@ -1,0 +1,21 @@
+---
+import V3CollectionExplorer from '../components/v3/V3CollectionExplorer.astro';
+import V3Layout from '../layouts/v3/V3Layout.astro';
+import { collectionCount, featuredWork, works } from '../lib/v3';
+---
+
+<V3Layout
+  title="Rear View"
+  description="Fifty sculptures. A study of the figure, from every angle. Explore in 3D, AR and VR."
+  image={featuredWork.thumbnailImage}
+>
+  <header class="v3-page-hero v3-discovery-hero">
+    <p class="v3-kicker">Nevernude / {collectionCount} works</p>
+    <h1 class="v3-display">Rear View.</h1>
+    <p>Fifty sculptures. A study of the figure, from every angle.</p>
+  </header>
+
+  <section class="v3-collection" aria-label="Rear View collection">
+    <V3CollectionExplorer works={works} spatial={true} />
+  </section>
+</V3Layout>

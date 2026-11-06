@@ -1,0 +1,36 @@
+{
+  "sourceRevision": "c0dacac0da71f5dc994998b635fee3de20f57c3e",
+  "works": [
+    {
+      "slug": "modern/dubuffet-la-chiffonniere",
+      "title": "La Chiffonni\u00e8re",
+      "status": "approximate",
+      "sizeLabel": "Height \u2248 6.71 m",
+      "reference": {
+        "axis": "y",
+        "meters": 6.7056,
+        "estimated": true
+      },
+      "method": "existing-reference",
+      "sourceText": "H 22 ft (6.7 m)",
+      "sourceUrl": "https://www.publicartfund.org/exhibitions/view/la-chiffoniere/",
+      "assetSha256": "80c28fbe88a2917a71e90efb1e42b1c8a8acd5a1d8f34ee81a0e00836c03bd0b",
+      "note": "Scaled to Atrium\u2019s best estimate from listed dimensions and work descriptions; actual size may vary. Physical scale starts at the approximate published size. Display size is adjustable; proportions are preserved."
+    },
+    {
+      "slug": "asia/yunnan-drum-yale-ant052625",
+      "title": "Drum from Yunnan",
+      "status": "approximate",
+      "sizeLabel": "Longest side \u2248 25.4 cm",
+      "reference": {
+        "axis": "longest",
+        "meters": 0.254,
+        "estimated": true
+      },
+      "method": "record-text",
+      "sourceText": "Diameter approximately 25.4 cm; depth approximately 5.1 cm",
+      "sourceUrl": "",
+      "note": "Scaled to Atrium\u2019s best estimate from listed dimensions and work descriptions; actual size may vary. The largest listed dimension sets the model\u2019s longest side; its proportions are preserved."
+    }
+  ]
+}

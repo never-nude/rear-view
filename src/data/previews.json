@@ -1,0 +1,402 @@
+{
+  "discobolus": {
+    "url": "https://models.atrium.earth/models/previews/discobolus/preview-18e77773563d.glb",
+    "bytes": 7200744,
+    "sourceBytes": 100849784,
+    "sourceFormat": "stl",
+    "faces": 400000,
+    "sourceFaces": 2016994
+  },
+  "doryphoros": {
+    "url": "https://models.atrium.earth/models/previews/doryphoros/preview-d799001e3ad8.glb",
+    "bytes": 497068,
+    "sourceBytes": 4954404,
+    "sourceFormat": "glb",
+    "faces": 275182,
+    "sourceFaces": 275182
+  },
+  "crouching-venus": {
+    "url": "https://models.atrium.earth/models/previews/crouching-venus/preview.glb",
+    "bytes": 493044,
+    "sourceBytes": 20000984,
+    "sourceFormat": "stl",
+    "faces": null,
+    "sourceFaces": null
+  },
+  "the-wrestlers": {
+    "url": "https://models.atrium.earth/models/previews/the-wrestlers/preview.glb",
+    "bytes": 499232,
+    "sourceBytes": 20001284,
+    "sourceFormat": "stl",
+    "faces": null,
+    "sourceFaces": null
+  },
+  "capitoline-venus": {
+    "url": "https://models.atrium.earth/models/previews/capitoline-venus/preview.glb",
+    "bytes": 481568,
+    "sourceBytes": 20002184,
+    "sourceFormat": "stl",
+    "faces": 14000,
+    "sourceFaces": 400042
+  },
+  "borghese-gladiator": {
+    "url": "https://models.atrium.earth/models/previews/borghese-gladiator/preview.glb",
+    "bytes": 490700,
+    "sourceBytes": 20000684,
+    "sourceFormat": "stl",
+    "faces": null,
+    "sourceFaces": null
+  },
+  "modern/crouching-woman-rodin-hirshhorn-66-4342": {
+    "url": "https://models.atrium.earth/models/previews/modern/crouching-woman-rodin-hirshhorn-66-4342/preview.glb",
+    "bytes": 804788,
+    "sourceBytes": 12658184,
+    "sourceFormat": "stl",
+    "faces": 253162,
+    "sourceFaces": 253162
+  },
+  "modern/bacchante-and-satyr-clesinger-mia-73-13": {
+    "url": "https://models.atrium.earth/models/previews/modern/bacchante-and-satyr-clesinger-mia-73-13/preview.glb",
+    "bytes": 993664,
+    "sourceBytes": 16001284,
+    "sourceFormat": "stl",
+    "faces": 320024,
+    "sourceFaces": 320024
+  },
+  "modern/the-kiss-rodin-musee-rodin-s-1002": {
+    "url": "https://models.atrium.earth/models/previews/modern/the-kiss-rodin-musee-rodin-s-1002/preview-94630787b4b0.glb",
+    "bytes": 23685860,
+    "sourceBytes": 45301224,
+    "sourceFormat": "glb",
+    "faces": 999794,
+    "sourceFaces": 1000098
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "url": "https://models.atrium.earth/models/previews/modern/athlete-wrestling-python-leighton-tate-n01754/preview.glb",
+    "bytes": 1257984,
+    "sourceBytes": 49853184,
+    "sourceFormat": "stl",
+    "faces": 400000,
+    "sourceFaces": 997062
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "url": "https://models.atrium.earth/models/previews/baroque/venus-callipyge-louvre-mr-1999/preview.glb",
+    "bytes": 4211212,
+    "sourceBytes": 4211212,
+    "sourceFormat": "glb",
+    "faces": 305954,
+    "sourceFaces": 305954
+  },
+  "roman/three-graces-louvre-ma-287": {
+    "url": "https://models.atrium.earth/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+    "bytes": 13054756,
+    "sourceBytes": 13054756,
+    "sourceFormat": "glb",
+    "faces": 984372,
+    "sourceFaces": 984372
+  },
+  "roman/sleeping-hermaphroditus-louvre-ma-231": {
+    "url": "https://models.atrium.earth/models/previews/roman/sleeping-hermaphroditus-louvre-ma-231/preview.glb",
+    "bytes": 1125412,
+    "sourceBytes": 17933184,
+    "sourceFormat": "stl",
+    "faces": 358662,
+    "sourceFaces": 358662
+  },
+  "rodin/danaid": {
+    "url": "https://models.atrium.earth/models/previews/rodin/danaid/preview.glb",
+    "bytes": 362492,
+    "sourceBytes": 19895954,
+    "sourceFormat": "stl",
+    "faces": null,
+    "sourceFaces": null
+  },
+  "rodin/adam-rodin-musee-rodin": {
+    "url": "https://models.atrium.earth/models/previews/rodin/adam-rodin-musee-rodin/preview.glb",
+    "bytes": 1255292,
+    "sourceBytes": 37706484,
+    "sourceFormat": "stl",
+    "faces": 400000,
+    "sourceFaces": 754128
+  },
+  "rodin/age-of-bronze-rodin-musee-rodin": {
+    "url": "https://models.atrium.earth/models/previews/rodin/age-of-bronze-rodin-musee-rodin/preview.glb",
+    "bytes": 1246200,
+    "sourceBytes": 94003384,
+    "sourceFormat": "stl",
+    "faces": 400000,
+    "sourceFaces": 1880066
+  },
+  "modern/bacchante-couchee-clesinger-petit-palais": {
+    "url": "https://models.atrium.earth/models/previews/modern/bacchante-couchee-clesinger-petit-palais/preview-c003da62b8d6.glb",
+    "bytes": 1113720,
+    "sourceBytes": 6708668,
+    "sourceFormat": "glb",
+    "faces": 49245,
+    "sourceFaces": 49245
+  },
+  "modern/three-nymphs-maillol-carrousel": {
+    "url": "https://models.atrium.earth/models/previews/modern/three-nymphs-maillol-carrousel/preview-6ae33e9ceb01.glb",
+    "bytes": 986768,
+    "sourceBytes": 6227348,
+    "sourceFormat": "glb",
+    "faces": 200028,
+    "sourceFaces": 200028
+  },
+  "modern/bacchante-etcheto-pau": {
+    "url": "https://models.atrium.earth/models/previews/modern/bacchante-etcheto-pau/preview-a37c90a6013f.glb",
+    "bytes": 1663680,
+    "sourceBytes": 131482980,
+    "sourceFormat": "glb",
+    "faces": 249988,
+    "sourceFaces": 3485606
+  },
+  "roman/esquiline-venus-smk-cast": {
+    "url": "https://models.atrium.earth/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+    "bytes": 1466772,
+    "sourceBytes": 12722696,
+    "sourceFormat": "glb",
+    "faces": 249997,
+    "sourceFaces": 394803
+  },
+  "roman/crouching-aphrodite-met": {
+    "url": "https://models.atrium.earth/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+    "bytes": 558700,
+    "sourceBytes": 2947960,
+    "sourceFormat": "glb",
+    "faces": 58596,
+    "sourceFaces": 58596
+  },
+  "roman/lely-venus-british-museum": {
+    "url": "https://models.atrium.earth/models/previews/roman/lely-venus-british-museum/preview-17045586a3c8.glb",
+    "bytes": 658164,
+    "sourceBytes": 3610944,
+    "sourceFormat": "glb",
+    "faces": 66979,
+    "sourceFaces": 66979
+  },
+  "modern/danae-henning": {
+    "url": "https://models.atrium.earth/models/previews/modern/danae-henning/preview-ba70d7305fd5.glb",
+    "bytes": 2080864,
+    "sourceBytes": 13302004,
+    "sourceFormat": "glb",
+    "faces": 184428,
+    "sourceFaces": 184428
+  },
+  "modern/action-in-chains-maillol-carrousel": {
+    "url": "https://models.atrium.earth/models/previews/modern/action-in-chains-maillol-carrousel/preview-ba9bd4d7fcf4.glb",
+    "bytes": 195248,
+    "sourceBytes": 1064524,
+    "sourceFormat": "glb",
+    "faces": 19912,
+    "sourceFaces": 19912
+  },
+  "modern/assia-despiau-middelheim": {
+    "url": "https://models.atrium.earth/models/previews/modern/assia-despiau-middelheim/preview-ff140dce843d.glb",
+    "bytes": 1016216,
+    "sourceBytes": 23454012,
+    "sourceFormat": "glb",
+    "faces": 249996,
+    "sourceFaces": 888878
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "url": "https://models.atrium.earth/models/previews/modern/small-phryne-maillol-mount-holyoke/preview-d81ccb0b07f7.glb",
+    "bytes": 1602908,
+    "sourceBytes": 178143388,
+    "sourceFormat": "glb",
+    "faces": 249985,
+    "sourceFaces": 5382819
+  },
+  "modern/torso-callender-saam": {
+    "url": "https://models.atrium.earth/models/previews/modern/torso-callender-saam/preview-3b8fd391c55f.glb",
+    "bytes": 989472,
+    "sourceBytes": 5803276,
+    "sourceFormat": "glb",
+    "faces": 179958,
+    "sourceFaces": 179958
+  },
+  "modern/susanna-aaltonen-turku": {
+    "url": "https://models.atrium.earth/models/previews/modern/susanna-aaltonen-turku/preview-9d50f46de573.glb",
+    "bytes": 1500460,
+    "sourceBytes": 46071892,
+    "sourceFormat": "glb",
+    "faces": 250000,
+    "sourceFaces": 1466488
+  },
+  "modern/gladiator-welonski-krakow": {
+    "url": "https://models.atrium.earth/models/previews/modern/gladiator-welonski-krakow/preview-8a1c7cea5a03.glb",
+    "bytes": 2364824,
+    "sourceBytes": 19723372,
+    "sourceFormat": "glb",
+    "faces": 250000,
+    "sourceFaces": 346386
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "url": "https://models.atrium.earth/models/previews/neoclassical/three-graces-glyptotek/preview-4ae8e5f8733e.glb",
+    "bytes": 1542540,
+    "sourceBytes": 8277584,
+    "sourceFormat": "glb",
+    "faces": 237259,
+    "sourceFaces": 237259
+  },
+  "modern/nude-in-sun-harvent-mons": {
+    "url": "https://models.atrium.earth/models/previews/modern/nude-in-sun-harvent-mons/preview-6c3b82e1725b.glb",
+    "bytes": 952452,
+    "sourceBytes": 6415368,
+    "sourceFormat": "glb",
+    "faces": 186174,
+    "sourceFaces": 186174
+  },
+  "modern/eternal-spring-rodin-glyptotek": {
+    "url": "https://models.atrium.earth/models/previews/modern/eternal-spring-rodin-glyptotek/preview-a08ef2288206.glb",
+    "bytes": 1738464,
+    "sourceBytes": 10815604,
+    "sourceFormat": "glb",
+    "faces": 249995,
+    "sourceFaces": 308890
+  },
+  "modern/eve-rodin-reduced-marble": {
+    "url": "https://models.atrium.earth/models/previews/modern/eve-rodin-reduced-marble/preview-8983147f2e0d.glb",
+    "bytes": 92460,
+    "sourceBytes": 565696,
+    "sourceFormat": "glb",
+    "faces": 10000,
+    "sourceFaces": 10000
+  },
+  "modern/victorious-athlete-grandmoulin-tahto": {
+    "url": "https://models.atrium.earth/models/previews/modern/victorious-athlete-grandmoulin-tahto/preview-e1dee8a2b9c4.glb",
+    "bytes": 3107912,
+    "sourceBytes": 12202696,
+    "sourceFormat": "glb",
+    "faces": 108994,
+    "sourceFaces": 108994
+  },
+  "contemporary/punishment-hercules-deepak": {
+    "url": "https://models.atrium.earth/models/previews/contemporary/punishment-hercules-deepak/preview-fc651f0077f1.glb",
+    "bytes": 1146512,
+    "sourceBytes": 27941420,
+    "sourceFormat": "glb",
+    "faces": 249999,
+    "sourceFaces": 970379
+  },
+  "modern/woman-gutter-vandensteen-jehay": {
+    "url": "https://models.atrium.earth/models/previews/modern/woman-gutter-vandensteen-jehay/preview-bf6e6efc10ea.glb",
+    "bytes": 1107780,
+    "sourceBytes": 25066744,
+    "sourceFormat": "glb",
+    "faces": 249992,
+    "sourceFaces": 929842
+  },
+  "roman/hermes-tying-sandal-glyptotek": {
+    "url": "/models/previews/roman/hermes-tying-sandal-glyptotek/preview.glb",
+    "bytes": 1474560,
+    "sourceBytes": 12878940,
+    "sourceFormat": "glb",
+    "faces": 179997,
+    "sourceFaces": 391003
+  },
+  "modern/aurore-les-vagues-swiecinski-guethary": {
+    "url": "/models/previews/modern/aurore-les-vagues-swiecinski-guethary/preview.glb",
+    "bytes": 1065588,
+    "sourceBytes": 68572748,
+    "sourceFormat": "glb",
+    "faces": 180000,
+    "sourceFaces": 1870330
+  },
+  "rodin/the-eternal-idol-harvard": {
+    "url": "/models/previews/rodin/the-eternal-idol-harvard/preview.glb",
+    "bytes": 6238616,
+    "sourceBytes": 6238616,
+    "sourceFormat": "glb",
+    "faces": 180901,
+    "sourceFaces": 180901
+  },
+  "europe/three-graces-carpeaux-mia": {
+    "url": "/models/previews/europe/three-graces-carpeaux-mia/preview.glb",
+    "bytes": 3681988,
+    "sourceBytes": 355226516,
+    "sourceFormat": "glb",
+    "faces": 249999,
+    "sourceFaces": 1499999
+  },
+  "europe/winter-houdon-met": {
+    "url": "/models/previews/europe/winter-houdon-met/preview.glb",
+    "bytes": 3797832,
+    "sourceBytes": 3797832,
+    "sourceFormat": "glb",
+    "faces": 111724,
+    "sourceFaces": 111724
+  },
+  "europe/sluggard-leighton-royal-academy": {
+    "url": "/models/previews/europe/sluggard-leighton-royal-academy/preview.glb",
+    "bytes": 865028,
+    "sourceBytes": 13636424,
+    "sourceFormat": "glb",
+    "faces": 250585,
+    "sourceFaces": 250585
+  },
+  "rodin/fugitive-love-cantor-portland": {
+    "url": "/models/previews/rodin/fugitive-love-cantor-portland/preview.glb",
+    "bytes": 218668,
+    "sourceBytes": 4612284,
+    "sourceFormat": "stl",
+    "faces": 92244,
+    "sourceFaces": 92244
+  },
+  "rodin/iris-cantor-portland": {
+    "url": "/models/previews/rodin/iris-cantor-portland/preview.glb",
+    "bytes": 254688,
+    "sourceBytes": 6867684,
+    "sourceFormat": "stl",
+    "faces": 137352,
+    "sourceFaces": 137352
+  },
+  "contemporary/dynamic-female-torso-polycosm": {
+    "url": "/models/previews/contemporary/dynamic-female-torso-polycosm/preview.glb",
+    "bytes": 16567896,
+    "sourceBytes": 98548500,
+    "sourceFormat": "glb",
+    "faces": 913032,
+    "sourceFaces": 915546
+  },
+  "roman/aphrodite-pudica-glyptotek": {
+    "url": "/models/previews/roman/aphrodite-pudica-glyptotek/preview.glb",
+    "bytes": 1168012,
+    "sourceBytes": 12202772,
+    "sourceFormat": "glb",
+    "faces": 180000,
+    "sourceFaces": 395047
+  },
+  "roman/aphrodite-removing-sandal-karlsruhe": {
+    "url": "/models/previews/roman/aphrodite-removing-sandal-karlsruhe/preview.glb",
+    "bytes": 428844,
+    "sourceBytes": 2501408,
+    "sourceFormat": "glb",
+    "faces": 20000,
+    "sourceFaces": 20000
+  },
+  "europe/bacchante-female-satyr-clodion-mag": {
+    "url": "/models/previews/europe/bacchante-female-satyr-clodion-mag/preview.glb",
+    "bytes": 1188984,
+    "sourceBytes": 16349968,
+    "sourceFormat": "glb",
+    "faces": 284606,
+    "sourceFaces": 295960
+  },
+  "europe/le-repos-boucher-pau": {
+    "url": "/models/previews/europe/le-repos-boucher-pau/preview.glb",
+    "bytes": 1001144,
+    "sourceBytes": 126717732,
+    "sourceFormat": "glb",
+    "faces": 250001,
+    "sourceFaces": 3407429
+  },
+  "rodin/the-sphinx-nga": {
+    "url": "/models/previews/rodin/the-sphinx-nga/preview.glb",
+    "bytes": 1243228,
+    "sourceBytes": 6141388,
+    "sourceFormat": "glb",
+    "faces": 185386,
+    "sourceFaces": 185386
+  }
+}

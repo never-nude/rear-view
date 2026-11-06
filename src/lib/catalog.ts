@@ -1,0 +1,834 @@
+import rawCatalog from '../data/catalog.json';
+import rawPreviews from '../data/previews.json';
+import rawRenders from '../data/renders.json';
+import rawOrientations from '../data/orientations.json';
+import rawMaterialAppearances from '../data/material-appearances.json';
+import rawAppearanceOverrides from '../data/appearance-overrides.json';
+import rawPhysicalDimensions from '../data/physical-dimensions.json';
+import rawSpatialEligibility from '../data/spatial-eligibility.json';
+import rawSpatialDisplayDefaults from '../data/spatial-display-defaults.json';
+import rawDisplayRecommendations from '../data/display-recommendations.json';
+import rawIdentityCorrections from '../data/identity-corrections.json';
+import selectedSlugs from '../data/selection.json';
+import { featuredForDate } from './featured-selection.mjs';
+import { physicalDimensionsFor } from './physical-dimensions.mjs';
+import { spatialEligibilityFor } from './spatial-eligibility.mjs';
+import { spatialAccessFor } from './spatial-access.mjs';
+import { approximateDimensionsFor } from './approximate-dimensions.mjs';
+import { assignWing } from './assignWing';
+import type { WingId } from '../data/wings';
+
+type RawWork = {
+  slug: string;
+  hidden?: boolean;
+  wing?: WingId | null;
+  collection?: string | null;
+  culture?: string | null;
+  title: string;
+  artist?: string | null;
+  year?: string | null;
+  year_sort?: number | null;
+  era?: string | null;
+  material?: string | null;
+  dimensions?: string | null;
+  museum?: string | null;
+  original_location?: string | null;
+  displayed_at?: string | null;
+  current_location?: string | null;
+  department?: string | null;
+  geography?: string | null;
+  source_institution?: string | null;
+  source_url?: string | null;
+  source_record_url?: string | null;
+  related_source_record_urls?: string[] | null;
+  scan_author?: string | null;
+  scan_source?: string | null;
+  license?: string | null;
+  license_url?: string | null;
+  attribution?: string | null;
+  accession?: string | null;
+  wikidata?: string | null;
+  note?: string | null;
+  ai_training_restricted?: boolean | null;
+  tier?: number | null;
+  index?: number | null;
+  total?: number | null;
+  model?: {
+    sourcePath?: string | null;
+    format?: string | null;
+    sizeBytes?: number | null;
+  } | null;
+  search?: string | null;
+};
+
+type Preview = {
+  url: string;
+  bytes: number;
+  sourceBytes?: number;
+  sourceFormat?: string;
+  faces?: number;
+  sourceFaces?: number;
+};
+
+type OrientationEntry = string | {
+  upAxis?: string;
+  axis?: string;
+  fit?: number;
+  yaw?: number;
+  modelRotation?: number[];
+  rotation?: number[];
+  viewDirection?: number[];
+  cameraDirection?: number[];
+  status?: string;
+  note?: string;
+};
+
+export type ModelTransform = {
+  upAxis: string;
+  fit: number;
+  yaw: number;
+  modelRotation: [number, number, number];
+  viewDirection?: [number, number, number];
+  status?: string;
+  note?: string;
+};
+
+export type Work = {
+  id: string;
+  slug: string;
+  collection: string;
+  wing: WingId | 'unfiled';
+  route: string;
+  legacyRoute: string;
+  title: string;
+  subtitle: string;
+  maker: string;
+  makerDates: string;
+  culture: string;
+  yearStart: number | null;
+  yearEnd: number | null;
+  displayDate: string;
+  era: string;
+  movement: string;
+  geography: string;
+  sourceMuseum: string;
+  museum: string;
+  originalLocation: string;
+  department: string;
+  medium: string;
+  materials: string[];
+  materialProfile: string;
+  materialAppearance: MaterialAppearance;
+  dimensions: string;
+  dimensionsNote: string;
+  dimensionsSourceUrl: string;
+  dimensionsBasis: string;
+  spatialReference: { axis: string; meters: number; extentFraction?: number; estimated?: boolean } | null;
+  spatialNote: string;
+  spatialEligibility: {
+    enabled: boolean;
+    kind: 'original' | 'object' | 'cast' | null;
+    label: string;
+    sizeLabel: string;
+    reason: string;
+    assetSha256?: string;
+  };
+  displaySupport: { kind: string; height?: number; note: string } | null;
+  spatialAccess: { enabled: boolean; verified: boolean; status: 'verified' | 'approximate' | 'unknown'; label: string; sizeLabel: string; note: string; defaultMaxExtentMeters?: number; assetSha256?: string; reference?: { axis: string; meters: number; extentFraction?: number; estimated?: boolean }; sourceText?: string; sourceUrl?: string };
+  accession: string;
+  creditLine: string;
+  rights: string;
+  licenseUrl: string;
+  provenance: string;
+  tags: string[];
+  relatedWorks: string[];
+  posterImage: string;
+  thumbnailImage: string;
+  ingested?: string;
+  modelGlb: string;
+  modelUpAxis: string;
+  modelTransform: ModelTransform;
+  modelStats: string;
+  featuredWeight: number;
+  heroCrop: string;
+  index: number;
+  search: string;
+  hasPreview: boolean;
+  sourceUrl: string;
+  sourceRecordUrl: string;
+  relatedSourceRecordUrls: string[];
+  scanAuthor: string;
+  scanSource: string;
+  aiTrainingRestricted: boolean;
+  internalModelSource: string;
+};
+
+export type Facet = {
+  label: string;
+  value: string;
+  count: number;
+};
+
+export type MaterialAppearance = {
+  key: string;
+  label: string;
+  material: string;
+  baseColor: string;
+  secondaryColor: string;
+  tintStrength: number;
+  variation: number;
+  metalness: number;
+  roughness: number;
+  textureDefault: number;
+  exposure: number;
+  envMapIntensity: number;
+  emissiveIntensity?: number;
+  mapLift?: number;
+  mapFloor?: number;
+  backdropTop?: string;
+  backdropBase?: string;
+  backdropGlow?: string;
+  backdropGlowStrength?: number;
+  keyLightIntensity?: number;
+  fillLightIntensity?: number;
+  rimLightIntensity?: number;
+  hemiLightIntensity?: number;
+  preserveSourceUnlit?: boolean;
+  preserveSourceMaterials?: boolean;
+  // Pair with a source-grounded white/zero-tint/zero-variation page override
+  // and exact source PBR values; this flag only prevents spatial reclassification.
+  preserveSpatialMaterialValues?: boolean;
+};
+
+type AppearanceOverride = Partial<Omit<MaterialAppearance, 'key' | 'label' | 'material'>> & {
+  profile?: string;
+};
+
+export const catalogCount = (rawCatalog as RawWork[]).length;
+
+// Keep deferred scans in the source catalog, but exclude them from every public surface.
+const rawWorks = (rawCatalog as RawWork[]).filter((work) => !work.hidden);
+const previewMap = rawPreviews as Record<string, Preview>;
+const renderSet = new Set(rawRenders as string[]);
+const orientationMap = rawOrientations as Record<string, OrientationEntry>;
+const appearanceConfig = rawMaterialAppearances as {
+  profiles: Record<string, MaterialAppearance>;
+  materialToProfile: Record<string, string>;
+  collectionDefaults: Record<string, string>;
+  slugOverrides: Record<string, string>;
+};
+const appearanceOverrides = rawAppearanceOverrides as Record<string, AppearanceOverride>;
+
+const makerCollections = new Set(['michelangelo', 'donatello', 'verrocchio', 'lorenzi', 'bouchardon', 'rodin']);
+
+const collectionLabels: Record<string, string> = {
+  'ancient-near-east': 'Ancient Near East',
+  americas: 'Americas and Oceania',
+  asia: 'Asia',
+  assyrian: 'Assyrian',
+  bouchardon: 'Bouchardon',
+  donatello: 'Donatello',
+  lorenzi: 'Lorenzi',
+  michelangelo: 'Michelangelo',
+  palmyra: 'Palmyra',
+  rodin: 'Rodin',
+  'sub-saharan-africa': 'Sub-Saharan Africa',
+  verrocchio: 'Verrocchio',
+};
+
+const collectionGeography: Record<string, string> = {
+  'ancient-near-east': 'Ancient Near East',
+  americas: 'Americas and Oceania',
+  asia: 'Asia',
+  assyrian: 'Ancient Near East',
+  baroque: 'Europe',
+  bouchardon: 'Europe',
+  donatello: 'Europe',
+  egyptian: 'Ancient Near East and Egypt',
+  europe: 'Europe',
+  greek: 'Mediterranean',
+  lorenzi: 'Europe',
+  medieval: 'Europe',
+  michelangelo: 'Europe',
+  modern: 'Europe',
+  neoclassical: 'Europe',
+  oceania: 'Americas and Oceania',
+  palmyra: 'Ancient Near East',
+  renaissance: 'Europe',
+  rodin: 'Europe',
+  roman: 'Mediterranean',
+  'sub-saharan-africa': 'Sub-Saharan Africa',
+  verrocchio: 'Europe',
+};
+
+const collectionCulture: Record<string, string> = {
+  'ancient-near-east': 'Ancient Near Eastern',
+  americas: 'Americas and Oceania',
+  asia: 'Asian',
+  assyrian: 'Assyrian',
+  palmyra: 'Palmyrene',
+  'sub-saharan-africa': 'Sub-Saharan African',
+};
+
+const movementByCollection: Record<string, string> = {
+  'ancient-near-east': 'Ancient Near Eastern sculpture',
+  americas: 'Indigenous and Pacific sculpture',
+  asia: 'Asian sculpture',
+  assyrian: 'Assyrian relief',
+  bouchardon: 'French neoclassical sculpture',
+  donatello: 'Early Renaissance sculpture',
+  lorenzi: 'Renaissance sculpture',
+  michelangelo: 'High Renaissance sculpture',
+  palmyra: 'Palmyrene funerary sculpture',
+  rodin: 'Modern sculpture',
+  'sub-saharan-africa': 'African sculpture',
+  verrocchio: 'Renaissance sculpture',
+};
+
+const internalNotePatterns = [
+  'mesh',
+  'source stl',
+  'source mesh',
+  'viewer uses',
+  'viewer basis',
+  'museum-style lighting',
+  'mobile-friendly controls',
+  'post-load rotation',
+  'camera unchanged',
+  'upright in this viewer',
+];
+
+function clean(value: unknown): string {
+  const text = String(value ?? '').trim();
+  return text === '-' || text === '—' ? '' : text;
+}
+
+function finiteNumber(value: unknown, fallback = 0): number {
+  const next = Number(value);
+  return Number.isFinite(next) ? next : fallback;
+}
+
+function rotationArray(value: unknown): [number, number, number] {
+  if (!Array.isArray(value) || value.length !== 3) return [0, 0, 0];
+  return [
+    finiteNumber(value[0], 0),
+    finiteNumber(value[1], 0),
+    finiteNumber(value[2], 0),
+  ];
+}
+
+function optionalVector3(value: unknown): [number, number, number] | undefined {
+  if (!Array.isArray(value) || value.length !== 3) return undefined;
+  const next = [
+    finiteNumber(value[0], Number.NaN),
+    finiteNumber(value[1], Number.NaN),
+    finiteNumber(value[2], Number.NaN),
+  ] as [number, number, number];
+  return next.every(Number.isFinite) ? next : undefined;
+}
+
+function parseLegacyTransform(value: unknown): ModelTransform {
+  const [rawAxis, rawFit, rawYaw] = String(value || 'auto').toLowerCase().split(':');
+  const upAxis = ['auto', 'x', 'y', 'z'].includes(rawAxis) ? rawAxis : 'auto';
+  const fit = finiteNumber(rawFit, 0);
+  return {
+    upAxis,
+    fit: fit > 0 ? fit : 0,
+    yaw: finiteNumber(rawYaw, 0),
+    modelRotation: [0, 0, 0],
+  };
+}
+
+function modelTransformFor(entry: OrientationEntry | undefined): ModelTransform {
+  if (!entry || typeof entry === 'string') return parseLegacyTransform(entry || 'auto');
+  const fallback = parseLegacyTransform(entry.upAxis || entry.axis || 'auto');
+  const rawAxis = clean(entry.upAxis || entry.axis || fallback.upAxis).toLowerCase();
+  const upAxis = ['auto', 'x', 'y', 'z'].includes(rawAxis) ? rawAxis : fallback.upAxis;
+  const fit = finiteNumber(entry.fit, fallback.fit);
+  const viewDirection = optionalVector3(entry.viewDirection || entry.cameraDirection);
+  return {
+    status: entry.status,
+    note: entry.note,
+    upAxis,
+    fit: fit > 0 ? fit : 0,
+    yaw: finiteNumber(entry.yaw, fallback.yaw),
+    modelRotation: rotationArray(entry.modelRotation || entry.rotation),
+    ...(viewDirection ? { viewDirection } : {}),
+  };
+}
+
+function legacyTransformString(transform: ModelTransform): string {
+  const fit = transform.fit || '';
+  const yaw = transform.yaw || '';
+  return fit || yaw ? `${transform.upAxis}:${fit}:${yaw}` : transform.upAxis;
+}
+
+function titleCaseSlug(value: string): string {
+  return value
+    .split(/[-/]/g)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+function valueKey(value: string): string {
+  return value.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+export function formatYear(year: number): string {
+  if (year < 0) return `${Math.abs(year)} BCE`;
+  return `${year} CE`;
+}
+
+export function yearLabel(work: Work): string {
+  if (work.yearStart === null) return 'Date not yet recorded';
+  if (work.yearEnd !== null && work.yearEnd !== work.yearStart) {
+    return `${formatYear(work.yearStart)}-${formatYear(work.yearEnd)}`;
+  }
+  return formatYear(work.yearStart);
+}
+
+function parseYearRange(raw: RawWork): { start: number | null; end: number | null } {
+  const yearSort = typeof raw.year_sort === 'number' && Number.isFinite(raw.year_sort) ? Math.trunc(raw.year_sort) : null;
+  const text = clean(raw.year);
+  if (yearSort === null) return { start: null, end: null };
+
+  const bceRange = text.match(/(\d{1,4})\s*[-–]\s*(\d{1,4})\s*BCE/i);
+  if (bceRange) {
+    return { start: -Number(bceRange[1]), end: -Number(bceRange[2]) };
+  }
+
+  const ceRange = text.match(/(\d{3,4})\s*[-–]\s*(\d{2,4})/);
+  if (ceRange && !/BCE/i.test(text)) {
+    const start = Number(ceRange[1]);
+    let end = Number(ceRange[2]);
+    if (end < 100 && start >= 1000) end += Math.floor(start / 100) * 100;
+    return { start, end };
+  }
+
+  return { start: yearSort, end: yearSort };
+}
+
+function eraFor(raw: RawWork): string {
+  // Prefer an explicit numeric sort; otherwise use a date parsed from the year text.
+  const sort = typeof raw.year_sort === 'number' && Number.isFinite(raw.year_sort) ? raw.year_sort : null;
+  const { start } = parseYearRange(raw);
+  const year = sort ?? start;
+  const collection = clean(raw.collection);
+
+  if (year !== null) {
+    if (year < 500) return 'Ancient';
+    if (year < 1400) return 'Medieval';
+    if (year < 1700) return 'Renaissance';
+    if (year < 1850) return 'Early modern';
+    if (year < 1970) return 'Modern';
+    return 'Contemporary';
+  }
+
+  // No numeric date. Fall back only to facts the record actually carries — never invent a date.
+  if (clean(raw.era) === 'Contemporary') return 'Contemporary';
+  if (['michelangelo', 'donatello', 'verrocchio', 'lorenzi'].includes(collection)) return 'Renaissance';
+  if (collection === 'bouchardon') return 'Early modern';
+  if (collection === 'rodin') return 'Modern';
+  if (collection === 'assyrian' || collection === 'palmyra') return 'Ancient';
+
+  // Classical antiquities often carry a BCE / "Roman copy" date in the text but no year_sort.
+  const text = `${raw.title ?? ''} ${raw.year ?? ''} ${raw.note ?? ''}`.toLowerCase();
+  if (/\bbce\b|b\.c\.|hellenistic|roman copy|classical antiquity|\bantiquity\b/.test(text)) return 'Ancient';
+
+  return 'Undated';
+}
+
+function geographyFor(raw: RawWork): string {
+  const explicit = clean(raw.geography);
+  const collection = clean(raw.collection);
+  const search = `${raw.title ?? ''} ${raw.year ?? ''} ${raw.note ?? ''}`.toLowerCase();
+
+  if (explicit) return explicit;
+  if (collectionGeography[collection]) return collectionGeography[collection];
+  if (/cypriot|gudea|amarna|horus|egypt|assyrian|nimrud|nineveh|mesopotamia/.test(search)) {
+    return 'Ancient Near East and Egypt';
+  }
+  if (/roman|greek|hellenistic|athena|apollo|venus|dionysos|herakles|zeus|cybele|laocoon|discobolus|doryphoros|gaul|germanicus|capitoline|belvedere|hermes|antinoos|juno|thalia|vulcan|artemision|wrestlers|hestia|perseus|medici/.test(search)) {
+    return 'Mediterranean';
+  }
+  return 'Unassigned geography';
+}
+
+function cultureFor(raw: RawWork, geography: string): string {
+  if (clean(raw.culture)) return clean(raw.culture);
+  const collection = clean(raw.collection);
+  if (collectionCulture[collection]) return collectionCulture[collection];
+  if (makerCollections.has(collection)) return 'European';
+  if (geography !== 'Unassigned geography') return geography;
+  return '';
+}
+
+function materialsFor(raw: RawWork): string[] {
+  const values = new Set<string>();
+  const override = clean(appearanceConfig.slugOverrides[raw.slug]);
+  if (override) values.add(override);
+
+  const explicit = clean(raw.material);
+  if (explicit) {
+    for (const item of explicit.split(/[,;/]+/g)) {
+      const label = clean(item);
+      if (label) values.add(label);
+    }
+  }
+
+  const text = `${raw.title ?? ''} ${raw.year ?? ''} ${noteForInference(raw)}`.toLowerCase();
+  const inferred: Array<[RegExp, string]> = [
+    [/bronze/, 'Bronze'],
+    [/marble/, 'Marble'],
+    [/limestone/, 'Limestone'],
+    [/silver/, 'Silver'],
+    [/wood|post|mask|pole|box|drum|gong/, 'Wood'],
+    [/terracotta|ceramic|clay/, 'Ceramic'],
+    [/stone|stele|relief|sarcophagus|capital|corbel|lintel|voussoir|sphinx/, 'Stone'],
+  ];
+
+  for (const [pattern, label] of inferred) {
+    if (pattern.test(text)) values.add(label);
+  }
+
+  if (!values.size) {
+    const fallback = clean(appearanceConfig.collectionDefaults[clean(raw.collection)]);
+    if (fallback) values.add(fallback);
+  }
+
+  return [...values];
+}
+
+function materialProfileFor(slug: string, materials: string[]): string {
+  const overrideProfile = clean(appearanceOverrides[slug]?.profile);
+  if (overrideProfile && appearanceConfig.profiles[overrideProfile]) return overrideProfile;
+  for (const material of materials) {
+    const profile = profileForMaterial(material);
+    if (profile && appearanceConfig.profiles[profile]) return profile;
+  }
+  return 'neutral';
+}
+
+function profileForMaterial(material: string): string {
+  const exact = appearanceConfig.materialToProfile[valueKey(material)];
+  if (exact) return exact;
+
+  const text = material.toLowerCase();
+  if (/black marble/.test(text)) return 'stone';
+  if (/marble|ivory/.test(text)) return 'marble';
+  if (/plaster/.test(text)) return 'plaster';
+  if (/limestone|dolomite/.test(text)) return 'limestone';
+  if (/quartzite|metagraywacke|chlorite|diorite|andesite|basalt|sandstone|alabaster|stone/.test(text)) return 'stone';
+  if (/silver/.test(text)) return 'silver';
+  if (/wood|oak|mahogany|basswood|cottonwood|iroko|guaiacum|ebony|barkcloth|bamboo|fiber|fibre|rattan|plant|leaf|leaves|sago|shell|cloth|resin|organic/.test(text)) return 'wood';
+  if (/bronze|brass|copper|gilded|metal|iron|steel|zinc|alloy/.test(text)) return 'bronze-patina';
+  if (/terracotta|ceramic|earthenware|clay/.test(text)) return 'ceramic';
+  return '';
+}
+
+function effectiveAppearanceFor(slug: string, profileKey: string): MaterialAppearance {
+  const base = appearanceConfig.profiles[profileKey] || appearanceConfig.profiles.neutral;
+  const { profile: _profile, ...override } = appearanceOverrides[slug] || {};
+  return { ...base, ...override };
+}
+
+export function getEffectiveAppearance(work: Pick<Work, 'slug' | 'materialProfile'>): MaterialAppearance {
+  return effectiveAppearanceFor(work.slug, work.materialProfile);
+}
+
+// Catalog notes are ingest and research material. They may help normalize sparse
+// source records, but they must never become visitor-facing object descriptions.
+function noteForInference(raw: RawWork): string {
+  const note = clean(raw.note);
+  if (!note) return '';
+  const lower = note.toLowerCase();
+  if (internalNotePatterns.some((pattern) => lower.includes(pattern))) return '';
+  return note;
+}
+
+function scanSourceForDisplay(raw: RawWork): string {
+  const value = clean(raw.scan_source);
+  if (!value || /^https?:\/\//i.test(value)) return '';
+  return value
+    .split(';')
+    .map(clean)
+    .filter((clause) => clause && !/https?:\/\/|\b(?:archive|archived|bytes|polygons|preserv(?:ed|ation))\b/i.test(clause))
+    .join('; ');
+}
+
+function movementFor(raw: RawWork, era: string): string {
+  const collection = clean(raw.collection);
+  if (movementByCollection[collection]) return movementByCollection[collection];
+  if (era === 'Ancient') return 'Ancient sculpture';
+  if (era === 'Renaissance') return 'Renaissance sculpture';
+  if (era === 'Modern') return 'Modern sculpture';
+  if (era === 'Undated') return 'Movement not yet recorded';
+  return `${era} sculpture`;
+}
+
+function makerFor(raw: RawWork): string {
+  const artist = clean(raw.artist);
+  if (artist.toLowerCase() === 'rodin') return 'Auguste Rodin';
+  if (artist) return artist;
+  const collection = clean(raw.collection);
+  if (makerCollections.has(collection)) return titleCaseSlug(collection);
+  return '';
+}
+
+function modelStatsFor(preview: Preview | undefined, raw: RawWork): string {
+  if (!preview) return '3D preview queued';
+  const size = preview.bytes ? `${Math.round(preview.bytes / 1024)} KB` : 'web preview';
+  const faces = preview.faces ? `${preview.faces.toLocaleString()} faces` : 'optimized mesh';
+  const source = raw.model?.format ? raw.model.format.toUpperCase() : 'source mesh';
+  return `${size}, ${faces}, prepared from ${source}`;
+}
+
+function normalize(raw: RawWork, fallbackIndex: number): Work {
+  const correction = (rawIdentityCorrections as Record<string, { title?: string; catalog?: Partial<RawWork> }>)[raw.slug];
+  if (correction?.catalog) raw = { ...raw, ...correction.catalog };
+  const collection = clean(raw.collection);
+  const { start, end } = parseYearRange(raw);
+  const era = eraFor(raw);
+  const geography = geographyFor(raw);
+  const wing = assignWing({
+    slug: raw.slug,
+    data: { wing: raw.wing, region: collection, place: geography },
+  });
+  const maker = makerFor(raw);
+  const materials = materialsFor(raw);
+  const materialProfile = materialProfileFor(raw.slug, materials);
+  const materialAppearance = effectiveAppearanceFor(raw.slug, materialProfile);
+  const sourceMuseum = clean(raw.source_institution);
+  const museum = clean(raw.displayed_at) || clean(raw.current_location) || clean(raw.museum);
+  const preview = previewMap[raw.slug];
+  const previewFilename = preview?.url?.split('/').at(-1) || '';
+  const localPreview = /^preview(?:-[a-f0-9]+)?\.glb$/.test(previewFilename)
+    ? `/models/previews/${raw.slug}/${previewFilename}` : '';
+  const movement = movementFor(raw, era);
+  const medium = clean(raw.material);
+  const title = clean(correction?.title || raw.title) || titleCaseSlug(raw.slug);
+  const modelTransform = modelTransformFor(orientationMap[raw.slug]);
+  const dimensionRecord = rawPhysicalDimensions[raw.slug];
+  const physicalDimensions = physicalDimensionsFor(raw.dimensions, dimensionRecord, preview?.url, rawOrientations[raw.slug]);
+  const spatialEligibility = spatialEligibilityFor({
+    slug: raw.slug,
+    record: dimensionRecord,
+    previewUrl: preview?.url,
+    orientation: rawOrientations[raw.slug],
+    spatialReference: physicalDimensions.spatialReference,
+  }, rawSpatialEligibility[raw.slug]);
+  const approximation = spatialEligibility.enabled ? null : approximateDimensionsFor({
+    work: raw, record: dimensionRecord, previewUrl: preview?.url,
+    orientation: rawOrientations[raw.slug], spatialReference: physicalDimensions.spatialReference,
+  });
+
+  const tags = [
+    era,
+    geography,
+    movement,
+    maker,
+    sourceMuseum,
+    museum,
+    ...materials,
+    collectionLabels[collection] || '',
+  ].filter((value) => value && !/not yet recorded|pending|unassigned/i.test(value));
+
+  return {
+    id: raw.slug.replaceAll('/', '--'),
+    slug: raw.slug,
+    collection,
+    wing,
+    route: `/works/${raw.slug}/`,
+    legacyRoute: `/${raw.slug}/`,
+    title,
+    subtitle: collectionLabels[collection] || era,
+    maker,
+    makerDates: '',
+    culture: cultureFor(raw, geography),
+    yearStart: start,
+    yearEnd: end,
+    displayDate: clean(raw.year) || 'Date not yet recorded',
+    era,
+    movement,
+    geography,
+    sourceMuseum,
+    museum,
+    originalLocation: clean(raw.original_location),
+    department: clean(raw.department),
+    medium,
+    materials,
+    materialProfile,
+    materialAppearance,
+    ...physicalDimensions,
+    spatialEligibility,
+    spatialAccess: spatialAccessFor(spatialEligibility, preview?.url, (rawSpatialDisplayDefaults as Record<string, { maxExtentMeters: number }>)[raw.slug], approximation, physicalDimensions.spatialReference),
+    displaySupport: (rawDisplayRecommendations as Record<string, { kind: string; height?: number; note: string }>)[raw.slug] || null,
+    accession: clean(raw.accession),
+    creditLine: clean(raw.attribution),
+    rights: clean(raw.license) || 'Rights review pending',
+    licenseUrl: clean(raw.license_url),
+    provenance: '',
+    tags: [...new Set(tags)],
+    relatedWorks: [],
+    posterImage: renderSet.has(raw.slug) ? `/previews/renders/${raw.slug}/thumb.webp` : `/previews/posters/${raw.slug}/poster.svg`,
+    thumbnailImage: renderSet.has(raw.slug) ? `/previews/renders/${raw.slug}/thumb.webp` : `/previews/posters/${raw.slug}/poster.svg`,
+    // Mirror exact source bytes on this origin; keep preview.url unchanged above
+    // because dimension evidence is bound to the original asset identity.
+    modelGlb: localPreview || '',
+    modelUpAxis: legacyTransformString(modelTransform),
+    modelTransform,
+    modelStats: modelStatsFor(preview, raw),
+    featuredWeight: Math.max(1, 5 - Number(raw.tier || 3)),
+    ingested: raw.ingested || undefined,
+    heroCrop: 'center',
+    index: raw.index || fallbackIndex + 1,
+    search: `${title} ${clean(raw.search) || `${maker} ${era} ${geography} ${materials.join(' ')}`}`.toLowerCase(),
+    hasPreview: Boolean(preview?.url),
+    sourceUrl: clean(raw.source_url),
+    sourceRecordUrl: clean(raw.source_record_url),
+    relatedSourceRecordUrls: Array.isArray(raw.related_source_record_urls)
+      ? [...new Set(raw.related_source_record_urls.map(clean).filter(Boolean))]
+      : [],
+    scanAuthor: clean(raw.scan_author),
+    scanSource: scanSourceForDisplay(raw),
+    aiTrainingRestricted: Boolean(raw.ai_training_restricted),
+    internalModelSource: clean(raw.model?.sourcePath),
+  };
+}
+
+function relatedFor(work: Work, works: Work[]): string[] {
+  return works
+    .filter((candidate) => candidate.slug !== work.slug)
+    .map((candidate) => {
+      const materialOverlap = candidate.materials.filter((material) => work.materials.includes(material)).length;
+      let score = 0;
+      if (work.maker && candidate.maker === work.maker) score += 6;
+      if (candidate.geography === work.geography) score += 3;
+      if (candidate.era === work.era) score += 2;
+      if (candidate.movement === work.movement) score += 2;
+      score += materialOverlap * 2;
+      if (work.yearStart !== null && candidate.yearStart !== null) {
+        score += Math.max(0, 2 - Math.abs(work.yearStart - candidate.yearStart) / 500);
+      }
+      return { slug: candidate.slug, score, index: candidate.index };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, 4)
+    .map((item) => item.slug);
+}
+
+export function compareWorksByDefaultOrder(a: Work, b: Work): number {
+  if (a.yearStart === null && b.yearStart === null) return a.index - b.index;
+  if (a.yearStart === null) return 1;
+  if (b.yearStart === null) return -1;
+  return a.yearStart - b.yearStart || a.index - b.index;
+}
+
+const normalized = rawWorks.map(normalize);
+const selectionOrder = new Map(selectedSlugs.map((slug, index) => [slug, index]));
+export const works: Work[] = normalized
+  .map((work) => ({ ...work, index: (selectionOrder.get(work.slug) ?? 0) + 1, relatedWorks: relatedFor(work, normalized) }))
+  .sort((a, b) => (selectionOrder.get(a.slug) ?? 0) - (selectionOrder.get(b.slug) ?? 0));
+export const worksBySlug = new Map(works.map((work) => [work.slug, work]));
+
+export function workBySlug(slug: string): Work | undefined {
+  return worksBySlug.get(slug);
+}
+
+export function facetValue(label: string): string {
+  return valueKey(label);
+}
+
+function facetCounts(values: string[]): Facet[] {
+  const counts = new Map<string, number>();
+  for (const value of values.filter(Boolean)) counts.set(value, (counts.get(value) || 0) + 1);
+  return [...counts.entries()]
+    .map(([label, count]) => ({ label, value: facetValue(label), count }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+
+export const facets = {
+  eras: facetCounts(works.map((work) => work.era)),
+  geography: facetCounts(works.map((work) => work.geography)),
+  materials: facetCounts(works.flatMap((work) => (work.materials.length ? work.materials : ['Material not yet recorded']))),
+  movements: facetCounts(works.map((work) => work.movement)),
+  makers: facetCounts(works.map((work) => work.maker || 'Maker not yet recorded')),
+};
+
+export function worksForFacet(field: 'era' | 'geography' | 'movement' | 'maker', label: string): Work[] {
+  return works.filter((work) => {
+    const value = field === 'maker' ? work.maker || 'Maker not yet recorded' : work[field];
+    return value === label;
+  });
+}
+
+export function worksForMaterial(label: string): Work[] {
+  return works.filter((work) => (work.materials.length ? work.materials : ['Material not yet recorded']).includes(label));
+}
+
+export function featuredWorkForDate(date = new Date()): Work {
+  return featuredForDate(featuredWorks, date);
+}
+
+export const featuredWorks: Work[] = works;
+const featuredSlugs = new Set(featuredWorks.map((work) => work.slug));
+export const homepageFeaturedWorks = featuredWorks.slice(0, 8);
+
+export function isFeaturedWork(work: Work | string): boolean {
+  return featuredSlugs.has(typeof work === 'string' ? work : work.slug);
+}
+
+export function featuredWorkIn(candidates: Work[]): Work | undefined {
+  return candidates.find((work) => isFeaturedWork(work));
+}
+
+export function homepageHeroWorkForDate(date = new Date()): Work {
+  return works[0];
+}
+
+export function collectionHighlights(): Work[] {
+  return featuredWorks.slice(0, 8);
+}
+
+export function recentlyPrepared(limit = 8): Work[] {
+  return [...works]
+    .sort((a, b) => {
+      const ai = a.ingested || '';
+      const bi = b.ingested || '';
+      if (ai !== bi) return bi.localeCompare(ai);
+      return b.index - a.index;
+    })
+    .slice(0, limit);
+}
+
+export function clampTimelineYear(year: number | null): number | null {
+  if (year === null) return null;
+  return Math.max(-3000, Math.min(new Date().getUTCFullYear(), year));
+}
+
+export function timelinePercent(year: number | null): number {
+  const min = -3000;
+  const max = new Date().getUTCFullYear();
+  const clamped = clampTimelineYear(year);
+  if (clamped === null) return 50;
+  return ((clamped - min) / (max - min)) * 100;
+}
+
+export function publicDataset(work: Work): Record<string, string> {
+  // Canonical facet vocabulary, shared by cards (data-*) and the museum filter:
+  // era · place · material · maker · media.
+  return {
+    slug: work.slug,
+    title: work.title,
+    search: `${work.title} ${work.maker} ${work.displayDate} ${work.era} ${work.geography} ${work.materials.join(' ')} ${work.movement} ${work.wing}`.toLowerCase(),
+    year: String(clampTimelineYear(work.yearStart) ?? ''),
+    wing: work.wing,
+    era: facetValue(work.era),
+    place: facetValue(work.geography),
+    material: (work.materials.length ? work.materials : ['Material not yet recorded']).map(facetValue).join(' '),
+    maker: facetValue(work.maker || 'Maker not yet recorded'),
+    media: work.hasPreview ? 'model' : 'still',
+  };
+}

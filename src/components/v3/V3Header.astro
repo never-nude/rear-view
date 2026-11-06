@@ -1,0 +1,40 @@
+---
+import { withBase } from '../../lib/urls';
+
+type Props = { currentPath: string };
+const { currentPath } = Astro.props;
+const nav = [
+  ['Collection', '/'],
+  ['AR / VR', '/ar-vr/'],
+  ['Atrium ↗', 'https://atrium.earth'],
+];
+const current = (href: string) => href === '/'
+  ? currentPath === '/' || currentPath === '/collection/'
+  : currentPath === href;
+---
+
+<header class="v3-header studio-header" data-v3-header>
+  <a class="v3-brand rear-view-brand" href={withBase('/')} aria-label="Nevernude — Rear View home">
+    <span>Nevernude</span><sup>Rear View</sup>
+  </a>
+
+  <nav class="v3-nav" aria-label="Primary">
+    {nav.map(([label, href]) => (
+      <a href={withBase(href)} aria-current={current(href) ? 'page' : undefined}>{label}</a>
+    ))}
+  </nav>
+
+  <details class="v3-menu">
+    <summary aria-label="Open menu"><span>Menu</span><i aria-hidden="true"></i></summary>
+    <nav aria-label="Mobile primary">
+      {nav.map(([label, href]) => (
+        <a href={withBase(href)} aria-current={current(href) ? 'page' : undefined}>{label}</a>
+      ))}
+    </nav>
+  </details>
+</header>
+
+<style>
+  .rear-view-brand { gap: 9px; }
+  .rear-view-brand sup { letter-spacing: .06em; }
+</style>

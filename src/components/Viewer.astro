@@ -1,0 +1,990 @@
+---
+import SpatialViewing from './SpatialViewing.astro';
+type Props = {
+  glb?: string;
+  poster: string;
+  /** Alt text for the still image. Describe the work itself; the default only names it. */
+  posterAlt?: string;
+  title: string;
+  hud?: boolean;
+  tag?: string;
+  upAxis?: string;
+  modelTransform?: Record<string, unknown>;
+  materialAppearance?: Record<string, unknown>;
+  immersive?: boolean;
+  posterLoading?: 'eager' | 'lazy';
+  autoStart?: boolean | 'visible';
+  autoRotate?: boolean;
+  autoRotateSpeed?: number;
+  // Positive values turn the sculpture counterclockwise when viewed from above.
+  turntableDegreesPerSecond?: number;
+  respectReducedMotion?: boolean;
+  rotationControl?: 'full' | 'simple';
+  wheelZoom?: boolean;
+  displayControls?: boolean;
+  spatialViewing?: boolean;
+  museumLabel?: Record<string, string>;
+  spatialAssetSha256?: string;
+  spatialDimensionStatus?: 'verified' | 'approximate' | 'unknown';
+  spatialLabel?: string;
+  spatialSizeLabel?: string;
+  spatialDefaultMaxExtentMeters?: number;
+  spatialUnavailableNote?: string;
+  spatialReference?: { axis: string; meters: number; extentFraction?: number; estimated?: boolean } | null;
+  spatialNote?: string;
+  displaySupport?: { kind: string; height?: number; note: string } | null;
+};
+const {
+  glb = '',
+  poster,
+  posterAlt,
+  title,
+  hud = true,
+  tag,
+  upAxis = 'auto',
+  modelTransform = {},
+  materialAppearance = {},
+  immersive = false,
+  posterLoading = 'lazy',
+  autoStart = true,
+  autoRotate = true,
+  autoRotateSpeed,
+  turntableDegreesPerSecond,
+  respectReducedMotion = true,
+  rotationControl = 'full',
+  wheelZoom = true,
+  displayControls = false,
+  spatialViewing = false,
+  museumLabel,
+  spatialAssetSha256,
+  spatialDimensionStatus = 'unknown',
+  spatialLabel,
+  spatialSizeLabel,
+  spatialDefaultMaxExtentMeters,
+  spatialUnavailableNote,
+  spatialReference = null,
+  spatialNote,
+  displaySupport,
+} = Astro.props;
+const hasModel = Boolean(glb);
+const uid = Math.random().toString(36).slice(2, 8);
+const appearanceJson = JSON.stringify(materialAppearance);
+const transformJson = JSON.stringify(modelTransform);
+---
+
+<div class:list={['viewer', { 'viewer--immersive': immersive }]} data-viewer data-auto-start={String(autoStart)}>
+  <div class="model-stage" data-stage data-glb={hasModel ? glb : ''} data-spatial-asset-sha256={spatialViewing ? spatialAssetSha256 : undefined} data-up-axis={upAxis} data-model-transform={transformJson} data-material-appearance={appearanceJson} data-immersive={String(immersive)} data-auto-rotate={String(autoRotate)} data-auto-rotate-speed={autoRotateSpeed} data-turntable-degrees-per-second={turntableDegreesPerSecond} data-respect-reduced-motion={respectReducedMotion ? undefined : 'false'} data-rotation-control={rotationControl === 'simple' ? 'simple' : undefined} data-wheel-zoom={String(wheelZoom)} tabindex={hasModel ? '0' : undefined} aria-label={hasModel ? `Interactive 3D view of ${title}` : undefined}>
+    <span class="stage-corner stage-corner--tl" aria-hidden="true"></span>
+    <span class="stage-corner stage-corner--tr" aria-hidden="true"></span>
+    <span class="stage-corner stage-corner--bl" aria-hidden="true"></span>
+    <span class="stage-corner stage-corner--br" aria-hidden="true"></span>
+    <span class="stage-tag" aria-hidden="true">{tag ?? (hasModel ? '3D MODEL' : 'PHOTOGRAPH')}</span>
+
+    <img src={poster} alt={posterAlt ?? `${title} — still image`} width="720" height="900" loading={posterLoading} decoding="async" data-poster />
+
+    {/* Rendered hidden: the script reveals it only when it is needed (auto-start
+        off, or the model failed to load). Crawlers, pre-hydration paint, and
+        no-JS visitors all get the still image with nothing offered on top of it. */}
+    {hasModel && (
+      <button class="stage-activate" type="button" data-activate hidden>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M12 2 4 6.5v9L12 20l8-4.5v-9L12 2z" />
+          <path d="M4 6.5 12 11l8-4.5M12 11v9" />
+        </svg>
+        Examine in 3D
+      </button>
+    )}
+    <div class="stage-loading" data-loading hidden>
+      <span class="spinner" aria-hidden="true"></span>
+      <span class="loading-text">Loading…</span>
+    </div>
+
+    {immersive && hasModel && (
+      <div class="immersive-tools" data-immersive-tools hidden aria-label="3D viewing tools">
+        <button type="button" data-zoom-in aria-label="Zoom in" title="Zoom in">+</button>
+        <button type="button" data-zoom-out aria-label="Zoom out" title="Zoom out">−</button>
+        <button type="button" data-tool-wire aria-pressed="false" title="Show wireframe">Mesh</button>
+        <button type="button" data-tool-rotate aria-pressed={String(autoRotate)} title="Toggle rotation">Turn</button>
+        <button type="button" data-tool-reset title="Reset view">Reset</button>
+        <button type="button" data-tool-fullscreen aria-pressed="false" title="Enter full screen">Expand</button>
+      </div>
+    )}
+
+    {immersive && hasModel && displayControls && (
+      <details class="immersive-light" data-display-controls hidden>
+        <summary>Display <span>+</span></summary>
+        <div class="immersive-light__panel" aria-label="Display controls">
+          <label>Exposure <input type="range" min="5" max="120" step="1" value="20" data-exposure /></label>
+          <div class="immersive-texture">
+            <div class="immersive-texture__label">
+              <label for={`texture-${uid}`}>Texture</label>
+              <button type="button" data-texture-reset aria-label="Restore original texture" disabled>Reset</button>
+            </div>
+            <input id={`texture-${uid}`} type="range" min="0" max="100" step="1" value="50" data-surface-texture />
+          </div>
+        </div>
+      </details>
+    )}
+  </div>
+
+  {hud && hasModel && (
+    <div class="viewer-hud" data-hud-panel hidden>
+      <div class="hud-control">
+        <label for={`b-${uid}`}>Exposure <span class="hud-read" data-read-brightness>20%</span></label>
+        <input id={`b-${uid}`} type="range" min="5" max="120" step="1" value="20" data-brightness />
+      </div>
+      <div class="hud-control">
+        <label for={`r-${uid}`}>Texture <span class="hud-ends">rough → shiny</span></label>
+        <input id={`r-${uid}`} type="range" min="0" max="100" step="1" value="20" data-texture />
+      </div>
+      <div class="hud-control hud-control--row">
+        <label class="hud-switch">
+          <input type="checkbox" data-autorotate checked={autoRotate} />
+          <span>Auto-rotate</span>
+        </label>
+        <label class="hud-switch">
+          <input type="checkbox" data-wireframe />
+          <span>Wireframe</span>
+        </label>
+        <button class="hud-reset" type="button" data-reset>Reset view</button>
+      </div>
+    </div>
+  )}
+
+  {hasModel && <p class="stage-hint fine" data-hint hidden>Drag to orbit · <span class="stage-hint__pan">right-drag or two-finger drag to pan · </span>scroll or pinch to zoom · double-tap to reset</p>}
+
+  {spatialViewing && hasModel && <SpatialViewing title={title} poster={poster} museumLabel={museumLabel} reference={spatialReference} sizeNote={spatialNote} displaySupport={displaySupport} dimensionStatus={spatialDimensionStatus} requiresAssetCheck={Boolean(spatialAssetSha256)} referenceLabel={spatialLabel} sizeLabel={spatialSizeLabel} defaultMaxExtentMeters={spatialDefaultMaxExtentMeters} />}
+  {!spatialViewing && spatialUnavailableNote && <a id="ar-vr" class="spatial-unavailable" data-spatial-unavailable href="#size-verification" title={spatialUnavailableNote}>AR / VR unavailable · Size unverified <span aria-hidden="true">↓</span></a>}
+
+  <noscript>
+    {/* Without JavaScript the still image is the presentation, not a fallback: hide
+        every affordance that promises an interaction the page cannot deliver. */}
+    <style is:inline>
+      .viewer .stage-tag, .viewer .stage-activate, .viewer .stage-loading, .viewer .stage-hint { display: none !important; }
+    </style>
+  </noscript>
+</div>
+
+<script>
+  import { rememberSpatialAppearance } from '../lib/spatial-materials.mjs';
+  import { createTextureControl } from '../lib/viewerTexture';
+
+  type ViewState = {
+    position: number[];
+    target: number[];
+    autoRotate: boolean;
+    wireframe: boolean;
+    turntableAngle?: number;
+  };
+
+  type Viewer = {
+    spatial: any;
+    setVisible: (visible: boolean) => void;
+    capture: () => ViewState;
+    dispose: () => void;
+    setBrightness: (pct: number) => void;
+    setTexture: (pct: number) => void;
+    setWireframe: (on: boolean) => void;
+    setAutoRotate: (on: boolean) => void;
+    zoom: (factor: number) => void;
+    reset: () => void;
+    texture: ReturnType<typeof createTextureControl>;
+    defaults: { exposure: number; texture: number; autoRotate: boolean };
+  };
+
+  type Appearance = {
+    key?: string;
+    baseColor: string;
+    secondaryColor: string;
+    tintStrength: number;
+    variation: number;
+    metalness: number;
+    roughness: number;
+    textureDefault: number;
+    exposure: number;
+    envMapIntensity: number;
+    emissiveIntensity?: number;
+    mapLift?: number;
+    mapFloor?: number;
+    backdropTop?: string;
+    backdropBase?: string;
+    backdropGlow?: string;
+    backdropGlowStrength?: number;
+    keyLightIntensity?: number;
+    fillLightIntensity?: number;
+    rimLightIntensity?: number;
+    hemiLightIntensity?: number;
+    sourceVertexColors?: 'ignore-invalid';
+    preserveSourceUnlit?: boolean;
+    preserveSourceMaterials?: boolean;
+  };
+
+  const WIREFRAME_COLOR = 0xE3DAC9;
+
+  const defaultAppearance: Appearance = {
+    baseColor: '#9F9689',
+    secondaryColor: '#7A7268',
+    tintStrength: 0.1,
+    variation: 0.12,
+    metalness: 0,
+    roughness: 0.68,
+    textureDefault: 34,
+    exposure: 0.66,
+    envMapIntensity: 0.18,
+    emissiveIntensity: 0,
+    mapLift: 0.16,
+    mapFloor: 0.05,
+    backdropTop: '#15243A',
+    backdropBase: '#15243A',
+    backdropGlow: '#D7DEE8',
+    backdropGlowStrength: 0.07,
+    keyLightIntensity: 1.12,
+    fillLightIntensity: 0.88,
+    rimLightIntensity: 1.16,
+    hemiLightIntensity: 0.82,
+  };
+
+  function readAppearance(stage: HTMLElement): Appearance {
+    try {
+      return { ...defaultAppearance, ...JSON.parse(stage.dataset.materialAppearance || '{}') };
+    } catch {
+      return defaultAppearance;
+    }
+  }
+
+  function clamp01(value: number) {
+    return Math.max(0, Math.min(1, value));
+  }
+
+  function noise01(value: number) {
+    const s = Math.sin(value * 12.9898) * 43758.5453;
+    return s - Math.floor(s);
+  }
+
+  function hexToRgba(hex: string | undefined, alpha: number) {
+    const source = (hex || '#E0A95B').replace('#', '').trim();
+    const full = source.length === 3 ? source.split('').map((char) => char + char).join('') : source;
+    if (!/^[0-9a-f]{6}$/i.test(full)) return `rgba(224, 169, 91, ${clamp01(alpha)})`;
+    const value = Number.parseInt(full, 16);
+    const r = (value >> 16) & 255;
+    const g = (value >> 8) & 255;
+    const b = value & 255;
+    return `rgba(${r}, ${g}, ${b}, ${clamp01(alpha)})`;
+  }
+
+  function applyStageBackdrop(stage: HTMLElement, appearance: Appearance) {
+    const top = appearance.backdropTop || defaultAppearance.backdropTop;
+    const base = appearance.backdropBase || defaultAppearance.backdropBase;
+    const glow = hexToRgba(appearance.backdropGlow, appearance.backdropGlowStrength ?? defaultAppearance.backdropGlowStrength ?? 0.18);
+    stage.style.background = [
+      `radial-gradient(70% 52% at 50% 20%, ${glow}, transparent 72%)`,
+      `radial-gradient(120% 80% at 50% -5%, ${top}, ${base} 78%)`,
+    ].join(', ');
+  }
+
+  function hasAuthoredVertexColors(mesh: any) {
+    return Boolean(mesh.geometry?.attributes?.color && !mesh.geometry.userData.atriumPaletteBase);
+  }
+
+  function addMaterialVariation(THREE: any, mesh: any, material: any, appearance: Appearance) {
+    if (hasAuthoredVertexColors(mesh)) return;
+    const position = mesh.geometry?.attributes?.position;
+    if (!position || position.count > 850000) return;
+
+    if (!mesh.geometry.attributes.color) mesh.geometry = mesh.geometry.clone();
+    const colors = new Float32Array(position.count * 3);
+    const base = new THREE.Color(appearance.baseColor);
+    const secondary = new THREE.Color(appearance.secondaryColor || appearance.baseColor);
+    const seed = noise01((mesh.name || material.name || 'atrium').length * 17.17);
+
+    for (let i = 0; i < position.count; i += 1) {
+      const x = position.getX(i), y = position.getY(i), z = position.getZ(i);
+      const grain = noise01(x * 37.1 + y * 51.7 + z * 73.3 + seed * 19.9);
+      const vertical = clamp01((y + 0.5) * 0.75);
+      const mix = clamp01(grain * appearance.variation + vertical * appearance.variation * 0.45);
+      const color = base.clone().lerp(secondary, mix);
+      const shade = 1 - appearance.variation * 0.28 + grain * appearance.variation * 0.42;
+      color.multiplyScalar(shade);
+      colors[i * 3] = color.r;
+      colors[i * 3 + 1] = color.g;
+      colors[i * 3 + 2] = color.b;
+    }
+
+    mesh.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    mesh.geometry.userData.atriumPaletteBase = appearance.baseColor;
+    material.vertexColors = true;
+  }
+
+  function prepareMaterial(THREE: any, source: any, appearance?: Appearance) {
+    if (appearance?.preserveSourceMaterials === true) return source;
+    if (appearance?.preserveSourceUnlit === true && source.isMeshBasicMaterial) return source;
+    if ('roughness' in source && 'metalness' in source && 'emissive' in source) return source;
+    const prepared = new THREE.MeshStandardMaterial({
+      name: source.name || 'atrium-material',
+      map: source.map || null,
+      normalMap: source.normalMap || null,
+      aoMap: source.aoMap || null,
+      alphaMap: source.alphaMap || null,
+      transparent: source.transparent || false,
+      opacity: source.opacity ?? 1,
+      side: source.side,
+      vertexColors: source.vertexColors || false,
+      color: source.color ? source.color.clone() : new THREE.Color(0xffffff),
+    });
+    prepared.needsUpdate = true;
+    return prepared;
+  }
+
+  function createWireframeMaterial(THREE: any, source: any) {
+    return new THREE.MeshBasicMaterial({
+      color: WIREFRAME_COLOR,
+      wireframe: true,
+      side: source.side,
+    });
+  }
+
+  function applyMapLift(THREE: any, material: any, appearance: Appearance) {
+    const mapLift = appearance.mapLift || 0;
+    const mapFloor = appearance.mapFloor || 0;
+    if (!material.map || (!mapLift && !mapFloor)) return;
+    const liftColor = new THREE.Color(appearance.secondaryColor || appearance.baseColor);
+    material.onBeforeCompile = (shader: any) => {
+      shader.uniforms.atriumMapLift = { value: mapLift };
+      shader.uniforms.atriumMapFloor = { value: mapFloor };
+      shader.uniforms.atriumMapLiftColor = { value: liftColor };
+      shader.fragmentShader = `
+uniform float atriumMapLift;
+uniform float atriumMapFloor;
+uniform vec3 atriumMapLiftColor;
+${shader.fragmentShader.replace('#include <map_fragment>', `
+#include <map_fragment>
+#ifdef USE_MAP
+  diffuseColor.rgb = mix(diffuseColor.rgb, atriumMapLiftColor, atriumMapLift);
+  float atriumLuma = dot(diffuseColor.rgb, vec3(0.2126, 0.7152, 0.0722));
+  if (atriumLuma < atriumMapFloor) {
+    diffuseColor.rgb *= atriumMapFloor / max(atriumLuma, 0.001);
+  }
+#endif
+`)}`;
+    };
+    material.customProgramCacheKey = () => `atrium-map-lift-${mapLift}-${mapFloor}-${liftColor.getHexString()}`;
+  }
+
+  function hasSourceTexture(material: any) {
+    return Boolean(
+      material.map
+      || material.normalMap
+      || material.aoMap
+      || material.alphaMap
+      || material.emissiveMap
+      || material.metalnessMap
+      || material.roughnessMap
+      || material.bumpMap
+      || material.displacementMap
+    );
+  }
+
+  function applyMaterialAppearance(THREE: any, mesh: any, material: any, appearance: Appearance) {
+    if (appearance.preserveSourceMaterials === true) return;
+    if (!('color' in material)) return;
+    // Explicit, evidence-backed per-work decision; retain the source attribute
+    // and material multiplier, and never replace it with a generated palette.
+    if (appearance.sourceVertexColors === 'ignore-invalid' && hasAuthoredVertexColors(mesh)) {
+      material.vertexColors = false;
+    }
+    if (hasSourceTexture(material) || hasAuthoredVertexColors(mesh)) {
+      if ('envMapIntensity' in material && material.envMapIntensity == null) {
+        material.envMapIntensity = appearance.envMapIntensity;
+      }
+      material.needsUpdate = true;
+      return;
+    }
+
+    rememberSpatialAppearance(material, appearance);
+    const target = new THREE.Color(appearance.baseColor);
+    material.color.lerp(target, appearance.tintStrength);
+    if ('metalness' in material) material.metalness = appearance.metalness;
+    if ('roughness' in material) material.roughness = appearance.roughness;
+    if ('envMapIntensity' in material) material.envMapIntensity = appearance.envMapIntensity;
+    if ('emissive' in material && appearance.emissiveIntensity) {
+      material.emissive.lerp(target, 0.72);
+      material.emissiveIntensity = appearance.emissiveIntensity;
+    }
+    applyMapLift(THREE, material, appearance);
+    addMaterialVariation(THREE, mesh, material, appearance);
+    material.needsUpdate = true;
+  }
+
+  async function buildViewer(stage: HTMLElement, glb: string, saved: ViewState | undefined, signal: AbortSignal): Promise<Viewer> {
+    const THREE = await import('three');
+    const { DRACOLoader } = await import('three/examples/jsm/loaders/DRACOLoader.js');
+    const { GLTFLoader } = await import('three/examples/jsm/loaders/GLTFLoader.js');
+    const { OrbitControls } = await import('three/examples/jsm/controls/OrbitControls.js');
+    const { RoomEnvironment } = await import('three/examples/jsm/environments/RoomEnvironment.js');
+    const { MeshoptDecoder } = await import('three/examples/jsm/libs/meshopt_decoder.module.js');
+    const { applyModelTransform, frameCameraToBox, normalizeModel, parseModelTransform } = await import(`${import.meta.env.BASE_URL}model-render-utils.js`);
+    signal.throwIfAborted();
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const rotateOnLoad = stage.dataset.autoRotate !== 'false'
+      && (stage.dataset.respectReducedMotion === 'false' || !reduce);
+
+    let width = stage.clientWidth || 600;
+    let height = stage.clientHeight || 600;
+    const appearance = readAppearance(stage);
+    const immersive = stage.dataset.immersive === 'true';
+    applyStageBackdrop(stage, appearance);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(width, height);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = appearance.exposure;
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.domElement.classList.add('viewer-canvas');
+    stage.appendChild(renderer.domElement);
+    renderer.domElement.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(35, width / height, immersive ? 0.001 : 0.01, 200);
+
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    const room = new RoomEnvironment();
+    const environment = pmrem.fromScene(room, 0.04);
+    scene.environment = environment.texture;
+    room.dispose();
+    pmrem.dispose();
+
+    // Keep the gallery rig spectrally neutral: authored base-colour, normal and
+    // PBR maps supply the object's colour and surface character. The lights only
+    // reveal form, and their direction is fixed rather than visitor-controlled.
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x606060, appearance.hemiLightIntensity ?? 0.7));
+    const key = new THREE.DirectionalLight(0xffffff, appearance.keyLightIntensity ?? 2.4);
+    const keyRadius = 5, keyHeight = 4;
+    const fixedKeyAngle = 0.15 * Math.PI * 2;
+    key.position.set(Math.cos(fixedKeyAngle) * keyRadius, keyHeight, Math.sin(fixedKeyAngle) * keyRadius);
+    key.castShadow = true;
+    key.shadow.mapSize.set(1024, 1024);
+    key.shadow.bias = -0.0005;
+    key.shadow.normalBias = 0.015;
+    scene.add(key);
+    const fill = new THREE.DirectionalLight(0xffffff, appearance.fillLightIntensity ?? 0.55);
+    fill.position.set(-3, 1.2, -2.5);
+    scene.add(fill);
+    const rim = new THREE.DirectionalLight(0xffffff, appearance.rimLightIntensity ?? 0.4);
+    rim.position.set(-2.7, 2.6, 3.4);
+    scene.add(rim);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.08;
+    controls.enablePan = true;
+    controls.enableZoom = stage.dataset.wheelZoom !== 'false';
+    controls.rotateSpeed = 0.9;
+    controls.zoomSpeed = immersive ? 1.35 : 0.8;
+    controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.PAN };
+    const turntableSpeed = Number(stage.dataset.turntableDegreesPerSecond || 0);
+    const turnsModel = Number.isFinite(turntableSpeed) && turntableSpeed !== 0;
+    let rotating = saved?.autoRotate ?? rotateOnLoad;
+    controls.autoRotate = !turnsModel && rotating;
+    const timedRotation = stage.dataset.autoRotateSpeed !== undefined;
+    const rotationSpeed = Number(stage.dataset.autoRotateSpeed ?? 1);
+    controls.autoRotateSpeed = Number.isFinite(rotationSpeed) && rotationSpeed >= 0 ? rotationSpeed : 1;
+
+    const loader = new GLTFLoader();
+    loader.setMeshoptDecoder(MeshoptDecoder);
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath(`${import.meta.env.BASE_URL}vendor/draco/`);
+    loader.setDRACOLoader(dracoLoader);
+    const releasePending = () => {
+      controls.dispose();
+      environment.dispose();
+      renderer.dispose();
+      renderer.forceContextLoss();
+      renderer.domElement.remove();
+    };
+    signal.addEventListener('abort', releasePending, { once: true });
+    let gltf;
+    let verifiedAsset = false;
+    try {
+      if (stage.dataset.spatialAssetSha256) {
+        // Verify the bytes actually displayed, including models with mutable URLs.
+        // A mismatch keeps ordinary 3D available while preventing an AR launch.
+        const response = await fetch(glb, { signal });
+        if (!response.ok) throw new Error(`Model request failed: ${response.status}`);
+        const bytes = await response.arrayBuffer();
+        if (crypto.subtle) {
+          try {
+            const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', bytes));
+            verifiedAsset = Array.from(digest, value => value.toString(16).padStart(2, '0')).join('') === stage.dataset.spatialAssetSha256;
+          } catch {
+            // A browser unable to verify the model can still offer ordinary 3D.
+            verifiedAsset = false;
+          }
+        }
+        gltf = await loader.parseAsync(bytes, new URL('.', new URL(glb, location.href)).href);
+      } else gltf = await loader.loadAsync(glb);
+    } catch (error) {
+      signal.removeEventListener('abort', releasePending);
+      if (!signal.aborted) releasePending();
+      throw error;
+    } finally {
+      dracoLoader.dispose();
+    }
+    signal.throwIfAborted();
+    const model = gltf.scene;
+    const transform = parseModelTransform(stage.dataset.modelTransform || stage.dataset.upAxis || 'auto', stage.dataset.upAxis || 'auto');
+
+    const scanHelpers: any[] = [];
+    const materials: any[] = [];
+    const wireframeMeshes: any[] = [];
+    model.traverse((obj: any) => {
+      const elementCount = obj.geometry?.index?.count || obj.geometry?.getAttribute?.('position')?.count || 0;
+      const tinyCube = /^cube(?:_|\.|$)/i.test(obj.name || '') && elementCount / 3 <= 12;
+      if (/^(?:cubo|disco)(?:_|\.|$)/i.test(obj.name || '') || /^(?:cubo|disco)(?:_|\.|$)/i.test(obj.material?.name || '') || tinyCube) {
+        scanHelpers.push(obj);
+        return;
+      }
+      if (obj.isMesh && obj.material) {
+        if (!obj.geometry?.getAttribute('normal')) {
+          obj.geometry = obj.geometry.clone();
+          obj.geometry.computeVertexNormals();
+        }
+        // The scan's authored maps carry its surface colour and texture. The
+        // fixed neutral key may ground its geometry, but the object never receives
+        // a synthetic shadow from another mesh in the viewer.
+        obj.castShadow = true;
+        obj.receiveShadow = false;
+        const hasMaterialArray = Array.isArray(obj.material);
+        const list = hasMaterialArray ? obj.material : [obj.material];
+        const prepared = list.map((m: any) => prepareMaterial(THREE, m, appearance));
+        const wireframes = prepared.map((m: any) => createWireframeMaterial(THREE, m));
+        const solidMaterial = hasMaterialArray ? prepared : prepared[0];
+        const wireframeMaterial = hasMaterialArray ? wireframes : wireframes[0];
+        obj.material = solidMaterial;
+        wireframeMeshes.push({ mesh: obj, solidMaterial, wireframeMaterial });
+        for (const m of prepared) {
+          applyMaterialAppearance(THREE, obj, m, appearance);
+          materials.push(m);
+        }
+      }
+    });
+    for (const helper of scanHelpers) helper.parent?.remove(helper);
+
+    applyModelTransform(THREE, model, transform);
+    const normalized = normalizeModel(THREE, model);
+    const box = normalized.box;
+    const size = normalized.size;
+    // normalizeModel positions the scan around world origin. Rotate a wrapper so
+    // the scan's original origin cannot move the sculpture off its base.
+    const turntable = new THREE.Group();
+    if (turnsModel) {
+      turntable.add(model);
+      turntable.rotation.y = saved?.turntableAngle ?? 0;
+      scene.add(turntable);
+    } else scene.add(model);
+
+    // Keep the shadow camera close to the normalized object. A modest map and
+    // PCF filtering produce a soft grounding shadow without painting detail onto
+    // the object's authored texture.
+    const shadowSpan = Math.max(size.x, size.y, size.z) * 2.2;
+    const keyDist = Math.hypot(keyRadius, keyHeight);
+    const shadowCam = key.shadow.camera;
+    shadowCam.left = -shadowSpan;
+    shadowCam.right = shadowSpan;
+    shadowCam.top = shadowSpan;
+    shadowCam.bottom = -shadowSpan;
+    shadowCam.near = Math.max(0.1, keyDist - shadowSpan);
+    shadowCam.far = keyDist + shadowSpan;
+    shadowCam.updateProjectionMatrix();
+
+    const isWideLow = Math.max(size.x, size.z) > Math.max(size.y * 1.8, 0.65);
+    camera.near = immersive ? 0.001 : 0.01;
+    camera.far = 100;
+    frameCameraToBox(THREE, camera, box, {
+      direction: transform.viewDirection || [0.55, 0.34, 0.9],
+      padding: transform.fit || (isWideLow ? 1.38 : 1.18),
+    });
+    controls.target.set(0, 0, 0);
+    controls.minDistance = immersive ? 0.035 : 0.5;
+    controls.maxDistance = immersive ? 24 : 8;
+    controls.update(timedRotation ? 0 : undefined);
+
+    const grid = new THREE.GridHelper(4, 24, 0x3a557a, 0x22324a);
+    grid.position.y = -size.y / 2 - 0.001;
+    (grid.material as any).transparent = true;
+    (grid.material as any).opacity = 0.18;
+    scene.add(grid);
+
+    // A low-opacity neutral receiver grounds the object without tinting the
+    // backdrop or competing with texture and material maps.
+    const shadowFoot = Math.max(1.2, Math.max(size.x, size.z) * 4);
+    const ground = new THREE.Mesh(
+      new THREE.PlaneGeometry(shadowFoot, shadowFoot),
+      new THREE.ShadowMaterial({ color: 0x000000, opacity: 0.16, depthWrite: false }),
+    );
+    ground.rotation.x = -Math.PI / 2;
+    ground.position.y = -size.y / 2 + 0.001;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    const home = { pos: camera.position.clone(), tgt: controls.target.clone() };
+    let wireframe = saved?.wireframe ?? false;
+    if (saved) {
+      camera.position.fromArray(saved.position);
+      controls.target.fromArray(saved.target);
+      controls.autoRotate = !turnsModel && saved.autoRotate;
+      for (const item of wireframeMeshes) item.mesh.material = wireframe ? item.wireframeMaterial : item.solidMaterial;
+      controls.update(timedRotation ? 0 : undefined);
+    }
+
+    let visible = true;
+    let disposed = false;
+    let suspended = false;
+    let raf = 0;
+    let previousFrameTime: number | undefined;
+    function frame(now = performance.now()) {
+      raf = 0;
+      if (disposed || suspended || !visible || document.hidden) return;
+      const elapsed = previousFrameTime === undefined ? 0 : Math.max((now - previousFrameTime) / 1000, 0);
+      previousFrameTime = now;
+      // The featured sculpture turns independently of orbit-control interaction state.
+      // Use elapsed time so a slow device does not turn it into a nearly still image.
+      if (turnsModel && rotating) {
+        turntable.rotation.y = (turntable.rotation.y + THREE.MathUtils.degToRad(turntableSpeed) * Math.min(elapsed, 1)) % (Math.PI * 2);
+      }
+      controls.update(timedRotation ? Math.min(elapsed, 0.1) : undefined);
+      renderer.render(scene, camera);
+      raf = requestAnimationFrame(frame);
+    }
+    frame();
+
+    const ro = new ResizeObserver(() => {
+      if (suspended) return;
+      width = stage.clientWidth; height = stage.clientHeight;
+      renderer.setSize(width, height); camera.aspect = width / height; camera.updateProjectionMatrix();
+    });
+    ro.observe(stage);
+    function updateRendering() {
+      cancelAnimationFrame(raf);
+      previousFrameTime = undefined;
+      frame();
+    }
+    document.addEventListener('visibilitychange', updateRendering);
+    window.addEventListener('pageshow', updateRendering);
+
+    // Keep pending cleanup attached through material setup and the first render.
+    // If initialization throws, start() aborts the activation and releases its context.
+    signal.removeEventListener('abort', releasePending);
+    const textureControl = createTextureControl(materials);
+    return {
+      spatial: {
+        THREE, renderer, scene, camera, model, ground, grid, box, verifiedAsset,
+        suspend: () => {
+          if (suspended || disposed) throw new Error('Finish the current view before starting another.');
+          suspended = true;
+          cancelAnimationFrame(raf);
+          const controlsEnabled = controls.enabled;
+          controls.enabled = false;
+          return () => {
+            if (disposed) return;
+            suspended = false;
+            controls.enabled = controlsEnabled;
+            width = stage.clientWidth || width; height = stage.clientHeight || height;
+            renderer.setSize(width, height); camera.aspect = width / height; camera.updateProjectionMatrix();
+            updateRendering();
+          };
+        },
+      },
+      setVisible: (next) => { visible = next; updateRendering(); },
+      capture: () => ({ position: camera.position.toArray(), target: controls.target.toArray(), autoRotate: rotating, wireframe, turntableAngle: turntable.rotation.y }),
+      dispose: () => {
+        if (disposed) return;
+        disposed = true;
+        cancelAnimationFrame(raf);
+        ro.disconnect();
+        document.removeEventListener('visibilitychange', updateRendering);
+        window.removeEventListener('pageshow', updateRendering);
+        controls.dispose();
+        const geometries = new Set<any>();
+        const surfaces = new Set<any>();
+        const textures = new Set<any>();
+        scene.traverse((object: any) => {
+          if (object.geometry) geometries.add(object.geometry);
+          for (const material of [object.material].flat()) if (material) surfaces.add(material);
+        });
+        for (const item of wireframeMeshes) {
+          for (const material of [item.solidMaterial, item.wireframeMaterial].flat()) surfaces.add(material);
+        }
+        for (const material of surfaces) {
+          for (const value of Object.values(material)) if ((value as any)?.isTexture) textures.add(value);
+          material.dispose();
+        }
+        for (const geometry of geometries) geometry.dispose();
+        for (const texture of textures) texture.dispose();
+        key.shadow.dispose();
+        environment.dispose();
+        renderer.dispose();
+        renderer.forceContextLoss();
+        renderer.domElement.remove();
+      },
+      texture: textureControl,
+      setBrightness: (pct) => { renderer.toneMappingExposure = pct / 100; },
+      // Slider runs rough (0) → shiny (100); roughness is the inverse.
+      setTexture: (pct) => { if (appearance.preserveSourceMaterials === true) { textureControl.setValue(pct); return; } const r = 1 - pct / 100; for (const m of materials) { m.roughness = r; m.needsUpdate = true; } },
+      setWireframe: (on) => { wireframe = on; for (const item of wireframeMeshes) item.mesh.material = on ? item.wireframeMaterial : item.solidMaterial; },
+      setAutoRotate: (on) => { rotating = on; controls.autoRotate = !turnsModel && on; },
+      zoom: (factor) => {
+        const offset = camera.position.clone().sub(controls.target);
+        const distance = Math.max(controls.minDistance, Math.min(controls.maxDistance, offset.length() * factor));
+        offset.setLength(distance);
+        camera.position.copy(controls.target).add(offset);
+        controls.update(timedRotation ? 0 : undefined);
+      },
+      reset: () => { turntable.rotation.y = 0; camera.position.copy(home.pos); controls.target.copy(home.tgt); controls.update(timedRotation ? 0 : undefined); },
+      defaults: { exposure: Math.round(appearance.exposure * 100), texture: appearance.preserveSourceMaterials === true ? textureControl.defaultValue : appearance.textureDefault, autoRotate: rotating },
+    };
+  }
+
+  // Exhibition pages can contain many models. Keep four nearby/recent viewers,
+  // including in-flight loads; retain the visitor's camera when an old one is released.
+  const residents = new Map<Element, { visible: () => boolean; release: () => void }>();
+  function trimResidents() {
+    for (const [element, resident] of residents) {
+      if (residents.size <= 4) break;
+      if (resident.visible() || document.fullscreenElement === element || element.contains(document.activeElement)) continue;
+      resident.release();
+    }
+  }
+
+  for (const root of document.querySelectorAll('[data-viewer]')) {
+    const stage = root.querySelector('[data-stage]') as HTMLElement | null;
+    const glb = stage?.getAttribute('data-glb') || '';
+    if (!stage || !glb) continue;
+    const poster = root.querySelector('[data-poster]') as HTMLElement | null;
+    const loading = root.querySelector('[data-loading]') as HTMLElement | null;
+    const activate = root.querySelector('[data-activate]') as HTMLButtonElement | null;
+    const hud = root.querySelector('[data-hud-panel]') as HTMLElement | null;
+    const tools = root.querySelector('[data-immersive-tools]') as HTMLElement | null;
+    const displayPanel = root.querySelector('[data-display-controls]') as HTMLElement | null;
+    const hint = root.querySelector('[data-hint]') as HTMLElement | null;
+    const lazy = root.getAttribute('data-auto-start') === 'visible' && 'IntersectionObserver' in window;
+    let visible = !lazy;
+    let activeViewer: Viewer | undefined;
+    let saved: ViewState | undefined;
+    let bindings: AbortController | undefined;
+    let hintTimer: number | undefined;
+    let generation = 0;
+    let started = false;
+
+    function release() {
+      generation += 1;
+      if (activeViewer) saved = activeViewer.capture();
+      activeViewer?.dispose();
+      activeViewer = undefined;
+      bindings?.abort();
+      window.clearTimeout(hintTimer);
+      stage!.classList.remove('is-live');
+      for (const element of [loading, tools, displayPanel, hud, hint]) if (element) element.hidden = true;
+      if (poster) poster.style.opacity = '1';
+      if (activate) activate.hidden = false;
+      residents.delete(root);
+      started = false;
+    }
+
+    async function start() {
+      if (started) return; started = true;
+      const current = ++generation;
+      const events = new AbortController();
+      bindings = events;
+      if (lazy) {
+        residents.delete(root);
+        residents.set(root, { visible: () => visible, release });
+        trimResidents();
+      }
+      if (activate) activate.hidden = true;
+      if (poster) poster.style.opacity = '0';
+      if (loading) loading.hidden = false;
+      try {
+        const viewer = await buildViewer(stage!, glb, saved, events.signal);
+        if (current !== generation) { viewer.dispose(); return; }
+        activeViewer = viewer;
+        viewer.setVisible(visible);
+        root.dispatchEvent(new CustomEvent('atrium:viewer-ready'));
+        function on<K extends keyof HTMLElementEventMap>(target: HTMLElement | Document | null, type: K, listener: (event: HTMLElementEventMap[K]) => void) {
+          target?.addEventListener(type, listener as EventListener, { signal: events.signal });
+        }
+        if (loading) loading.hidden = true;
+        stage!.classList.add('is-live');
+        if (hint) {
+          // Show the gesture hint once, then let it get out of the way: it fades after
+          // a beat, or as soon as the visitor starts handling the model. Only canvas
+          // pointerdowns count — toolbar taps bubble through the stage and must not eat it.
+          hint.hidden = false;
+          const dismissHint = () => hint.classList.add('is-dismissed');
+          hintTimer = window.setTimeout(dismissHint, 7000);
+          on(stage!, 'pointerdown', (event) => {
+            if (event.target instanceof Element && event.target.classList.contains('viewer-canvas')) dismissHint();
+          });
+        }
+        if (tools) {
+          tools.hidden = false;
+          const zoomIn = tools.querySelector('[data-zoom-in]') as HTMLButtonElement | null;
+          const zoomOut = tools.querySelector('[data-zoom-out]') as HTMLButtonElement | null;
+          const wire = tools.querySelector('[data-tool-wire]') as HTMLButtonElement | null;
+          const rotate = tools.querySelector('[data-tool-rotate]') as HTMLButtonElement | null;
+          const reset = tools.querySelector('[data-tool-reset]') as HTMLButtonElement | null;
+          const fullscreen = tools.querySelector('[data-tool-fullscreen]') as HTMLButtonElement | null;
+          let wireOn = saved?.wireframe ?? false;
+          wire?.setAttribute('aria-pressed', String(wireOn));
+          let rotateOn = viewer.defaults.autoRotate;
+          const syncRotationButton = () => {
+            if (!rotate) return;
+            if (stage?.dataset.rotationControl === 'simple') {
+              rotate.removeAttribute('aria-pressed');
+              const action = rotateOn ? 'Pause' : 'Resume';
+              rotate.textContent = action;
+              rotate.setAttribute('aria-label', `${action} rotation`);
+              rotate.title = `${action} rotation`;
+            } else {
+              rotate.setAttribute('aria-pressed', String(rotateOn));
+            }
+          };
+          syncRotationButton();
+          on(zoomIn, 'click', () => viewer.zoom(0.68));
+          on(zoomOut, 'click', () => viewer.zoom(1.46));
+          on(wire, 'click', () => {
+            wireOn = !wireOn;
+            wire?.setAttribute('aria-pressed', String(wireOn));
+            viewer.setWireframe(wireOn);
+          });
+          on(rotate, 'click', () => {
+            rotateOn = !rotateOn;
+            syncRotationButton();
+            viewer.setAutoRotate(rotateOn);
+          });
+          on(reset, 'click', () => viewer.reset());
+          on(fullscreen, 'click', async () => {
+            if (document.fullscreenElement === root) await document.exitFullscreen();
+            else await root.requestFullscreen?.();
+          });
+          on(document, 'fullscreenchange', () => {
+            const expanded = document.fullscreenElement === root;
+            fullscreen?.setAttribute('aria-pressed', String(expanded));
+            if (fullscreen) {
+              fullscreen.textContent = expanded ? 'Close' : 'Expand';
+              fullscreen.title = expanded ? 'Exit full screen' : 'Enter full screen';
+            }
+          });
+          on(stage!, 'keydown', (event) => {
+            if (event.key === '+' || event.key === '=') { event.preventDefault(); viewer.zoom(0.68); }
+            if (event.key === '-' || event.key === '_') { event.preventDefault(); viewer.zoom(1.46); }
+            if (event.key === '0') { event.preventDefault(); viewer.reset(); }
+            if (event.key.toLowerCase() === 'w') {
+              event.preventDefault();
+              wireOn = !wireOn;
+              wire?.setAttribute('aria-pressed', String(wireOn));
+              viewer.setWireframe(wireOn);
+            }
+          });
+        }
+        if (displayPanel) {
+          displayPanel.hidden = false;
+          const exposure = displayPanel.querySelector('[data-exposure]') as HTMLInputElement | null;
+          const texture = displayPanel.querySelector('[data-surface-texture]') as HTMLInputElement | null;
+          const resetTexture = displayPanel.querySelector('[data-texture-reset]') as HTMLButtonElement | null;
+          if (exposure) {
+            exposure.value = String(viewer.defaults.exposure);
+            on(exposure, 'input', () => viewer.setBrightness(+exposure.value));
+          }
+          if (texture) {
+            const original = viewer.texture.defaultValue;
+            const updateTextureReadout = () => {
+              const value = +texture.value;
+              const finish = value === original ? 'original texture' : value > original ? 'glossier' : 'more matte';
+              texture.setAttribute('aria-valuetext', `${value}, ${finish}`);
+              if (resetTexture) resetTexture.disabled = value === original;
+            };
+            // Binding the control must not alter the scan's authored surface.
+            texture.value = String(original);
+            updateTextureReadout();
+            on(texture, 'input', () => {
+              viewer.texture.setValue(+texture.value);
+              updateTextureReadout();
+            });
+            on(resetTexture, 'click', () => {
+              texture.value = String(original);
+              viewer.texture.setValue(original);
+              updateTextureReadout();
+            });
+          }
+        }
+        if (hud) {
+          hud.hidden = false;
+          const brightness = hud.querySelector('[data-brightness]') as HTMLInputElement | null;
+          const texture = hud.querySelector('[data-texture]') as HTMLInputElement | null;
+          const autorotate = hud.querySelector('[data-autorotate]') as HTMLInputElement | null;
+          const wire = hud.querySelector('[data-wireframe]') as HTMLInputElement | null;
+          const reset = hud.querySelector('[data-reset]') as HTMLButtonElement | null;
+          const readB = hud.querySelector('[data-read-brightness]') as HTMLElement | null;
+          if (brightness) brightness.value = String(viewer.defaults.exposure);
+          if (texture) texture.value = String(viewer.defaults.texture);
+          if (readB && brightness) readB.textContent = `${brightness.value}%`;
+          if (brightness) { viewer.setBrightness(+brightness.value); on(brightness, 'input', () => { viewer.setBrightness(+brightness.value); if (readB) readB.textContent = `${brightness.value}%`; }); }
+          if (texture) { viewer.setTexture(+texture.value); on(texture, 'input', () => viewer.setTexture(+texture.value)); }
+          if (autorotate) { autorotate.checked = viewer.defaults.autoRotate; viewer.setAutoRotate(autorotate.checked); on(autorotate, 'change', () => viewer.setAutoRotate(autorotate.checked)); }
+          if (wire) on(wire, 'change', () => viewer.setWireframe(wire.checked));
+          if (reset) on(reset, 'click', () => viewer.reset());
+        }
+        on(stage!, 'dblclick', (event) => {
+          // Double-tap resets only on the model itself — a double-click on a display
+          // control inside the stage must not throw the view away.
+          if (event.target instanceof Element && event.target.classList.contains('viewer-canvas')) viewer.reset();
+        });
+      } catch (err) {
+        if (current !== generation) return;
+        release();
+        root.dispatchEvent(new CustomEvent('atrium:viewer-error'));
+        if (loading) loading.hidden = true;
+        if (poster) poster.style.opacity = '1';
+        if (activate) activate.hidden = false;
+        started = false;
+      }
+    }
+
+    const spatial = root.querySelector('[data-spatial]');
+    if (spatial) {
+      void import('../lib/spatial-viewer.mjs').then(({ bindSpatialViewing }) => {
+        bindSpatialViewing(spatial, () => activeViewer?.spatial, start);
+      });
+    }
+    if (activate) activate.addEventListener('click', start);
+    if (lazy && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        activeViewer?.setVisible(visible);
+        if (visible) {
+          const resident = residents.get(root);
+          if (resident) { residents.delete(root); residents.set(root, resident); }
+          start();
+        }
+        trimResidents();
+      }, { rootMargin: '200px 0px' });
+      observer.observe(stage);
+    }
+    // Load single featured works after first paint; older browsers retain click activation.
+    if (root.getAttribute('data-auto-start') === 'true') {
+      if ('requestIdleCallback' in window) (window as any).requestIdleCallback(() => start(), { timeout: 1500 });
+      else setTimeout(start, 300);
+    } else if (activate) {
+      activate.hidden = false;
+    }
+  }
+</script>
+
+<style>
+  .spatial-unavailable { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--v3-muted, #c9c6bd); font: 500 11px/1.5 var(--v3-sans, sans-serif); text-decoration: none; }
+  .spatial-unavailable:hover { color: var(--v3-ink, #f7f5ef); text-decoration: underline; text-underline-offset: 4px; }
+  .spatial-unavailable:focus-visible { outline: 2px solid var(--v3-signal, #eccf7a); outline-offset: 4px; }
+</style>

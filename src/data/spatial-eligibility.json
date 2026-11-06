@@ -1,0 +1,248 @@
+{
+  "discobolus": {
+    "enabled": true,
+    "policyVersion": 1,
+    "slug": "discobolus",
+    "kind": "cast",
+    "recordFingerprint": "e30c045eb7f1cd611a65df162e6bd79dc3106fc129b9e774f8b544403ef38cad",
+    "modelUrl": "https://models.atrium.earth/models/previews/discobolus/preview-18e77773563d.glb",
+    "assetSha256": "18e77773563d7fb00996c62c94526d663d5207edfec13982fe5ac2833cfb0ccb",
+    "orientationFingerprint": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "bindingFingerprint": "60f9fb769be378eebd52126394d34b0a8ebd2e5f1c18f2e10834d6383514d897"
+  },
+  "capitoline-venus": {
+    "enabled": true,
+    "policyVersion": 1,
+    "kind": "original",
+    "recordFingerprint": "2af424c535ed43ab7b39b47049fc9bf6d0a4a66c89a7a84f1af7866e17d68630",
+    "modelUrl": "https://models.atrium.earth/models/previews/capitoline-venus/preview.glb",
+    "assetSha256": "03e6b216348d922374c662e10cbb22b3f8e7539fe95dc7cc13aea7f1ddc55044",
+    "orientationFingerprint": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "bindingFingerprint": "5557ef2024909571ecb5b7e7d74f9cac920fb9e40e0b61a9fe6a8ed8f13c7be7"
+  },
+  "rodin/danaid": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "axis"
+  },
+  "borghese-gladiator": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "crouching-venus": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "doryphoros": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "the-wrestlers": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "rodin/adam-rodin-musee-rodin": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "rodin/age-of-bronze-rodin-musee-rodin": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "mismatch"
+  },
+  "roman/three-graces-louvre-ma-287": {
+    "enabled": true,
+    "policyVersion": 1,
+    "kind": "object",
+    "recordFingerprint": "47647a5df7213d1e589d706d39d90218b52f55fa2d6ed21692991110c629a215",
+    "modelUrl": "https://models.atrium.earth/models/previews/roman/three-graces-louvre-ma-287/preview.glb",
+    "assetSha256": "5e13d0c442e1def10d344e6a9455b8945400476dd3008e3f51a23fd8e073dff3",
+    "orientationFingerprint": "4cef4f8cc399d2218cba4a275c945f8b441b73661ef97d2371e66ca72e57f209",
+    "bindingFingerprint": "53432d9e756e2731501c44389c32ce2f70be30810aa6c3f9457fc98d3eebf91c"
+  },
+  "baroque/venus-callipyge-louvre-mr-1999": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/crouching-woman-rodin-hirshhorn-66-4342": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/bacchante-and-satyr-clesinger-mia-73-13": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "roman/sleeping-hermaphroditus-louvre-ma-231": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "modern/athlete-wrestling-python-leighton-tate-n01754": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "axis"
+  },
+  "modern/the-kiss-rodin-musee-rodin-s-1002": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/bacchante-couchee-clesinger-petit-palais": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/three-nymphs-maillol-carrousel": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/bacchante-etcheto-pau": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "roman/esquiline-venus-smk-cast": {
+    "enabled": true,
+    "policyVersion": 1,
+    "kind": "original",
+    "recordFingerprint": "a417f8fa30038ff0d32b35dce7a537bc980e79df639eb85a1f678d2914344bc3",
+    "modelUrl": "https://models.atrium.earth/models/previews/roman/esquiline-venus-smk-cast/preview-3defa179231e.glb",
+    "assetSha256": "3defa179231e213c1694f9eda905a0651e7f094d9415dfa3f48aa1ede027cf97",
+    "orientationFingerprint": "b0a970593be3876c7a91f1a4a4f17f99411aead48c56206b9b8d664cd6d63fd5",
+    "bindingFingerprint": "968f74a1d60e8e4e05478e0fa0517978f54d146610ae74eb78d1c2a77f6a80d6"
+  },
+  "roman/crouching-aphrodite-met": {
+    "enabled": true,
+    "policyVersion": 1,
+    "kind": "object",
+    "recordFingerprint": "b438620690568aa4f085e87a44d764fe8ee7a15014893419dd38601828f3dc16",
+    "modelUrl": "https://models.atrium.earth/models/previews/roman/crouching-aphrodite-met/preview-5cf07e325dac.glb",
+    "assetSha256": "5cf07e325dac8cc106094c277cc68adafc5869e312cf49e30c76a29062f176ce",
+    "orientationFingerprint": "f2348a230f3ba456fccb62b72da023b30563175f5980821e28b34950396b55f0",
+    "bindingFingerprint": "bbad11e2f13e5def88fad66af080bb8613342130bf2f3c010169ab1c353b48ed"
+  },
+  "roman/lely-venus-british-museum": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/danae-henning": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/action-in-chains-maillol-carrousel": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/assia-despiau-middelheim": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/small-phryne-maillol-mount-holyoke": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "axis"
+  },
+  "modern/torso-callender-saam": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/susanna-aaltonen-turku": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/gladiator-welonski-krakow": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "neoclassical/three-graces-glyptotek": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "mismatch"
+  },
+  "modern/nude-in-sun-harvent-mons": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/eternal-spring-rodin-glyptotek": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/eve-rodin-reduced-marble": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "axis"
+  },
+  "modern/victorious-athlete-grandmoulin-tahto": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "contemporary/punishment-hercules-deepak": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "modern/woman-gutter-vandensteen-jehay": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "unverified"
+  },
+  "rodin/the-eternal-idol-harvard": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "europe/three-graces-carpeaux-mia": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "europe/winter-houdon-met": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "europe/sluggard-leighton-royal-academy": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "rodin/fugitive-love-cantor-portland": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "rodin/iris-cantor-portland": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "europe/bacchante-female-satyr-clodion-mag": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  },
+  "europe/le-repos-boucher-pau": {
+    "enabled": false,
+    "policyVersion": 1,
+    "reason": "geometry"
+  }
+}
